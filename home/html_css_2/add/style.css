@@ -1,0 +1,14 @@
+#pic1,
+#pic2,
+#pic3 {
+  position: relative;
+}
+#pic2{
+    top: -513px;
+    right: -110px;
+}
+#pic3{
+    top: -806px;
+    right: -300px;
+}
+
