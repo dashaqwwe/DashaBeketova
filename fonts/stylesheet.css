@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'TradeGothic LT Extended';
+    src: url('TradeGothicLT-Extended.eot');
+    src: url('TradeGothicLT-Extended.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-Extended.woff2') format('woff2'),
+        url('TradeGothicLT-Extended.woff') format('woff'),
+        url('TradeGothicLT-Extended.ttf') format('truetype'),
+        url('TradeGothicLT-Extended.svg#TradeGothicLT-Extended') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

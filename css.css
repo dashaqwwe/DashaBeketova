@@ -9,14 +9,115 @@
   border: 1px solid transparent;
 }
 .fon {
+  /* background-image: url(imgmaket/122f863358e82f3cc1dbab4d71a827f9.jpg); */
   background-image: url(imgmaket/Rectangle\ 31.jpg);
   width: 1380px;
   height: 599px;
+  /* background-size: cover;
+  border-radius: 24px; */
 }
 .header {
   width: 1380px;
   padding: 24px 32px;
 }
 .flight {
+  float: left;
+  margin: 0px 32px 0px 0px;
+}
+.stays {
+  float: left;
+}
+.signup {
+  float: right;
+  border-radius: 8px;
+  background: var(--Neutrals, #fff);
+  display: flex;
+  height: 48px;
+  flex-direction: column;
+  justify-content: center;
+}
+.login {
+  float: right;
+  margin: 0px 32px 0px 0px;
+  height: 48px;
+  padding-top: 10px;
+}
+.span1 {
+  display: inline-block;
+  vertical-align: super;
+  color: var(--Neutrals, #fff);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.span2 {
+  display: inline-block;
+  vertical-align: super;
+  color: var(--Neutrals, #fff);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.span3 {
+  display: inline-block;
+  vertical-align: sub;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin: 10px 24px;
+}
+.span4 {
+  display: inline-block;
+  vertical-align: sub;
+  color: var(--Neutrals, #fff);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.logo {
+  float: left;
+  margin: 0px auto 0px 362px;
+  padding-top: 5px;
+  /* text-align: center; */
+}
+.air {
+  width: 24px;
+  height: 24px;
+}
+.ion {
+  width: 24px;
+  height: 24px;
+}
+.h {
+  clear: both;
+  text-align: center;
+  margin: 54px 314px 247px 313px;
+}
+.helping {
+  color: var(--Neutrals, #fff);
+  text-align: center;
+  font-size: 45px;
+  font-family: "TradeGothic LT Extended";
+}
+.live {
+  color: var(--Neutrals, #fff);
+  text-align: center;
+  font-size: 80px;
+  text-transform: uppercase;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  font-family: "TradeGothic LT Extended";
+}
+.special {
+  color: var(--Neutrals, #fff);
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.fix {
+  padding-top: 10px;
+  border: 1px solid transparent;
+  width: 260px;
   float: left;
 }
