@@ -9,13 +9,14 @@
   border: 1px solid transparent;
 }
 .fon {
-  background-image: url(imgmaket/122f863358e82f3cc1dbab4d71a827f9.jpg),
-    url(imgmaket/Rectangle\ 32.png);
-  /* background-image: url(imgmaket/Rectangle\ 31.jpg); */
+  /* background-image: url(imgmaket/Rectangle\ 32.png),
+    url(imgmaket/122f863358e82f3cc1dbab4d71a827f9.jpg); */
+  background: url(imgmaket/Rectangle\ 32.png) no-repeat, url(imgmaket/Rectangle\ 31.jpg);
   width: 1380px;
   height: 599px;
-  background-size: cover;
-  border-radius: 24px;
+  /* background-size: cover; */
+  /* border-radius: 24px; */
+  margin-top: 30px;
 }
 .header {
   width: 1380px;
@@ -308,7 +309,142 @@
 .span12 {
   vertical-align: -6px;
   color: var(--Blackish-Green, #121);
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 500;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+.plan {
+  height: 36px;
+  align-self: stretch;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 80px;
+  margin-bottom: 16px;
+}
+.search_flights {
+  align-self: stretch;
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+.h2 {
+  width: 1059px;
+  float: left;
+  margin-bottom: 40px;
+}
+.more_places {
+  width: 159px;
+  display: flex;
+  height: 40px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid var(--Mint-Green, #8dd3bb);
+  float: right;
+  margin-top: 96px;
+}
+.span13 {
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  width: 117px;
+}
+.Istanbul {
+  width: 390px;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--Neutrals, #fff);
+  box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+  height: 122px;
+  float: left;
+  margin-right: 32px;
+}
+.Turkey {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  background: url(imgmaket/be76b5a0f44cb9eeaeadb5f68d795b83.jpg),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+  margin-right: 16px;
+  float: left;
+}
+.Istanbul_Turkey {
+  /* width: 252px; */
+  margin-bottom: 8px;
+  align-self: stretch;
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+}
+.flightsoll {
+  float: left;
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tochka {
+  float: left;
+  margin: 0px 8px 0px 8px;
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+}
+.hotelsoll {
+  float: left;
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+.tochka2 {
+  float: left;
+  margin: 0px 8px 0px 8px;
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+}
+.h3 {
+  padding: 23px 0px;
+}
+.resortsoll {
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+.Sydney {
+  width: 390px;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--Neutrals, #fff);
+  box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+  height: 122px;
+  float: left;
+}
+.Australia {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+  background: url(imgmaket/7d28e1016c3800ef03b0eab86df1b51a.jpg),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+  margin-right: 16px;
+  float: left;
+}
+.h4 {
+  padding: 23px 0px;
+}
+.Sydney_Australia {
+  margin-bottom: 8px;
+  align-self: stretch;
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
 }
