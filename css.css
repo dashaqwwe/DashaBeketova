@@ -91,7 +91,7 @@
 .h {
   clear: both;
   text-align: center;
-  margin: 54px 314px 247px 313px;
+  margin: 54px 314px 150px 313px;
 }
 .helping {
   color: var(--Neutrals, #fff);
@@ -120,4 +120,20 @@
   border: 1px solid transparent;
   width: 260px;
   float: left;
+}
+.booking {
+  width: 1232px;
+  height: 280px;
+  padding: 16px 32px 0px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  margin: -97px auto 0px auto;
+  box-shadow: 0px 4px 16px 0px rgba(141, 211, 187, 0.15);
+}
+.flights {
+  float: left;
+  margin-right: 32px;
+}
+.stays {
+  margin-left: 32px;
 }
