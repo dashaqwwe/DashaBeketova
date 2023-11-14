@@ -9,12 +9,13 @@
   border: 1px solid transparent;
 }
 .fon {
-  /* background-image: url(imgmaket/122f863358e82f3cc1dbab4d71a827f9.jpg); */
-  background-image: url(imgmaket/Rectangle\ 31.jpg);
+  background-image: url(imgmaket/122f863358e82f3cc1dbab4d71a827f9.jpg),
+    url(imgmaket/Rectangle\ 32.png);
+  /* background-image: url(imgmaket/Rectangle\ 31.jpg); */
   width: 1380px;
   height: 599px;
-  /* background-size: cover;
-  border-radius: 24px; */
+  background-size: cover;
+  border-radius: 24px;
 }
 .header {
   width: 1380px;
@@ -123,7 +124,6 @@
 }
 .booking {
   width: 1232px;
-  height: 280px;
   padding: 16px 32px 0px;
   border-radius: 16px;
   background-color: #ffffff;
@@ -132,8 +132,184 @@
 }
 .flights {
   float: left;
+  /* margin-right: 32px; */
+}
+.stays2 {
+  /* margin-left: 32px; */
+}
+.span5 {
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: super;
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  width: 57px;
+  height: 20px;
+}
+.span6 {
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: super;
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  width: 44px;
+  height: 20px;
+}
+.containersupp {
+  width: 1232px;
+  margin-left: 74px;
+  margin-right: 74px;
+}
+.flights_stays {
+  width: 239px;
+  height: 48px;
+  vertical-align: middle;
+  padding: 12px 0px;
+  margin-bottom: 48px;
+}
+.poloska {
+  width: 1px;
+  height: 48px;
+  background: #d7e2ee;
+  float: left;
+  margin-left: 32px;
   margin-right: 32px;
 }
-.stays {
-  margin-left: 32px;
+.fromto {
+  width: 324px;
+  height: 56px;
+  padding: 4px 0px 4px 16px;
+  border: 1px solid #79747e;
+  border-radius: 4px 4px 0px 0px;
+  margin-right: 24px;
+  float: left;
+}
+.lahore {
+  width: 260px;
+  height: 40px;
+  float: left;
+}
+.span7 {
+  vertical-align: -13px;
+  color: #1c1b1f;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  width: 130px;
+  height: 20px;
+}
+.imgswap {
+  padding: 12px;
+  text-align: right;
+}
+.trip2 {
+  width: 140px;
+  height: 56px;
+  padding: 4px 0px 4px 16px;
+  border: 1px solid #79747e;
+  border-radius: 4px 4px 0px 0px;
+  float: left;
+  margin-right: 24px;
+}
+.span8 {
+  vertical-align: -13px;
+  width: 56px;
+  height: 20px;
+  color: #1c1b1f;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+.return {
+  width: 76px;
+  height: 40px;
+  float: left;
+}
+.imgchevron {
+  padding: 12px;
+  text-align: right;
+}
+.depart {
+  width: 324px;
+  height: 56px;
+  padding: 8px 16px;
+  border: 1px solid #79747e;
+  border-radius: 4px 4px 0px 0px;
+  float: left;
+  margin-right: 24px;
+}
+.date {
+  width: 194px;
+  height: 40px;
+  float: left;
+}
+.span9 {
+  vertical-align: -10px;
+  width: 166px;
+  height: 20px;
+  color: #1c1b1f;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+.passenger {
+  width: 308px;
+  height: 56px;
+  padding: 8px 16px;
+  border: 1px solid #79747e;
+  border-radius: 4px 4px 0px 0px;
+  float: left;
+}
+.span10 {
+  vertical-align: -10px;
+  width: 178px;
+  height: 20px;
+  color: #1c1b1f;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+.show_filghts {
+  width: 144px;
+  height: 48px;
+  float: right;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: var(--Mint-Green, #8dd3bb);
+  margin: 32px 16px 32px 0px;
+}
+.plane {
+  vertical-align: -9px;
+}
+.span11 {
+  vertical-align: -6px;
+  display: inline-block;
+  /* margin-left: 4px; */
+  width: 92px;
+  height: 17px;
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+}
+.promo_code {
+  float: right;
+  width: 142px;
+  height: 48px;
+  padding: 8px 0px;
+  margin: 32px 24px 32px 0px;
+}
+.add {
+  vertical-align: -9px;
+}
+.span12 {
+  vertical-align: -6px;
+  color: var(--Blackish-Green, #121);
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
 }
