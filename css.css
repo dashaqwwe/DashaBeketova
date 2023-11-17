@@ -754,3 +754,41 @@
   height: 584px;
   margin-left: -451px;
 }
+.foncard2 {
+  margin-top: 22px;
+  width: 425px;
+  height: 586px;
+  border-radius: 20px;
+  background: rgba(141, 211, 187, 0.4);
+  float: left;
+  margin-left: 50px;
+}
+.Thomas {
+  padding: 24px;
+  border-radius: 20px;
+  background: var(--Neutrals, #fff);
+  box-shadow: 2px 4px 16px 0px rgba(17, 34, 17, 0.1);
+  float: left;
+  width: 425px;
+  height: 584px;
+  margin-left: -451px;
+}
+.foncard3 {
+  margin-top: 22px;
+  width: 425px;
+  height: 586px;
+  border-radius: 20px;
+  background: rgba(141, 211, 187, 0.4);
+  float: left;
+  margin-left: 50px;
+}
+.Eliot {
+  padding: 24px;
+  border-radius: 20px;
+  background: var(--Neutrals, #fff);
+  box-shadow: 2px 4px 16px 0px rgba(17, 34, 17, 0.1);
+  float: left;
+  width: 425px;
+  height: 584px;
+  margin-left: -451px;
+}
