@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .mnemonic a:hover {
+        color: red;
+      }
+      .mnemonic a {
+        color: green;
+        padding: 6px;
+      }
+      .mnemonic {
+        margin-bottom: 20px;
+      }
+      .mnemonic a:last-child {
+        border: none;
+      }
+      span {
+        color: red;
+        font-size: 40px;
+        display: inline-block;
+      }
+      .border a:hover {
+        color: red;
+      }
+      .border a {
+        color: green;
+        border-right: 2px solid red;
+        padding: 10px;
+      }
+      .border a:last-child {
+        border: none;
+      }
+      .border a:first-child {
+        padding-left: 6px;
+      }
+      .border a:nth-child(4) {
+        padding-left: 14px;
+        padding-right: 10px;
+      }
+      .border a:nth-child(3) {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+      .border {
+        margin-bottom: 10px;
+      }
+      .img a {
+        color: green;
+        padding: 3px;
+        vertical-align: 17px;
+      }
+      .img a:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- мнемоники -->
+    <div class="mnemonic">
+      <a href="#1">первая ссылка</a>
+      <span>&#124;</span>
+      <a href="#2">вторая ссылка</a>
+      <span>&#124;</span>
+      <a href="#3">третья ссылка</a>
+      <span>&#124;</span>
+      <a href="#4">четвертая ссылка</a>
+      <span>&#124;</span>
+      <a href="#5">пятая ссылка</a>
+    </div>
+    <!-- границы (как по мне лучший вариант, с которым не возникает проблем)-->
+    <div class="border">
+      <a href="#1">первая ссылка</a>
+      <a href="#2">вторая ссылка</a>
+      <a href="#3">третья ссылка</a>
+      <a href="#4">четвертая ссылка</a>
+      <a href="#5">пятая ссылка</a>
+    </div>
+    <!-- картинка -->
+    <div class="img">
+      <a href="#1">первая ссылка</a>
+      <img src="img/123123123.png" alt="" />
+      <a href="#2">вторая ссылка</a>
+      <img src="img/123123123.png"" alt="">
+      <a href="#3">третья ссылка</a>
+      <img src="img/123123123.png"" alt="">
+      <a href="#4">четвертая ссылка</a>
+      <img src="img/123123123.png"" alt="">
+      <a href="#5">пятая ссылка</a>
+    </div>
+  </body>
+</html>
