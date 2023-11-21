@@ -743,6 +743,7 @@
   background: rgba(141, 211, 187, 0.4);
   float: left;
   margin-left: 26px;
+  margin-bottom: 92px;
 }
 .Olga {
   padding: 24px;
@@ -762,6 +763,7 @@
   background: rgba(141, 211, 187, 0.4);
   float: left;
   margin-left: 50px;
+  margin-bottom: 92px;
 }
 .Thomas {
   padding: 24px;
@@ -781,6 +783,7 @@
   background: rgba(141, 211, 187, 0.4);
   float: left;
   margin-left: 50px;
+  margin-bottom: 92px;
 }
 .Eliot {
   padding: 24px;
@@ -794,4 +797,165 @@
 }
 .containersupp2 {
   width: 1500px;
+}
+.review_title {
+  height: 80px;
+  align-self: stretch;
+  color: var(--Blackish-Green, #121);
+  font-family: TradeGothic LT Extended;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.review {
+  height: 37px;
+  align-self: stretch;
+  overflow: hidden;
+  color: var(--Blackish-Green, #121);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.viewmore {
+  align-self: stretch;
+  color: var(--Blackish-Green, #121);
+  text-align: right;
+  font-family: TradeGothic LT Extended;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.ion_star {
+  margin-right: 12px;
+  margin-bottom: 20px;
+}
+.people_review {
+  align-self: stretch;
+  color: var(--Blackish-Green, #121);
+  font-family: TradeGothic LT Extended;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.Weave_Studios {
+  align-self: stretch;
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.imggoogle {
+  margin-right: 8px;
+  float: left;
+}
+.google {
+  color: var(--Blackish-Green, #121);
+  font-family: TradeGothic LT Extended;
+  font-size: 12px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+.divgoogle {
+  margin-bottom: 40px;
+}
+.pic_review {
+  height: 200px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: url(imgmaket/2d9afcfc8f6b2105b415f4d1a3703551.jpg),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+}
+.pic_review2 {
+  height: 200px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: url(imgmaket/2bc9380fe02cf65bd8e281ed4d43885a.jpg),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+}
+.pic_review3 {
+  height: 200px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: url(imgmaket/7f44409c34363230b50babb01b3efc89.jpg),
+    lightgray 50% / cover no-repeat;
+  background-size: cover;
+}
+.subscribe {
+  width: 1232px;
+  padding: 0px 24px;
+  border-radius: 20px;
+  background: #cdeae1;
+  box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
+  float: left;
+}
+.newsletter {
+  width: 633px;
+  padding: 24px 0px;
+  float: left;
+}
+.email_address {
+  width: 473px;
+  height: 56px;
+  padding: 8px 0px 8px 16px;
+  border-radius: 4px 4px 4px 4px;
+  background-color: White;
+  float: left;
+}
+.span14 {
+  vertical-align: -11px;
+  color: #1c1b1f;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+.subscribe_newsletter {
+  width: 364px;
+  color: var(--Blackish-Green, #121);
+  font-family: TradeGothic LT Extended;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+  margin-bottom: 24px;
+}
+.the_travel {
+  color: var(--Blackish-Green, #121);
+  font-family: TradeGothic LT Extended;
+  font-size: 20px;
+  font-weight: 700;
+  width: 117px;
+  height: 25px;
+  margin-bottom: 8px;
+}
+.get_inspired {
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.span15 {
+  color: var(--Neutrals, #fff);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+}
+.buttonsubscribe {
+  width: 104px;
+  height: 56px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background: var(--Blackish-Green, #121);
+  float: left;
+  margin-left: 16px;
+}
+.vector {
+  float: right;
+  background-color: #cdeae1;
+  margin-top: 45px;
 }
