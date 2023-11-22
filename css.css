@@ -893,6 +893,7 @@
   background: #cdeae1;
   box-shadow: 0px 4px 16px 0px rgba(17, 34, 17, 0.05);
   float: left;
+  margin-bottom: 40px;
 }
 .newsletter {
   width: 633px;
@@ -944,6 +945,7 @@
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
+  vertical-align: -9px;
 }
 .buttonsubscribe {
   width: 104px;
@@ -956,6 +958,6 @@
 }
 .vector {
   float: right;
-  background-color: #cdeae1;
-  margin-top: 45px;
+  margin-top: 46px;
+  font-size: 0;
 }
