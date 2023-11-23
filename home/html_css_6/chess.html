@@ -4,12 +4,19 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>*** unnamed text ***</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
       [href^="https://"]::before
       {
         content: url(img/extref.png);
+        margin-right: 2px;
+        vertical-align: text-bottom;
       }
       div p {
         color: blue;
+        font-style: italic;
       }
       b:first-child {
         color: red;
@@ -21,6 +28,10 @@
         color: blue;
         text-decoration: none;
         font-weight: bold;
+      }
+      a:last-of-type {
+        margin-top: 20px;
+        display: inline-block;
       }
       table.CHESS {
         border-collapse: collapse;
