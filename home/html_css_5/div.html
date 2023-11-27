@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css.css" />
     <title>Document</title>
     <style>
       body {
@@ -51,6 +50,60 @@
         background-image: url(img/ball.png), url(img/Безымянный.png);
         background-repeat: repeat-y, repeat-y;
         background-position: right top, left top;
+      }
+      @media all and (max-width: 570px) {
+        .sport {
+          width: 100%;
+          padding: 30px 20px 60px 0px;
+          background-color: rgb(201, 189, 86);
+          float: none;
+        }
+        h4 {
+          text-align: center;
+          font-size: 23px;
+        }
+        h3 {
+          text-align: center;
+          margin-top: 10px;
+          font-size: 25px;
+        }
+        .bbb {
+          background-image: url(img/ball.png);
+          background-repeat: repeat-y, repeat-y;
+          background-position: right top, left top;
+        }
+        .img {
+          float: none;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+        }
+        .header {
+          text-align: center;
+          background-color: rgb(97, 189, 201);
+          color: blue;
+          padding: 15px 5px;
+        }
+        h2 {
+          margin: 0px;
+        }
+        .footer {
+          text-align: center;
+          background-color: rgb(97, 189, 201);
+          color: blue;
+          padding: 15px 5px;
+          clear: both;
+        }
+        ul {
+          text-align: center;
+        }
+        li {
+          list-style-type: none;
+        }
+        li::before {
+          content: '•';
+          margin-right: 3px;
+        }
       }
     </style>
   </head>
