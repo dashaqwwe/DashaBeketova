@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
     <title>Document</title>
     <style>
       body {
@@ -16,11 +17,9 @@
         padding: 1px 60px;
       }
       .sport {
-        background-color: rgb(201, 189, 86);
         width: 140px;
         padding: 30px 20px 60px 20px;
         float: left;
-        height: 380px;
       }
       a {
         color: blue;
@@ -48,18 +47,18 @@
       h4 {
         margin: 0px 0px 21px;
       }
+      .bbb {
+        background-image: url(img/ball.png), url(img/Безымянный.png);
+        background-repeat: repeat-y, repeat-y;
+        background-position: right top, left top;
+      }
     </style>
   </head>
   <body>
     <div class="header">
       <h2>ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h2>
     </div>
-    <div
-      style="
-        background: url(img/ball.png) repeat-y;
-        background-position: right top;
-      "
-    >
+    <div class="bbb">
       <div class="sport">
         <h4>Виды спорта:</h4>
         <ul>
@@ -153,7 +152,7 @@
           характера игры.
         </p>
       </div>
-      <div style="clear: both;"></div>
+      <div style="clear: both"></div>
     </div>
     <div class="footer"><h2>ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</h2></div>
   </body>

@@ -1,0 +1,26 @@
+@media all and (max-width: 390px) {
+  .sport {
+    width: 100%;
+    padding: 30px 20px 60px 20px;
+    background-color: rgb(159, 179, 72);
+    float: none;
+  }
+  h4 {
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .bbb {
+    background-image: url(img/ball.png);
+    background-repeat: repeat-y, repeat-y;
+    background-position: right top, left top;
+  }
+  .img {
+    float: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+}
