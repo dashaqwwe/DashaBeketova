@@ -52,6 +52,19 @@
         background-repeat: repeat-y, repeat-y;
         background-position: right top, left top;
       }
+      .form {
+        position: absolute;
+        top: 40px;
+        right: 50px;
+      }
+      .button {
+        width: 130px;
+        height: 60px;
+        font-size: 16px;
+        text-decoration: underline;
+        background-color: aquamarine;
+        border-color: chartreuse;
+      }
       @media screen and (max-width: 390px) {
         .sport {
           width: auto;
@@ -112,12 +125,30 @@
           background-position: right top;
           margin-left: 0px;
         }
+        .form {
+          position: absolute;
+          top: 65px;
+          right: 4px;
+        }
+        .button {
+          width: 80px;
+          height: 40px;
+          font-size: 12px;
+          text-decoration: underline;
+          background-color: aquamarine;
+          border-color: chartreuse;
+        }
       }
     </style>
   </head>
   <body>
     <div class="header">
       <h2>ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h2>
+    </div>
+    <div class="form">
+      <form action="#" method="get" enctype="multipart/form-data">
+        <input class="button" type="button" value="Вступить&#13;&#10;в клуб" />
+      </form>
     </div>
     <div class="bbb">
       <div class="sport">
