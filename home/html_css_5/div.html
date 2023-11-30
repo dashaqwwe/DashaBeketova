@@ -52,7 +52,35 @@
         background-repeat: repeat-y, repeat-y;
         background-position: right top, left top;
       }
+<<<<<<< HEAD
       @media all and (max-width: 320px) {
+=======
+      .form {
+        position: absolute;
+        top: 40px;
+        right: 50px;
+      }
+      .button {
+        width: 130px;
+        height: 60px;
+        font-size: 16px;
+        text-decoration: underline;
+        background-color: aquamarine;
+        border-color: chartreuse;
+      }
+      .button:hover {
+        cursor: pointer;
+      }
+      .dop {
+        color: red;
+        font-size: 25px;
+        margin-left: 30px;
+        border: solid red 1px;
+        padding: 10px;
+        display: inline-block;
+      }
+      @media screen and (max-width: 390px) {
+>>>>>>> 51965983c54f22bc2e1352bf39ff2835ac8e83c5
         .sport {
           width: auto;
           padding: 10px 20px 10px 20px;
@@ -112,12 +140,36 @@
           background-position: right top;
           margin-left: 0px;
         }
+        .form {
+          position: absolute;
+          top: 65px;
+          right: 4px;
+        }
+        .button {
+          width: 80px;
+          height: 40px;
+          font-size: 12px;
+          text-decoration: underline;
+          background-color: aquamarine;
+          border-color: chartreuse;
+        }
+        .button:hover {
+          cursor: none;
+        }
+        .dop {
+          display: none;
+        }
       }
     </style>
   </head>
   <body>
     <div class="header">
       <h2>ПРИВЕТ УЧАСТНИКАМ СОРЕВНОВАНИЙ!</h2>
+    </div>
+    <div class="form">
+      <form action="#" method="get" enctype="multipart/form-data">
+        <input class="button" type="button" value="Вступить&#13;&#10;в клуб" />
+      </form>
     </div>
     <div class="bbb">
       <div class="sport">
@@ -216,5 +268,6 @@
       <div style="clear: both"></div>
     </div>
     <div class="footer"><h2>ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ!</h2></div>
+    <p class="dop">В ЭТОМ ФАЙЛЕ 3 ДОМАШНИХ ЗАДАНИЯ</p>
   </body>
 </html>
