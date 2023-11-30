@@ -12,14 +12,19 @@
       div {
         float: right;
       }
-      div::before {
-        content: url(img/star0.png);
+      div {
+        background: url(img/star0.png);
+        width: 80px;
+        height: 80px;
       }
       div:hover::before {
         content: url(img/star1.png);
       }
       div:hover ~ div::before {
         content: url(img/star1.png);
+      }
+      div:hover {
+        cursor: pointer;
       }
     </style>
   </head>
