@@ -1036,3 +1036,57 @@ h5 {
   margin-left: -104px;
   padding-left: 104px;
 }
+.forma {
+  border: none;
+  padding: 11px 16px 19px 16px;
+}
+input {
+  outline: none;
+}
+.legeng {
+  width: 324px;
+  margin-right: 24px;
+  float: left;
+}
+.From_To {
+  margin: 0 10px;
+  border-radius: 4px 4px 0px 0px;
+  color: #1c1b1f;
+  padding: 0px 4px;
+  color: var(--Blackish-Green, #121);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+}
+[placeholder] {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+}
+input::-webkit-input-placeholder {
+  color: #1c1b1f;
+}
+.fieldset {
+  border-radius: 4px 4px 4px 4px;
+  color: #79747e;
+}
+.ion_swap_horizontal {
+  position: relative;
+  left: 50px;
+  top: 5px;
+}
+.legeng2 {
+  width: 140px;
+  margin-right: 24px;
+  float: left;
+}
+.chevron_down {
+  position: relative;
+  left: 12px;
+  top: 6px;
+}
+.forma2 {
+  width: 87px;
+  border: none;
+  padding: 11px 16px 19px 16px;
+}
