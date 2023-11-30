@@ -5,21 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      .content {
+        position: relative;
+        margin: 0 auto;
+        width: 382px;
+        height: 330px;
+      }
       .biohazard {
         position: absolute;
       }
+      .biohazard:hover {
+        z-index: 2;
+      }
       .man_and_woman {
         position: absolute;
+        left: 190px;
+      }
+      .man_and_woman:hover {
+        z-index: 2;
       }
       .no_smoking {
         position: absolute;
+        bottom: 40px;
+        left: 61px;
+        z-index: 1;
       }
       .yin_and_yang {
         position: absolute;
+        top: 134px;
+        left: 90px;
       }
-      .main {
-        margin: 0 auto;
-        width: 300px;
+      .yin_and_yang:hover {
+        z-index: 2;
       }
     </style>
   </head>
@@ -31,22 +48,16 @@
       Поверьте: моего стыда Вы не узнали б никогда, Когда б надежду я имела Хоть
       редко, хоть в неделю раз В деревне нашей видеть вас.
     </p>
-    <div class="main">
+    <div class="content">
       <div class="biohazard">
         <img src="img/biohazard.png" alt="" />
       </div>
-    </div>
-    <div class="main2">
       <div class="man_and_woman">
         <img src="img/Man-and-woman.png" alt="" />
       </div>
-    </div>
-    <div class="main3">
       <div class="no_smoking">
         <img src="img/No_smoking.png" alt="" />
       </div>
-    </div>
-    <div class="main4">
       <div class="yin_and_yang">
         <img src="img/Yin_and_Yang.png" alt="" />
       </div>
