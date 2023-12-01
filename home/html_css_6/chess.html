@@ -33,6 +33,21 @@
         margin-top: 20px;
         display: inline-block;
       }
+      .none {
+        display: none;
+      }
+      @media print {
+        [href^="https://"]
+        {
+          display: none;
+        }
+        .none {
+          display: inline-block;
+          color: blue;
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -40,6 +55,9 @@
     <p>Дата рождения: 17 августа 1911 г.</p>
     <p><b>Чемпион мира: 1948-1957, 1958-1960, 1961-1963</b></p>
     <a href="https://chesspro.ru/statistic/botvinnik.shtml">Информация:</a>
+    <p class="none">
+      ссылка Информация на https://chesspro.ru/statistic/botvinnik.shtml
+    </p>
     <div>
       <p>
         С 1930-х гг. Ботвинник — лидер советских шахматистов: победы в
@@ -65,6 +83,9 @@
     <p>Дата рождения: 23 мая 1951 г.</p>
     <p><b>Чемпион мира: 1975-1985</b></p>
     <a href="https://chesspro.ru/statistic/karpov.shtml">Информация:</a>
+    <p class="none">
+      ссылка Информация на https://chesspro.ru/statistic/karpov.shtml
+    </p>
     <div>
       <p>
         В 1973 году победил на межзональном турнире в Ленинграде (1-2 места с
@@ -102,6 +123,9 @@
     <p>Дата рождения: 13 апреля 1963 г.</p>
     <p><b>Чемпион мира: 1985-1993</b></p>
     <a href="https://chesspro.ru/statistic/kasparov.shtml">Информация:</a>
+    <p class="none">
+      ссылка Информация на https://chesspro.ru/statistic/kasparov.shtml
+    </p>
     <div>
       <p>
         Первый матч за звание чемпиона мира по шахматам Гарри Каспаров играл
