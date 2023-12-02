@@ -3,303 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <title>Document</title>
     <style>
-      body {
-        cursor: url(https://cdn.custom-cursor.com/db/5484/32/holo-cursor.png),
-          default;
-        background: -webkit-linear-gradient(
-          45deg,
-          rgb(241, 212, 247) 16%,
-          rgb(231, 231, 231) 75%
-        );
-        background: -moz-linear-gradient(
-          45deg,
-          rgb(241, 212, 247) 16%,
-          rgb(231, 231, 231) 75%
-        );
-        background: linear-gradient(
-          45deg,
-          rgb(241, 212, 247) 16%,
-          rgb(231, 231, 231) 75%
-        );
-        background-size: cover;
-        background-attachment: fixed;
-        margin: 0%;
-        padding: 0%;
-        /* overflow: hidden; */
-        font-family: "Amita", serif;
-        font-size: large;
+      .table_col {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+        font-size: 18px;
+        width: 60%;
+        background: white;
+        text-align: left;
+        border-collapse: collapse;
+        color: #3e4347;
       }
-      h3 {
-        color: #000000;
-        transition: all 1s;
-        margin: 30px;
-        text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
-        text-align: center;
-      }
-      h3:hover {
+      .table_col th:first-child,
+      .table_col td:first-child {
         color: white;
-        text-shadow: -1px -1px 1px silver, 1px -1px 1px silver;
+        border-left: none;
+        font-weight: 600;
       }
-      h1 {
-        color: #000000;
-        transition: all 1s;
-        text-align: center;
-        margin: 30px;
-        text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
+      th:nth-last-of-type(2) {
+        color: black;
+        font-weight: 600;
       }
-      h1:hover {
-        color: white;
-        text-shadow: -1px -1px 1px silver, 1px -1px 1px silver;
+      th:nth-last-of-type(3) {
+        color: black;
+        font-weight: 600;
       }
-      h4 {
-        color: #000000;
-        transition: all 1s;
-        margin: 30px;
-        text-shadow: 1px 1px 1px silver, -1px 1px 1px silver;
-        text-align: center;
+      .table_col th {
+        border-bottom: 2px solid #f5e1a6;
+        border-right: 20px solid white;
+        border-left: 20px solid white;
+        padding: 8px 10px;
       }
-      h4:hover {
-        color: white;
-        text-shadow: -1px -1px 1px silver, 1px -1px 1px silver;
-      }
-      div {
-        width: 25%;
-        float: left;
-        box-sizing: border-box;
-        border: 1px solid rgb(0, 0, 0);
-        box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
-        height: 2000px;
-        padding: 0 20px 0 20px;
-        /* background-image: url(img/pngwing.com.png);
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center; */
+      .table_col td {
+        border-right: 20px solid white;
+        border-left: 20px solid white;
+        padding: 12px 10px;
+        color: #8b8e91;
       }
       a {
-        cursor: url(https://cdn.custom-cursor.com/db/5483/32/holo-ponter.png),
-          pointer;
-        margin: 10px;
-        color: #4d4fff;
         text-decoration: none;
-        font-weight: bold;
+        color: #8b8e91;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
       }
-      span {
-        color: #00b321;
-        float: right;
-        display: block;
-        margin: 0 10px 0 0;
-        font-weight: bold;
+      .check {
+        color: rgb(67, 228, 53);
+        font-size: 20px;
       }
-      .spann {
+      .not_check {
         color: red;
-        float: none;
-        margin: 0;
-        display: inline-block;
-        font-size: 40px;
+        font-size: 20px;
       }
     </style>
   </head>
   <body>
-    <h1>HOMETASKS</h1>
-    <div>
-      <h3>
-        &#9825;&#9825;&#9825;HTML/CSS
-        <span class="spann">1</span>&#9825;&#9825;&#9825;
-      </h3>
-      <h4>&#10048;base&#10048;</h4>
-      <section>
-        <a href="home/html_css_1/base/DIARY.html" target="_blank">diary</a>
-        <span>check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_1/base/VIZBOR2.html" target="_blank">vizbor</a>
-        <span>check</span>
-      </section>
-      <h4>&#10048;add&#10048;</h4>
-      <section>
-        <a href="home/html_css_1/add/oldtag.html" target="_blank">oldtag</a>
-        <span>check</span>
-      </section>
-      <hr />
-      <h3>
-        &#9825;&#9825;&#9825;HTML/CSS
-        <span class="spann">5</span>&#9825;&#9825;&#9825;
-      </h3>
-      <h4>&#10048;base&#10048;</h4>
-      <section>
-        <a href="home/html_css_5/div.html" target="_blank">div</a>
-        <span style="color: red">NOT check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_5/tabl.html" target="_blank">tabl</a>
-        <span>check</span>
-      </section>
-      <hr />
-    </div>
-    <div>
-      <h3>
-        &#9825;&#9825;&#9825;HTML/CSS
-        <span class="spann">2</span>&#9825;&#9825;&#9825;
-      </h3>
-      <h4>&#10048;base&#10048;</h4>
-      <section>
-        <a href="home/html_css_2/base/book.html" target="_blank">book</a>
-        <span>check</span>
-      </section>
-      <br />
-
-      <h4>&#10048;add&#10048;</h4>
-      <section>
-        <a href="home/html_css_2/add/skob.html" target="_blank">skob</a>
-        <span>check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_2/add/webq.html" target="_blank">webP</a>
-        <span>check</span>
-      </section>
-      <hr />
-      <h3>
-        &#9825;&#9825;&#9825;HTML/CSS
-        <span class="spann">6</span>&#9825;&#9825;&#9825;
-      </h3>
-      <h4>&#10048;base&#10048;</h4>
-      <section>
-        <a href="home/html_css_6/links.html" target="_blank">links</a>
-        <span>check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_6/chessmain.html" target="_blank">chess</a>
-        <span>check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_6/chess.html" target="_blank">chL:b</a>
-        <span style="color: red">NOT check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_6/chess2.html" target="_blank">chLbg</a>
-        <span style="color: red">NOT check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_6/stars.html" target="_blank">stars</a>
-        <span style="color: red">NOT check</span>
-      </section>
-      <hr />
-    </div>
-    <div>
-      <h3>
-        &#9825;&#9825;&#9825;HTML/CSS
-        <span class="spann">3</span>&#9825;&#9825;&#9825;
-      </h3>
-      <h4>&#10048;base&#10048;</h4>
-      <section>
-        <a href="home/html_css_3/base/FONT_GWF.html" target="_blank"
-          >FONT_GWF</a
-        >
-        <span>check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_3/base/FONT_GWF2.html" target="_blank"
-          >FONT_GWF2</a
-        >
-        <span>check</span>
-      </section>
-      <br />
-
-      <h4>&#10048;add&#10048;</h4>
-      <section>
-        <a href="home/html_css_3/add/safe.html" target="_blank">safe</a>
-        <span>check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_3/add/font.html" target="_blank">font</a>
-        <span>check</span>
-      </section>
-      <hr />
-      <h3>
-        &#9825;&#9825;&#9825;HTML/CSS
-        <span class="spann">7</span>&#9825;&#9825;&#9825;
-      </h3>
-      <h4>&#10048;base&#10048;</h4>
-      <section>
-        <a href="home/html_css_5/div.html" target="_blank">adapt</a>
-        <span style="color: red"> NOT check</span>
-      </section>
-
-      <h4>&#10048;add&#10048;</h4>
-      <section>
-        <a href="home/html_css_7/picture.html" target="_blank">picture</a>
-        <span style="color: red"> NOT check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_6/chess.html" target="_blank">href</a>
-        <span style="color: red"> NOT check</span>
-      </section>
-      <hr />
-    </div>
-    <div>
-      <h3>
-        &#9825;&#9825;&#9825;HTML/CSS
-        <span class="spann">4</span>&#9825;&#9825;&#9825;
-      </h3>
-      <h4>&#10048;base&#10048;</h4>
-      <section>
-        <a href="home/html_css_4/ramka.html" target="_blank">frame</a>
-        <span>check</span>
-        <h4>&#10048;add&#10048;</h4>
-      </section>
-      <section>
-        <a href="home/html_css_4/one_tag.html" target="_blank">1tag</a>
-        <span>check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_4/circle.html" target="_blank">area</a>
-        <span>check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_4/nocut.html" target="_blank">nocut</a>
-        <span>check</span>
-      </section>
-      <hr />
-      <h3>
-        &#9825;&#9825;&#9825;HTML/CSS
-        <span class="spann">8</span>&#9825;&#9825;&#9825;
-      </h3>
-      <h4>&#10048;base&#10048;</h4>
-      <section>
-        <a href="home/html_css_8/form.html" target="_blank">form</a>
-        <span style="color: red"> NOT check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_5/div.html" target="_blank">fix</a>
-        <span style="color: red"> NOT check</span>
-      </section>
-      <br />
-      <section>
-        <a href="home/html_css_8/abs2.html" target="_blank">abs</a>
-        <span style="color: red"> NOT check</span>
-      </section>
-      <hr />
-    </div>
+    <table class="table_col">
+      <colgroup>
+        <col style="background: #c7daf0" />
+      </colgroup>
+      <tr>
+        <th>HTML_CSS</th>
+        <th>BASE</th>
+        <th>ADD</th>
+      </tr>
+      <tr>
+        <td>HTML_CSS_1</td>
+        <td>
+          <a href="home/html_css_1/base/DIARY.html" target="_blank">DIARY</a
+          ><span class="check"> &check;</span><br />
+          <a href="home/html_css_1/base/VIZBOR.html" target="_blank">VIZBOR</a
+          ><span class="check"> &check;</span><br />
+          <a href="home/html_css_1/base/VIZBOR2.html" target="_blank"
+            >VIZBOR2</a
+          ><span class="check"> &check;</span>
+        </td>
+        <td>
+          <a href="home/html_css_1/add/oldtag.html" target="_blank">oldtag</a><span class="check"> &check;</span>
+        </td>
+      </tr>
+      <tr>
+        <td>HTML_CSS_2</td>
+        <td>
+          <a href="home/html_css_2/base/book.html" target="_blank">book</a><span class="check"> &check;</span>
+        </td>
+        <td>
+          <a href="home/html_css_2/add/webq.html" target="_blank">webq</a><span class="check"> &check;</span><br />
+          <a href="home/html_css_2/add/skob.html" target="_blank">skob</a><span class="check"> &check;</span>
+        </td>
+      </tr>
+      <tr>
+        <td>HTML_CSS_3</td>
+        <td>
+          <a href="home/html_css_3/base/FONT_GWF.html" target="_blank"
+            >FONT_GWF</a
+          ><span class="check"> &check;</span><br />
+          <a href="home/html_css_3/base/FONT_GWF2.html" target="_blank"
+            >FONT_GWF2</a
+          ><span class="check"> &check;</span>
+        </td>
+        <td>
+          <a href="home/html_css_3/add/font.html" target="_blank">font</a><span class="check"> &check;</span><br />
+          <a href="home/html_css_3/add/safe.html" target="_blank">safe</a><span class="check"> &check;</span>
+        </td>
+      </tr>
+      <tr>
+        <td>HTML_CSS_4</td>
+        <td><a href="home/html_css_4/ramka.html" target="_blank">frame</a><span class="check"> &check;</span></td>
+        <td>
+          <a href="home/html_css_4/one_tag.html" target="_blank">one_tag</a
+          ><span class="check"> &check;</span><br />
+          <a href="home/html_css_4/circle.html" target="_blank">area</a><span class="check"> &check;</span><br />
+          <a href="home/html_css_4/nocut.html" target="_blank">nocut</a><span class="check"> &check;</span>
+        </td>
+      </tr>
+      <tr>
+        <td>HTML_CSS_5</td>
+        <td>
+          <a href="home/html_css_5/tabl.html" target="_blank">tabl</a><span class="check"> &check;</span><br />
+          <a href="home/html_css_5/div.html" target="_blank">div</a><span class="not_check"> &cross;</span>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>HTML_CSS_6</td>
+        <td>
+          <a href="home/html_css_6/links.html" target="_blank">links</a><span class="check"> &check;</span><br />
+          <a href="home/html_css_6/chessmain.html" target="_blank">chess</a
+          ><span class="check"> &check;</span><br />
+          <a href="home/html_css_6/chess.html" target="_blank">chL:b</a><span class="not_check"> &cross;</span><br />
+          <a href="home/html_css_6/chess2.html" target="_blank">chLbg</a><span class="not_check"> &cross;</span><br />
+          <a href="home/html_css_6/stars.html" target="_blank">stars</a><span class="not_check"> &cross;</span>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>HTML_CSS_7</td>
+        <td><a href="home/html_css_5/div.html" target="_blank">adapt</a><span class="not_check"> &cross;</span></td>
+        <td>
+          <a href="home/html_css_7/picture.html" target="_blank">pict</a><span class="not_check"> &cross;</span><br />
+          <a href="home/html_css_6/chess.html" target="_blank">href</a><span class="not_check"> &cross;</span>
+        </td>
+      </tr>
+      <tr>
+        <td>HTML_CSS_8</td>
+        <td>
+          <a href="home/html_css_8/form.html" target="_blank">form</a><span class="not_check"> &cross;</span><br />
+          <a href="home/html_css_8/abs.html" target="_blank">abs</a><span class="not_check"> &cross;</span><br />
+          <a href="home/html_css_5/div.html" target="_blank">fix</a><span class="not_check"> &cross;</span>
+        </td>
+        <td></td>
+      </tr>
+    </table>
   </body>
 </html>
