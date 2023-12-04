@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 50px;
+      }
+      .p1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .span1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        float: left;
+      }
+      .divinput {
+        margin-left: 250px;
+      }
+      .input1 {
+        width: 100%;
+        height: 30px;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .select {
+        width: 30%;
+        height: 30px;
+        font-size: 18px;
+      }
+      .radio {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+      }
+      .spanradio {
+        font-size: 20px;
+        margin-right: 8px;
+      }
+      .checkbox {
+        width: 20px;
+        height: 20px;
+        margin-top: 4px;
+      }
+      .span2 {
+        font-size: 20px;
+      }
+      .textarea {
+        width: 100%;
+        height: 50px;
+      }
+      .button {
+        width: 130px;
+        height: 25px;
+      }
+      .span3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        float: left;
+      }
+      @media all and (max-width: 850px) {
+        .span1 {
+          font-size: 20px;
+          margin-bottom: 10px;
+          display: inline-block;
+          float: none;
+        }
+        .divinput {
+          margin-left: 0px;
+        }
+        .input1 {
+          width: 100%;
+          height: 30px;
+          margin-bottom: 10px;
+        }
+        .select {
+          width: 30%;
+          height: 30px;
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        .spanradio {
+          font-size: 20px;
+          margin-right: 8px;
+          margin-bottom: 10px;
+          display: inline-block;
+        }
+        .span3 {
+          font-size: 20px;
+          margin-bottom: 20px;
+          float: left;
+          margin-right: 20px;
+        }
+        @media all and (max-width: 320px) {
+          .span3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            float: left;
+            margin-right: 5px;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <form action="https://fe.it-academy.by/TestForm.php">
+        <p class="p1">
+          Для публикации вашей статьи заполните, пожалуйста, следующую форму:
+        </p>
+        <div class="clearfix">
+          <span class="span1">Название статьи:</span>
+          <div class="divinput">
+            <input type="text" name="article" class="input1" />
+          </div>
+        </div>
+        <div class="clearfix">
+          <span class="span1">Рубрика:</span>
+          <div class="divinput">
+            <select name="heading" class="select">
+              <option value="1">компьютерная техника</option>
+              <option value="1">графика и дизайн</option>
+              <option value="1" selected>программирование</option>
+            </select>
+          </div>
+        </div>
+        <div class="clearfix">
+          <span class="span1">Публикация:</span>
+          <div class="divinput">
+            <input class="radio" type="radio" name="answer" value="1" /><span
+              class="spanradio"
+              >на сайте</span
+            >
+            <input class="radio" type="radio" name="answer" value="1" /><span
+              class="spanradio"
+              >в журнале</span
+            >
+            <input class="radio" type="radio" name="answer" value="1" /><span
+              class="spanradio"
+              >на сайте и в журнале</span
+            >
+          </div>
+        </div>
+        <div class="clearfix">
+          <span class="span3">Разрешить комментарии:</span>
+          <div class="divinput">
+            <input type="checkbox" checked class="checkbox" />
+          </div>
+        </div>
+        <div class="clearfix">
+          <span class="span2">Текст статьи:</span><br />
+          <textarea class="textarea" name="text"></textarea>
+        </div>
+        <input type="submit" value="Опубликовать" class="button" />
+      </form>
+    </div>
+  </body>
+</html>
