@@ -126,7 +126,7 @@
 }
 .booking {
   width: 1232px;
-  padding: 16px 32px 0px;
+  padding: 16px 0px 0px 32px;
   border-radius: 16px;
   background-color: #ffffff;
   margin: -97px auto 0px auto;
@@ -184,20 +184,20 @@
 .show_filghts {
   width: 144px;
   height: 48px;
+  display: flex;
   float: right;
-  padding: 8px 16px;
+  padding: 15px 16px 8px 16px;
   border-radius: 4px;
   background: var(--Mint-Green, #8dd3bb);
   margin: 32px 16px 32px 0px;
+  border: none;
 }
-.plane {
-  vertical-align: -9px;
+.show_filghts:hover {
+  cursor: pointer;
 }
 .span11 {
-  vertical-align: -6px;
+  margin-left: 4px;
   display: inline-block;
-  width: 92px;
-  height: 17px;
   color: var(--Blackish-Green, #121);
   font-family: Montserrat;
   font-size: 14px;
@@ -944,7 +944,9 @@ h5 {
 }
 .forma {
   border: none;
-  padding: 11px 16px 19px 16px;
+  width: 260px;
+  margin-bottom: 14px;
+  margin-left: 16px;
 }
 input {
   outline: none;
@@ -953,9 +955,10 @@ input {
   width: 324px;
   margin-right: 24px;
   float: left;
+  position: relative;
 }
 .From_To {
-  margin: 0 10px;
+  margin: 0px 4px 9px 12px;
   border-radius: 4px 4px 0px 0px;
   color: #1c1b1f;
   padding: 0px 4px;
@@ -977,22 +980,42 @@ input::-webkit-input-placeholder {
   color: #79747e;
 }
 .ion_swap_horizontal {
-  position: relative;
-  left: 50px;
-  top: 5px;
+  position: absolute;
+  right: 0;
+  margin: 12px;
+  top: 13px;
 }
 .legeng2 {
   width: 140px;
   margin-right: 24px;
   float: left;
+  position: relative;
 }
 .chevron_down {
-  position: relative;
-  left: 12px;
-  top: 6px;
+  position: absolute;
+  right: 0;
+  margin: 12px;
+  top: 13px;
 }
 .forma2 {
-  width: 87px;
   border: none;
-  padding: 11px 16px 19px 16px;
+  width: 76px;
+  margin-bottom: 14px;
+  margin-left: 16px;
+}
+.legeng4 {
+  width: 324px;
+  float: left;
+}
+.forma3 {
+  border: none;
+  width: 194px;
+  margin-bottom: 14px;
+  margin-left: 16px;
+}
+.forma4 {
+  border: none;
+  width: 308px;
+  margin-bottom: 14px;
+  margin-left: 16px;
 }
