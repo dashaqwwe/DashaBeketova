@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      .left {
+        float: left;
+        width: 20%;
+      
+      }
+      .right {
+        width: 200px;
+        float: right;
+     
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .center {
+        margin-left: 20%;
+        margin-right: 200px;
+      
+      }
+      .main{
+        background: 
+        url(img/ball3.png) no-repeat left top,
+        url(img/ball3.png) no-repeat left bottom,
+        url(img/ball3.png) no-repeat right top,
+        url(img/ball3.png) no-repeat right bottom,
+        url(img/ball3_pravo.png) no-repeat right top,
+        url(img/ball3_pravo.png) no-repeat right bottom,
+        url(img/ball3_center.png) no-repeat 20% top,
+        url(img/ball3_center.png) no-repeat 20% bottom
+
+        ;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main clearfix">
+      <div class="left">
+        width: 20% width: 20% width: 20% width: 20% width: 20% width: 20% width:
+        20% width: 20% width: 20% width: 20% width: 20% width: 20% width: 20%
+        width: 20% width: 20% width: 20%
+      </div>
+      <div class="right">
+        width: 200px width: 200px width: 200px width: 200px width: 200px width:
+        200px width: 200px width: 200px width: 200px width: 200px width: 200px
+        width: 200px width: 200px width: 200px width: 200px width: 200px width:
+        200px width: 200px width: 200px width: 200px width: 200px width: 200px
+        width: 200px width: 200px width: 200px width: 200px width: 200px width:
+        200px width: 200px width: 200px
+      </div>
+      <div class="center">
+        контент контент контент контент контент контент контент контент контент
+        контент контент контент контент контент контент контент контент контент
+        контент контент контент контент контент контент контент контент контент
+        контент контент контент контент контент контент контент контент контент
+        контент контент контент контент контент контент
+      </div>
+    </div>
+  </body>
+</html>
