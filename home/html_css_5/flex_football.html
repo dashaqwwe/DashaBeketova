@@ -47,23 +47,20 @@
 				background: url(img/ball.png) right top repeat-y;
 				display: flex;
 				flex-direction: column;
+				padding: 10px;
 			}
 			.h3 {
 				font-size: 28px;
 				text-align: center;
-				margin-top: 40px;
+				margin-top: 30px;
 				margin-bottom: 40px;
 			}
 			.img {
 				width: 350px;
 				height: 200px;
-				margin-left: 40px;
+				margin-left: 30px;
 				margin-right: 20px;
 				float: left;
-			}
-			p {
-				margin-bottom: 20px;
-				font-size: 20px;
 			}
 			.footer {
 				display: flex;
@@ -73,6 +70,65 @@
 			}
 			ul {
 				margin-bottom: 120px;
+			}
+			.h5 {
+				font-size: 23px;
+				margin-bottom: 20px;
+				margin-top: 40px;
+			}
+			.media {
+				display: none;
+			}
+			.mainp {
+				margin-bottom: 20px;
+				font-size: 20px;
+			}
+			@media all and (max-width: 750px) {
+				.media {
+					display: inline-block;
+				}
+				.menu {
+					display: none;
+				}
+				.img {
+					width: 350px;
+					height: 200px;
+					margin-left: 10px;
+					margin-right: 10px;
+					float: none;
+				}
+				.imgp {
+					text-align: center;
+				}
+				.header {
+					display: none;
+				}
+				.footer {
+					display: none;
+				}
+				.mainp {
+					margin: 10px;
+				}
+				a {
+					margin-left: 10px;
+				}
+				.h5 {
+					margin-left: 10px;
+				}
+				.content {
+					background: white;
+					display: flex;
+					flex-direction: column;
+				}
+				@media all and (max-width: 400px) {
+					.img {
+						width: 100%;
+						height: 200px;
+						margin-left: 10px;
+						margin-right: 10px;
+						float: none;
+					}
+				}
 			}
 		</style>
 	</head>
@@ -117,7 +173,7 @@
 							<a
 								href="https://ru.wikipedia.org/wiki/Конькобежный_спорт"
 								target="_blank"
-								>прыжки в длинну</a
+								>прыжки в длину</a
 							>
 						</li>
 						<li>
@@ -161,13 +217,15 @@
 			<div class="content">
 				<h3 class="h3">ФУТБОЛ</h3>
 				<div class="float">
-					<img class="img" src="img/football.png" alt="" />
-					<p>
+					<p class="imgp">
+						<img class="img" src="img/football.png" alt="" />
+					</p>
+					<p class="mainp">
 						Футбол &mdash; командный вид спорта, в котором целью является забить
 						мяч в ворота соперника ногами или другими частями тела &lang;кроме
 						рук&rang; большее количество раз, чем команда соперника.
 					</p>
-					<p>
+					<p class="mainp">
 						Есть 17 официальных правил игры, каждое из которых содержит список
 						оговорок и руководящих принципов. Эти правила предназначены для
 						применения на всех уровнях футбола, хотя есть некоторые изменения
@@ -181,6 +239,40 @@
 		</div>
 		<div class="footer">
 			<h2 class="h2">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ</h2>
+		</div>
+		<div class="media">
+			<h4 class="h5">Виды спорта:</h4>
+			<a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт" target="_blank"
+				>конькобежный спорт</a
+			>,
+			<a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт" target="_blank"
+				>биатлон</a
+			>,
+			<a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт" target="_blank"
+				>футбол</a
+			>,
+			<a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт" target="_blank"
+				>стрельба из лука</a
+			>,<a
+				href="https://ru.wikipedia.org/wiki/Конькобежный_спорт"
+				target="_blank"
+				>прыжки в длину</a
+			>,
+			<a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт" target="_blank"
+				>прыжки в высоту</a
+			>,
+			<a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт" target="_blank"
+				>фигурное катание</a
+			>,
+			<a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт" target="_blank"
+				>синхронное плавание</a
+			>,
+			<a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт" target="_blank"
+				>шахматы</a
+			>,
+			<a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт" target="_blank"
+				>шашки</a
+			>
 		</div>
 	</body>
 </html>
