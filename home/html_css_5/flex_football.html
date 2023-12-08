@@ -71,24 +71,35 @@
 			ul {
 				margin-bottom: 120px;
 			}
-			.h5 {
-				font-size: 23px;
-				margin-bottom: 20px;
-				margin-top: 40px;
-			}
-			.media {
-				display: none;
-			}
 			.mainp {
 				margin-bottom: 20px;
 				font-size: 20px;
 			}
 			@media all and (max-width: 750px) {
-				.media {
-					display: inline-block;
+				.main {
+					display: flex;
+					flex-direction: column-reverse;
 				}
 				.menu {
-					display: none;
+					background: none;
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					flex-shrink: 0;
+				}
+				.center {
+					margin: 0;
+				}
+				.h4 {
+					font-size: 23px;
+					margin-bottom: 20px;
+					margin-top: 40px;
+					margin-left: 20px;
+				}
+				li {
+					display: inline;
+					margin-left: 10px;
+				}
 				}
 				.img {
 					width: 350px;
@@ -240,7 +251,7 @@
 		<div class="footer">
 			<h2 class="h2">ГЛАВНОЕ НЕ ПОБЕДА, А УЧАСТИЕ</h2>
 		</div>
-		<div class="media">
+		<!-- <div class="media">
 			<h4 class="h5">Виды спорта:</h4>
 			<a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт" target="_blank"
 				>конькобежный спорт</a
@@ -273,6 +284,6 @@
 			<a href="https://ru.wikipedia.org/wiki/Конькобежный_спорт" target="_blank"
 				>шашки</a
 			>
-		</div>
+		</div> -->
 	</body>
 </html>
