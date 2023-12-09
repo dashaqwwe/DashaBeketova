@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  background: url(../img/Rectangle\ 4255.png) no-repeat right top, linear-gradient(180deg, #f1f1f1 100%, #f0f2f1 16.25%, #ebedec 43.26%, #e6e8e7 72.5%, #dee2e1 100%);
+  padding: 19px 45px 0px 45px;
+  position: relative;
+  display: flex;
+}
+.section .border {
+  position: absolute;
+  top: 25%;
+  right: 3%;
+  margin-left: 142px;
+  width: 210px;
+  height: 75px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.45);
+  padding: 10px;
+}
+.section button {
+  width: 190px;
+  flex-shrink: 0;
+  border-radius: 17px;
+  border: none;
+  background: #5ccd6a;
+  box-shadow: 2px -2px 12px 0px rgba(34, 111, 33, 0.36) inset;
+  padding: 19px 42px 19px 43px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-family: "Ruberoid";
+}
+.section .header {
+  display: flex;
+}
+.section .header img {
+  margin-right: 156px;
+  flex-shrink: 0;
+}
+.section .header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1074px;
+}
+.section .header div span {
+  color: #495e4c;
+  font-family: "Proxima Nova Cn Rg";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+.section .header .p1 {
+  color: #495e4c;
+  font-family: "Ruberoid";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px;
+  text-transform: capitalize;
+}/*# sourceMappingURL=style.css.map */
