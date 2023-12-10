@@ -16,7 +16,13 @@
 }
 .section .text {
   margin-top: 80px;
-  margin-left: 90px;
+  width: 1170px;
+  position: relative;
+  margin: 80px auto 0px;
+}
+.section .text::after {
+  content: "hello";
+  visibility: hidden;
 }
 .section .text .p {
   color: #495e4c;
@@ -95,6 +101,7 @@
   border-radius: 40px;
   background: rgba(120, 192, 129, 0.25);
   padding: 15px;
+  margin-bottom: 28px;
 }
 .section .text button {
   flex-shrink: 0;
@@ -116,6 +123,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   position: relative;
 }
 .header .border {
@@ -142,15 +150,22 @@
   font-family: "Ruberoid";
 }
 .header .center {
-  margin: 0 auto;
+  display: flex;
+  flex-grow: 1;
+  margin-right: 142px;
+  margin-left: 156px;
 }
-.header .center span {
-  margin-right: 90px;
+.header .center ul {
+  list-style: none;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.header .center ul li {
   color: #495e4c;
   font-family: "Proxima Nova Rg";
   font-size: 15px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-transform: lowercase;
+  display: inline;
 }/*# sourceMappingURL=style.css.map */
