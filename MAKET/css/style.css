@@ -24,7 +24,7 @@
   content: "hello";
   visibility: hidden;
 }
-.section .text .p {
+.section .text h2 {
   color: #495e4c;
   font-family: "Ruberoid";
   font-size: 64px;
@@ -42,7 +42,7 @@
   margin: 30px 45px 0px 0px;
   float: left;
 }
-.section .text .p1 {
+.section .text h1 {
   color: var(--unnamed, #78c081);
   font-family: "Ruberoid";
   font-size: 64px;
@@ -63,7 +63,7 @@
 .section .text .ellipse {
   margin-right: 12px;
 }
-.section .text .p2 {
+.section .text h3 {
   width: 509px;
   color: #7ca381;
   font-family: "Proxima Nova Rg";
@@ -79,7 +79,7 @@
   margin-right: 20px;
   float: left;
 }
-.section .text .p3 {
+.section .text p {
   color: #7b897d;
   font-family: "Proxima Nova Rg";
   font-size: 16px;
@@ -168,4 +168,40 @@
   font-weight: 400;
   text-transform: lowercase;
   display: inline;
+}
+
+.container {
+  width: 1170px;
+  position: relative;
+  margin: 100px auto 0px;
+  display: flex;
+}
+.container div h2 {
+  color: #495e4c;
+  font-family: "Ruberoid";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.container div .uslugi {
+  margin-top: 10px;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.container div .uslugi .line {
+  width: 245px;
+  height: 2px;
+  flex-shrink: 0;
+  border-radius: 1.5px;
+  background: #78c081;
+  align-self: center;
+}
+.container div p {
+  color: #848484;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
