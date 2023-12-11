@@ -214,4 +214,5 @@
   border-radius: 65px;
   background: #d9fadd;
   display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
