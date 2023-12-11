@@ -178,6 +178,7 @@
 .container .uslugi {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .container .levo h2 {
   color: #495e4c;
@@ -209,10 +210,32 @@
   font-weight: 400;
 }
 .container .pravo {
-  width: 436px;
+  width: 538px;
+  height: 655px;
   flex-shrink: 0;
   border-radius: 65px;
   background: #d9fadd;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.container .pravo .pravo-1 {
+  display: flex;
+  align-items: flex-start;
+}
+.container .pravo p {
+  color: #495d4c;
+  font-family: "Proxima Nova Rg";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.container .pravo .square {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  margin-right: 15px;
+  margin-left: 40px;
 }/*# sourceMappingURL=style.css.map */
