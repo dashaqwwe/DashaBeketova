@@ -174,9 +174,12 @@
   width: 1170px;
   position: relative;
   margin: 100px auto 0px;
-  display: flex;
 }
-.container div h2 {
+.container .uslugi {
+  display: flex;
+  justify-content: space-between;
+}
+.container .levo h2 {
   color: #495e4c;
   font-family: "Ruberoid";
   font-size: 45px;
@@ -185,13 +188,13 @@
   text-transform: capitalize;
   font-weight: 500;
 }
-.container div .uslugi {
+.container .levo .text_uslugi {
   margin-top: 10px;
   margin-bottom: 22px;
   display: flex;
   justify-content: space-between;
 }
-.container div .uslugi .line {
+.container .levo .text_uslugi .line {
   width: 245px;
   height: 2px;
   flex-shrink: 0;
@@ -199,9 +202,16 @@
   background: #78c081;
   align-self: center;
 }
-.container div p {
+.container .levo p {
   color: #848484;
   font-family: "Proxima Nova Rg";
   font-size: 16px;
   font-weight: 400;
+}
+.container .pravo {
+  width: 436px;
+  flex-shrink: 0;
+  border-radius: 65px;
+  background: #d9fadd;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
