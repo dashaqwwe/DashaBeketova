@@ -1,247 +1,315 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .clearfix::after {
-	content: '';
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 .section {
-	background: url(../img/Rectangle\ 4255.png) no-repeat right top,
-		linear-gradient(
-			180deg,
-			#f1f1f1 0%,
-			#f0f2f1 16.25%,
-			#ebedec 43.26%,
-			#e6e8e7 72.5%,
-			#dee2e1 100%
-		);
-	padding: 19px 45px 0px 45px;
-	.text {
-		&::after {
-			content: 'hello';
-			visibility: hidden;
-		}
-		margin-top: 80px;
-		width: 1170px;
-		position: relative;
-		margin: 80px auto 0px;
-		h2 {
-			color: #495e4c;
-			font-family: 'Ruberoid';
-			font-size: 64px;
-			font-weight: 400;
-			line-height: 74px;
-			text-transform: capitalize;
-			font-weight: 500;
-		}
-		.line {
-			width: 148px;
-			height: 3px;
-			flex-shrink: 0;
-			border-radius: 1.5px;
-			background: var(--unnamed, #78c081);
-			margin: 30px 45px 0px 0px;
-			float: left;
-		}
-		h1 {
-			color: var(--unnamed, #78c081);
-			font-family: 'Ruberoid';
-			font-size: 64px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 74px;
-			letter-spacing: 1.92px;
-			text-transform: uppercase;
-			margin-top: 5px;
-			font-weight: 600;
-		}
-		img {
-			margin-right: 10px;
-			margin-top: 11px;
-			float: left;
-			margin-bottom: 20px;
-		}
-		.ellipse {
-			margin-right: 12px;
-		}
-		h3 {
-			width: 509px;
-			color: #7ca381;
-			font-family: 'Proxima Nova Rg';
-			font-size: 22px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 32px;
-			margin-top: 20px;
-			margin-bottom: 60px;
-		}
-		.pin_1 {
-			margin: 0px;
-			margin-right: 20px;
-			float: left;
-		}
-		p {
-			color: #7b897d;
-			font-family: 'Proxima Nova Rg';
-			font-size: 16px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: 24px;
-			margin-right: 73px;
-			float: left;
-			margin-bottom: 63px;
-		}
-		.telephone {
-			margin: 0px;
-			margin-right: 20px;
-			float: left;
-		}
-		.border {
-			width: 477px;
-			flex-shrink: 0;
-			border-radius: 40px;
-			background: rgba(120, 192, 129, 0.25);
-			padding: 15px;
-			margin-bottom: 28px;
-		}
-		button {
-			flex-shrink: 0;
-			border-radius: 30px;
-			background: #5ccd6a;
-			box-shadow: 2px -2px 12px 0px rgba(34, 111, 33, 0.36) inset;
-			border: none;
-			color: #fff;
-			font-family: 'Ruberoid';
-			font-size: 17px;
-			font-weight: 400;
-			letter-spacing: 0.68px;
-			text-transform: uppercase;
-			padding: 32px 123px 33px 123px;
-		}
-	}
+  background: url(../img/Rectangle\ 4255.png) no-repeat right top,
+    linear-gradient(
+      180deg,
+      #f1f1f1 0%,
+      #f0f2f1 16.25%,
+      #ebedec 43.26%,
+      #e6e8e7 72.5%,
+      #dee2e1 100%
+    );
+  padding: 19px 45px 0px 45px;
+  .text {
+    &::after {
+      content: "hello";
+      visibility: hidden;
+    }
+    margin-top: 80px;
+    width: 1170px;
+    position: relative;
+    margin: 80px auto 0px;
+    h2 {
+      color: #495e4c;
+      font-family: "Ruberoid";
+      font-size: 64px;
+      font-weight: 400;
+      line-height: 74px;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+    .line {
+      width: 148px;
+      height: 3px;
+      flex-shrink: 0;
+      border-radius: 1.5px;
+      background: var(--unnamed, #78c081);
+      margin: 30px 45px 0px 0px;
+      float: left;
+    }
+    h1 {
+      color: var(--unnamed, #78c081);
+      font-family: "Ruberoid";
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 74px;
+      letter-spacing: 1.92px;
+      text-transform: uppercase;
+      margin-top: 5px;
+      font-weight: 600;
+    }
+    img {
+      margin-right: 10px;
+      margin-top: 11px;
+      float: left;
+      margin-bottom: 20px;
+    }
+    .ellipse {
+      margin-right: 12px;
+    }
+    h3 {
+      width: 509px;
+      color: #7ca381;
+      font-family: "Proxima Nova Rg";
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
+    .pin_1 {
+      margin: 0px;
+      margin-right: 20px;
+      float: left;
+    }
+    p {
+      color: #7b897d;
+      font-family: "Proxima Nova Rg";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      margin-right: 73px;
+      float: left;
+      margin-bottom: 63px;
+    }
+    .telephone {
+      margin: 0px;
+      margin-right: 20px;
+      float: left;
+    }
+    .border {
+      width: 477px;
+      flex-shrink: 0;
+      border-radius: 40px;
+      background: rgba(120, 192, 129, 0.25);
+      padding: 15px;
+      margin-bottom: 28px;
+    }
+    button {
+      flex-shrink: 0;
+      border-radius: 30px;
+      background: #5ccd6a;
+      box-shadow: 2px -2px 12px 0px rgba(34, 111, 33, 0.36) inset;
+      border: none;
+      color: #fff;
+      font-family: "Ruberoid";
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0.68px;
+      text-transform: uppercase;
+      padding: 32px 123px 33px 123px;
+    }
+  }
 }
 .header {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	position: relative;
-	.border {
-		width: 210px;
-		height: 75px;
-		flex-shrink: 0;
-		border-radius: 20px;
-		background: rgba(255, 255, 255, 0.45);
-		padding: 10px;
-	}
-	button {
-		width: 190px;
-		flex-shrink: 0;
-		border-radius: 17px;
-		border: none;
-		background: #5ccd6a;
-		box-shadow: 2px -2px 12px 0px rgba(34, 111, 33, 0.36) inset;
-		padding: 19px 42px 19px 43px;
-		color: #fff;
-		font-size: 15px;
-		font-weight: 400;
-		letter-spacing: 0.6px;
-		text-transform: uppercase;
-		font-family: 'Ruberoid';
-	}
-	.center {
-		display: flex;
-		flex-grow: 1;
-		margin-right: 142px;
-		margin-left: 156px;
-		ul {
-			list-style: none;
-			display: flex;
-			flex-grow: 1;
-			justify-content: space-between;
-			li {
-				color: #495e4c;
-				font-family: 'Proxima Nova Rg';
-				font-size: 15px;
-				font-weight: 400;
-				text-transform: lowercase;
-				display: inline;
-			}
-		}
-	}
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .border {
+    width: 210px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.45);
+    padding: 10px;
+  }
+  button {
+    width: 190px;
+    flex-shrink: 0;
+    border-radius: 17px;
+    border: none;
+    background: #5ccd6a;
+    box-shadow: 2px -2px 12px 0px rgba(34, 111, 33, 0.36) inset;
+    padding: 19px 42px 19px 43px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    font-family: "Ruberoid";
+  }
+  .center {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 142px;
+    margin-left: 156px;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      li {
+        color: #495e4c;
+        font-family: "Proxima Nova Rg";
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: lowercase;
+        display: inline;
+      }
+    }
+  }
 }
 .container {
-	width: 1170px;
-	position: relative;
-	margin: 100px auto 0px;
-	.uslugi {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.levo {
-		h2 {
-			color: #495e4c;
-			font-family: 'Ruberoid';
-			font-size: 45px;
-			font-weight: 400;
-			line-height: 60px;
-			text-transform: capitalize;
-			font-weight: 500;
-		}
-		.text_uslugi {
-			margin-top: 10px;
-			margin-bottom: 22px;
-			display: flex;
-			justify-content: space-between;
-			.line {
-				width: 245px;
-				height: 2px;
-				flex-shrink: 0;
-				border-radius: 1.5px;
-				background: #78c081;
-				align-self: center;
-			}
-		}
-		p {
-			color: #848484;
-			font-family: 'Proxima Nova Rg';
-			font-size: 16px;
-			font-weight: 400;
-		}
-	}
-	.pravo {
-		width: 538px;
-		height: 655px;
-		flex-shrink: 0;
-		border-radius: 65px;
-		background: #d9fadd;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		.pravo-1 {
-			display: flex;
-			align-items: flex-start;
-		}
-		p {
-			color: #495d4c;
-			font-family: 'Proxima Nova Rg';
-			font-size: 20px;
-			font-weight: 400;
-			line-height: 30px;
-		}
-		.square {
-			width: 34px;
-			height: 34px;
-			flex-shrink: 0;
-			border-radius: 10px;
-			background: #fff;
-			margin-right: 15px;
-			margin-left: 40px;
-		}
-	}
+  width: 1170px;
+  position: relative;
+  margin: 100px auto 0px;
+  .uslugi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .levo {
+    h2 {
+      color: #495e4c;
+      font-family: "Ruberoid";
+      font-size: 45px;
+      font-weight: 400;
+      line-height: 60px;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+    .text_uslugi {
+      margin-top: 10px;
+      margin-bottom: 22px;
+      display: flex;
+      justify-content: space-between;
+      .line {
+        width: 245px;
+        height: 2px;
+        flex-shrink: 0;
+        border-radius: 1.5px;
+        background: #78c081;
+        align-self: center;
+      }
+    }
+    p {
+      color: #848484;
+      font-family: "Proxima Nova Rg";
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .hard {
+    display: flex;
+    align-items: center;
+    .help {
+      p {
+        transform: rotate(-90deg);
+        color: #7ca281;
+        font-family: "Proxima Nova Rg";
+        font-size: 14px;
+        font-weight: 400;
+        margin: 115px 20px 0px 20px;
+        &.transform {
+          color: #fff;
+          width: 135px;
+          height: 135px;
+          margin: 0px 0px 21px 25px;
+        }
+      }
+      img {
+        margin: 25px 16px 15px 16px;
+      }
+      .fonpravo {
+        width: 75px;
+        flex-shrink: 0;
+        border-radius: 45px 0px 0px 0px;
+        background: #d9fadd;
+        display: flex;
+        justify-content: end;
+        padding-top: 10px;
+      }
+      .fonpravo-2 {
+        width: 75px;
+        flex-shrink: 0;
+        border-radius: 0px 0px 0px 45px;
+        background: #d9fadd;
+        display: flex;
+        justify-content: end;
+        padding-bottom: 10px;
+      }
+      .dop-pravo {
+        width: 65px;
+        height: 233px;
+        flex-shrink: 0;
+        border-radius: 40px 0px 0px 0px;
+        background: #5ccd6a;
+        box-shadow: 2px -2px 12px 0px rgba(34, 111, 33, 0.36) inset;
+        align-self: flex-end;
+      }
+      .dop2-pravo {
+        width: 65px;
+        height: 233px;
+        flex-shrink: 0;
+        border-radius: 0px 0px 0px 40px;
+        background: #fff;
+      }
+    }
+    .pravo {
+      width: 538px;
+      height: 655px;
+      flex-shrink: 0;
+      border-radius: 65px;
+      background: #d9fadd;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 117px;
+      padding-bottom: 113px;
+      .pravo-1 {
+        display: flex;
+        align-items: flex-start;
+      }
+      p {
+        color: #495d4c;
+        font-family: "Proxima Nova Rg";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+      .square {
+        width: 34px;
+        height: 34px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #fff;
+        margin-right: 15px;
+        margin-left: 40px;
+        img {
+          margin: 7px;
+          &.extractor {
+            margin: 7px 6px 6px 6px;
+          }
+          &.air-cooler {
+            margin: 10px 7px;
+          }
+        }
+      }
+    }
+  }
 }
