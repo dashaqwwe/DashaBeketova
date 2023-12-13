@@ -58,4 +58,71 @@
   font-weight: 400;
   text-transform: lowercase;
   display: inline;
+}
+.wrapper .container {
+  margin-top: 80px;
+  width: 1170px;
+  margin: 80px auto 0px;
+}
+.wrapper .container .text {
+  display: flex;
+  width: 520px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.wrapper .container .text .main-text {
+  display: flex;
+  width: 520px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+}
+.wrapper .container .text .main-text h2 {
+  color: #495e4c;
+  font-family: "Ruberoid";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 74px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.wrapper .container .text .main-text .line {
+  width: 148px;
+  height: 3px;
+  flex-shrink: 0;
+  border-radius: 1.5px;
+  background: var(--unnamed, #78c081);
+  margin-right: 45px;
+}
+.wrapper .container .text .main-text h1 {
+  color: var(--unnamed, #78c081);
+  font-family: "Ruberoid";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.wrapper .container .text .ellipse {
+  display: flex;
+}
+.wrapper .container .text .ellipse img {
+  margin-right: 10px;
+  align-self: self-start;
+  margin-top: 11px;
+}
+.wrapper .container .text .ellipse img.ellipse-img {
+  margin-right: 12px;
+}
+.wrapper .container .text .ellipse h3 {
+  color: #7ca381;
+  font-family: "Proxima Nova Rg";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
 }/*# sourceMappingURL=flex.css.map */
