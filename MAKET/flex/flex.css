@@ -6,9 +6,9 @@
 
 .wrapper {
   background: url(../img/Rectangle\ 4255.png) no-repeat right top, linear-gradient(180deg, #f1f1f1 0%, #f0f2f1 16.25%, #ebedec 43.26%, #e6e8e7 72.5%, #dee2e1 100%);
-  padding: 19px 45px 0px 45px;
 }
 .wrapper .header {
+  padding: 19px 45px 80px 45px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -60,9 +60,12 @@
   display: inline;
 }
 .wrapper .container {
-  margin-top: 80px;
   width: 1170px;
-  margin: 80px auto 0px;
+  margin: 0px auto;
+}
+.wrapper .container::after {
+  content: "hello";
+  visibility: hidden;
 }
 .wrapper .container .text {
   display: flex;
@@ -155,4 +158,185 @@
 }
 .wrapper .container .text .contacts-main .contact span.not-margin {
   margin-right: 0px;
+}
+.wrapper .container .text .button-2 {
+  width: 477px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: rgba(120, 192, 129, 0.25);
+  padding: 15px;
+  margin-bottom: 28px;
+  margin-top: 63px;
+}
+.wrapper .container .text .button-2 button {
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #5ccd6a;
+  box-shadow: 2px -2px 12px 0px rgba(34, 111, 33, 0.36) inset;
+  border: none;
+  color: #fff;
+  font-family: "Ruberoid";
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.68px;
+  text-transform: uppercase;
+  padding: 32px 123px 33px 123px;
+}
+
+.container {
+  margin-top: 80px;
+  width: 1170px;
+  margin: 80px auto 0px;
+}
+
+.uslugi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.uslugi .left h2 {
+  color: #495e4c;
+  font-family: "Ruberoid";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.uslugi .left .text_uslugi {
+  margin-top: 10px;
+  margin-bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.uslugi .left .text_uslugi .line {
+  width: 245px;
+  height: 2px;
+  flex-shrink: 0;
+  border-radius: 1.5px;
+  background: #78c081;
+  align-self: center;
+}
+.uslugi .left p {
+  color: #848484;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
+}
+.uslugi .obertka {
+  display: flex;
+}
+.uslugi .obertka .help {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.uslugi .obertka .help .fonpravo {
+  width: 75px;
+  height: 243px;
+  flex-shrink: 0;
+  border-radius: 45px 0px 0px 0px;
+  background: #d9fadd;
+  display: flex;
+  justify-content: end;
+}
+.uslugi .obertka .help .fonpravo .dop-pravo {
+  width: 65px;
+  height: 233px;
+  flex-shrink: 0;
+  border-radius: 40px 0px 0px 0px;
+  background: #5ccd6a;
+  box-shadow: 2px -2px 12px 0px rgba(34, 111, 33, 0.36) inset;
+  align-self: end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: center;
+}
+.uslugi .obertka .help .fonpravo .dop-pravo img {
+  margin: 25px 16px 0px 16px;
+}
+.uslugi .obertka .help .fonpravo .dop-pravo p {
+  color: #fff;
+  font-family: "Proxima Nova Rg";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transform: rotate(-90deg);
+}
+.uslugi .obertka .help .fonpravo-2 {
+  width: 75px;
+  height: 243px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 0px 45px;
+  background: #d9fadd;
+  display: flex;
+  justify-content: end;
+}
+.uslugi .obertka .help .fonpravo-2 .dop-pravo-2 {
+  width: 65px;
+  height: 233px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 0px 40px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+}
+.uslugi .obertka .help .fonpravo-2 .dop-pravo-2 img {
+  margin: 25px 16px 0px 16px;
+}
+.uslugi .obertka .help .fonpravo-2 .dop-pravo-2 p {
+  color: #7ca281;
+  font-family: "Proxima Nova Rg";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transform: rotate(-90deg);
+  margin-bottom: 83px;
+}
+.uslugi .obertka .right {
+  width: 538px;
+  height: 655px;
+  flex-shrink: 0;
+  border-radius: 65px;
+  background: #d9fadd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.uslugi .obertka .right .right-1 {
+  display: flex;
+  align-items: flex-start;
+}
+.uslugi .obertka .right p {
+  color: #495d4c;
+  font-family: "Proxima Nova Rg";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.uslugi .obertka .right .square {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  margin-right: 15px;
+  margin-left: 40px;
+}
+.uslugi .obertka .right .square img {
+  margin: 7px;
+}
+.uslugi .obertka .right .square img.extractor {
+  margin: 7px 6px 6px 6px;
+}
+.uslugi .obertka .right .square img.air-cooler {
+  margin: 10px 7px;
 }/*# sourceMappingURL=flex.css.map */
