@@ -265,6 +265,10 @@
   font-weight: 400;
   line-height: normal;
   transform: rotate(-90deg);
+  margin: -170px 0px 15px -35px;
+}
+.uslugi .obertka .help .fonpravo .dop-pravo p span {
+  margin-left: 5px;
 }
 .uslugi .obertka .help .fonpravo-2 {
   width: 75px;
