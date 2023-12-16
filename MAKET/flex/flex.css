@@ -11,7 +11,6 @@
   padding: 19px 45px 80px 45px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -186,15 +185,14 @@
 .container {
   margin-top: 80px;
   width: 1170px;
-  margin: 80px auto 0px;
+  margin: 100px auto 0px;
 }
-
-.uslugi {
+.container .uslugi {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.uslugi .left h2 {
+.container .uslugi .left h2 {
   color: #495e4c;
   font-family: "Ruberoid";
   font-size: 45px;
@@ -203,13 +201,13 @@
   text-transform: capitalize;
   font-weight: 500;
 }
-.uslugi .left .text_uslugi {
+.container .uslugi .left .text_uslugi {
   margin-top: 10px;
   margin-bottom: 22px;
   display: flex;
   justify-content: space-between;
 }
-.uslugi .left .text_uslugi .line {
+.container .uslugi .left .text_uslugi .line {
   width: 245px;
   height: 2px;
   flex-shrink: 0;
@@ -217,21 +215,21 @@
   background: #78c081;
   align-self: center;
 }
-.uslugi .left p {
+.container .uslugi .left p {
   color: #848484;
   font-family: "Proxima Nova Rg";
   font-size: 16px;
   font-weight: 400;
 }
-.uslugi .obertka {
+.container .uslugi .obertka {
   display: flex;
 }
-.uslugi .obertka .help {
+.container .uslugi .obertka .help {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.uslugi .obertka .help .fonpravo {
+.container .uslugi .obertka .help .fonpravo {
   width: 75px;
   height: 243px;
   flex-shrink: 0;
@@ -240,7 +238,7 @@
   display: flex;
   justify-content: end;
 }
-.uslugi .obertka .help .fonpravo .dop-pravo {
+.container .uslugi .obertka .help .fonpravo .dop-pravo {
   width: 65px;
   height: 233px;
   flex-shrink: 0;
@@ -254,10 +252,10 @@
   align-content: space-between;
   align-items: center;
 }
-.uslugi .obertka .help .fonpravo .dop-pravo img {
+.container .uslugi .obertka .help .fonpravo .dop-pravo img {
   margin: 25px 16px 0px 16px;
 }
-.uslugi .obertka .help .fonpravo .dop-pravo p {
+.container .uslugi .obertka .help .fonpravo .dop-pravo p {
   color: #fff;
   font-family: "Proxima Nova Rg";
   font-size: 14px;
@@ -267,10 +265,10 @@
   transform: rotate(-90deg);
   margin: -170px 0px 15px -35px;
 }
-.uslugi .obertka .help .fonpravo .dop-pravo p span {
+.container .uslugi .obertka .help .fonpravo .dop-pravo p span {
   margin-left: 5px;
 }
-.uslugi .obertka .help .fonpravo-2 {
+.container .uslugi .obertka .help .fonpravo-2 {
   width: 75px;
   height: 243px;
   flex-shrink: 0;
@@ -279,7 +277,7 @@
   display: flex;
   justify-content: end;
 }
-.uslugi .obertka .help .fonpravo-2 .dop-pravo-2 {
+.container .uslugi .obertka .help .fonpravo-2 .dop-pravo-2 {
   width: 65px;
   height: 233px;
   flex-shrink: 0;
@@ -292,10 +290,10 @@
   justify-content: space-around;
   align-items: center;
 }
-.uslugi .obertka .help .fonpravo-2 .dop-pravo-2 img {
+.container .uslugi .obertka .help .fonpravo-2 .dop-pravo-2 img {
   margin: 25px 16px 0px 16px;
 }
-.uslugi .obertka .help .fonpravo-2 .dop-pravo-2 p {
+.container .uslugi .obertka .help .fonpravo-2 .dop-pravo-2 p {
   color: #7ca281;
   font-family: "Proxima Nova Rg";
   font-size: 14px;
@@ -305,9 +303,8 @@
   transform: rotate(-90deg);
   margin-bottom: 83px;
 }
-.uslugi .obertka .right {
+.container .uslugi .obertka .right {
   width: 538px;
-  height: 655px;
   flex-shrink: 0;
   border-radius: 65px;
   background: #d9fadd;
@@ -315,18 +312,24 @@
   flex-direction: column;
   justify-content: center;
 }
-.uslugi .obertka .right .right-1 {
+.container .uslugi .obertka .right .right-1 {
   display: flex;
   align-items: flex-start;
 }
-.uslugi .obertka .right p {
+.container .uslugi .obertka .right .right-1.margin {
+  margin-top: 129px;
+}
+.container .uslugi .obertka .right .right-1.margin-2 {
+  margin-bottom: 128px;
+}
+.container .uslugi .obertka .right p {
   color: #495d4c;
   font-family: "Proxima Nova Rg";
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
 }
-.uslugi .obertka .right .square {
+.container .uslugi .obertka .right .square {
   width: 34px;
   height: 34px;
   flex-shrink: 0;
@@ -335,12 +338,179 @@
   margin-right: 15px;
   margin-left: 40px;
 }
-.uslugi .obertka .right .square img {
+.container .uslugi .obertka .right .square img {
   margin: 7px;
 }
-.uslugi .obertka .right .square img.extractor {
+.container .uslugi .obertka .right .square img.extractor {
   margin: 7px 6px 6px 6px;
 }
-.uslugi .obertka .right .square img.air-cooler {
+.container .uslugi .obertka .right .square img.air-cooler {
   margin: 10px 7px;
+}
+
+.wrapper-2 {
+  background: url(../img/Vector.png) no-repeat 0% 50%, url(../img/list2.png) no-repeat 76% 86%, url(../img/Group\ 20402.svg) no-repeat 85% 40%;
+}
+.wrapper-2 .container {
+  background: url(../img/list1.png) no-repeat 126% 33%, url(../img/little_list-1.svg) 14% 59% no-repeat, url(../img/little_list-2.svg) 23% 63% no-repeat, url(../img/little_list-3.svg) 21% 86% no-repeat;
+  margin-top: 100px;
+}
+.wrapper-2 .container .h2 {
+  width: 867px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-2 .container .h2 div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-2 .container .h2 p {
+  color: #495e4c;
+  font-family: "Ruberoid";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.wrapper-2 .container .h2 .line {
+  width: 236px;
+  height: 3px;
+  flex-shrink: 0;
+  border-radius: 1.5px;
+  background: var(--unnamed, #78c081);
+}
+.wrapper-2 .main-price {
+  display: flex;
+  margin-top: 85px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.wrapper-2 .main-price div {
+  width: 257px;
+  height: 144px;
+  margin-bottom: 103px;
+  box-shadow: 0px -2px 2px 0px rgba(208, 208, 208, 0.36) inset;
+  border-radius: 30px;
+}
+.wrapper-2 .main-price div.top_div {
+  margin-bottom: 35px;
+}
+.wrapper-2 .main-price div .price {
+  width: 119px;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 6px 10px 10px 0px;
+  background: #d9fadd;
+  margin-top: 14px;
+  margin-bottom: 62px;
+  padding: 5px 15px 5px 16px;
+}
+.wrapper-2 .main-price div .price p {
+  color: #495d4c;
+  font-family: "Proxima Nova Rg";
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper-2 .main-price div .price.iskl {
+  margin-bottom: 50px;
+}
+.wrapper-2 .main-price div.pic-1 {
+  background: url(../img/pic1.png) no-repeat top;
+}
+.wrapper-2 .main-price div.pic-1 span {
+  color: #78c081;
+  font-family: "Ruberoid";
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 13px;
+  display: inline-block;
+}
+.wrapper-2 .main-price div.pic-2 {
+  background: url(../img/pic2.png) no-repeat top;
+}
+.wrapper-2 .main-price div.pic-2 span {
+  color: #78c081;
+  font-family: "Ruberoid";
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 13px;
+  display: inline-block;
+}
+.wrapper-2 .main-price div.pic-3 {
+  background: url(../img/pic3.png) no-repeat top;
+}
+.wrapper-2 .main-price div.pic-3 span {
+  color: #78c081;
+  font-family: "Ruberoid";
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 13px;
+  display: inline-block;
+}
+.wrapper-2 .main-price div.pic-4 {
+  background: url(../img/pic4.png) no-repeat top;
+}
+.wrapper-2 .main-price div.pic-4 span {
+  color: #78c081;
+  font-family: "Ruberoid";
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 13px;
+  display: inline-block;
+}
+.wrapper-2 .main-price div.pic-5 {
+  background: url(../img/pic5.png) no-repeat top;
+}
+.wrapper-2 .main-price div.pic-5 span {
+  color: #78c081;
+  font-family: "Ruberoid";
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 3px;
+  margin-top: 4px;
+  display: inline-block;
+}
+.wrapper-2 .main-price div.pic-6 {
+  background: url(../img/pic6.png) no-repeat top;
+}
+.wrapper-2 .main-price div.pic-6 span {
+  color: #78c081;
+  font-family: "Ruberoid";
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 13px;
+  display: inline-block;
+}
+.wrapper-2 .main-price div.pic-7 {
+  background: url(../img/pic7.png) no-repeat top;
+}
+.wrapper-2 .main-price div.pic-7 span {
+  color: #78c081;
+  font-family: "Ruberoid";
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 13px;
+  display: inline-block;
+}
+.wrapper-2 .main-price div.pic-8 {
+  background: url(../img/pic8.png) no-repeat top;
+}
+.wrapper-2 .main-price div.pic-8 span {
+  color: #78c081;
+  font-family: "Ruberoid";
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 15px;
+  margin-bottom: 13px;
+  display: inline-block;
 }/*# sourceMappingURL=flex.css.map */
