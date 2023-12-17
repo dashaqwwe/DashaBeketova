@@ -349,10 +349,10 @@
 }
 
 .wrapper-2 {
-  background: url(../img/Vector.png) no-repeat 0% 50%, url(../img/list2.png) no-repeat 76% 86%, url(../img/Group\ 20402.svg) no-repeat 85% 40%;
+  background: url(../img/Vector.png) no-repeat 0px 70px, url(../img/list2.png) no-repeat 663px 346px, url(../img/Group\ 20402.svg) no-repeat 1535px 190px;
 }
 .wrapper-2 .container {
-  background: url(../img/list1.png) no-repeat 126% 33%, url(../img/little_list-1.svg) 14% 59% no-repeat, url(../img/little_list-2.svg) 23% 63% no-repeat, url(../img/little_list-3.svg) 21% 86% no-repeat;
+  background: url(../img/list1.png) no-repeat 191px 127px, url(../img/little_list-1.svg) 170px 359px no-repeat, url(../img/little_list-2.svg) 262px 363px no-repeat, url(../img/little_list-3.svg) 227px 484px no-repeat;
   margin-top: 100px;
 }
 .wrapper-2 .container .h2 {
@@ -381,23 +381,23 @@
   border-radius: 1.5px;
   background: var(--unnamed, #78c081);
 }
-.wrapper-2 .main-price {
+.wrapper-2 .container .main-price {
   display: flex;
   margin-top: 85px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.wrapper-2 .main-price div {
+.wrapper-2 .container .main-price div {
   width: 257px;
   height: 144px;
   margin-bottom: 103px;
   box-shadow: 0px -2px 2px 0px rgba(208, 208, 208, 0.36) inset;
   border-radius: 30px;
 }
-.wrapper-2 .main-price div.top_div {
+.wrapper-2 .container .main-price div.top_div {
   margin-bottom: 35px;
 }
-.wrapper-2 .main-price div .price {
+.wrapper-2 .container .main-price div .price {
   width: 119px;
   height: 28px;
   flex-shrink: 0;
@@ -407,20 +407,20 @@
   margin-bottom: 62px;
   padding: 5px 15px 5px 16px;
 }
-.wrapper-2 .main-price div .price p {
+.wrapper-2 .container .main-price div .price p {
   color: #495d4c;
   font-family: "Proxima Nova Rg";
   font-size: 14px;
   font-weight: 600;
   text-align: center;
 }
-.wrapper-2 .main-price div .price.iskl {
+.wrapper-2 .container .main-price div .price.iskl {
   margin-bottom: 50px;
 }
-.wrapper-2 .main-price div.pic-1 {
+.wrapper-2 .container .main-price div.pic-1 {
   background: url(../img/pic1.png) no-repeat top;
 }
-.wrapper-2 .main-price div.pic-1 span {
+.wrapper-2 .container .main-price div.pic-1 span {
   color: #78c081;
   font-family: "Ruberoid";
   font-size: 16px;
@@ -429,10 +429,10 @@
   margin-bottom: 13px;
   display: inline-block;
 }
-.wrapper-2 .main-price div.pic-2 {
+.wrapper-2 .container .main-price div.pic-2 {
   background: url(../img/pic2.png) no-repeat top;
 }
-.wrapper-2 .main-price div.pic-2 span {
+.wrapper-2 .container .main-price div.pic-2 span {
   color: #78c081;
   font-family: "Ruberoid";
   font-size: 16px;
@@ -441,10 +441,10 @@
   margin-bottom: 13px;
   display: inline-block;
 }
-.wrapper-2 .main-price div.pic-3 {
+.wrapper-2 .container .main-price div.pic-3 {
   background: url(../img/pic3.png) no-repeat top;
 }
-.wrapper-2 .main-price div.pic-3 span {
+.wrapper-2 .container .main-price div.pic-3 span {
   color: #78c081;
   font-family: "Ruberoid";
   font-size: 16px;
@@ -453,10 +453,10 @@
   margin-bottom: 13px;
   display: inline-block;
 }
-.wrapper-2 .main-price div.pic-4 {
+.wrapper-2 .container .main-price div.pic-4 {
   background: url(../img/pic4.png) no-repeat top;
 }
-.wrapper-2 .main-price div.pic-4 span {
+.wrapper-2 .container .main-price div.pic-4 span {
   color: #78c081;
   font-family: "Ruberoid";
   font-size: 16px;
@@ -465,10 +465,10 @@
   margin-bottom: 13px;
   display: inline-block;
 }
-.wrapper-2 .main-price div.pic-5 {
+.wrapper-2 .container .main-price div.pic-5 {
   background: url(../img/pic5.png) no-repeat top;
 }
-.wrapper-2 .main-price div.pic-5 span {
+.wrapper-2 .container .main-price div.pic-5 span {
   color: #78c081;
   font-family: "Ruberoid";
   font-size: 16px;
@@ -478,10 +478,10 @@
   margin-top: 4px;
   display: inline-block;
 }
-.wrapper-2 .main-price div.pic-6 {
+.wrapper-2 .container .main-price div.pic-6 {
   background: url(../img/pic6.png) no-repeat top;
 }
-.wrapper-2 .main-price div.pic-6 span {
+.wrapper-2 .container .main-price div.pic-6 span {
   color: #78c081;
   font-family: "Ruberoid";
   font-size: 16px;
@@ -490,10 +490,10 @@
   margin-bottom: 13px;
   display: inline-block;
 }
-.wrapper-2 .main-price div.pic-7 {
+.wrapper-2 .container .main-price div.pic-7 {
   background: url(../img/pic7.png) no-repeat top;
 }
-.wrapper-2 .main-price div.pic-7 span {
+.wrapper-2 .container .main-price div.pic-7 span {
   color: #78c081;
   font-family: "Ruberoid";
   font-size: 16px;
@@ -502,10 +502,10 @@
   margin-bottom: 13px;
   display: inline-block;
 }
-.wrapper-2 .main-price div.pic-8 {
+.wrapper-2 .container .main-price div.pic-8 {
   background: url(../img/pic8.png) no-repeat top;
 }
-.wrapper-2 .main-price div.pic-8 span {
+.wrapper-2 .container .main-price div.pic-8 span {
   color: #78c081;
   font-family: "Ruberoid";
   font-size: 16px;
@@ -513,4 +513,67 @@
   margin-left: 15px;
   margin-bottom: 13px;
   display: inline-block;
+}
+.wrapper-2 .container .uslugi-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-2 .container .uslugi-2 .left-2 {
+  display: flex;
+  width: 524px;
+  flex-direction: column;
+}
+.wrapper-2 .container .uslugi-2 .left-2 p {
+  color: #495e4c;
+  font-family: "Ruberoid";
+  font-size: 45px;
+  line-height: 60px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.wrapper-2 .container .uslugi-2 .left-2 .obertka-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-2 .container .uslugi-2 .left-2 .obertka-2 .line {
+  width: 100px;
+  height: 2px;
+  flex-shrink: 0;
+  border-radius: 1.5px;
+  background: var(--unnamed, #78c081);
+}
+.wrapper-2 .container .uslugi-2 .left-2 .obertka-2 p:first-of-type {
+  margin-bottom: 10px;
+}
+.wrapper-2 .container .uslugi-2 .right-2 {
+  display: flex;
+  width: 563px;
+  flex-direction: column;
+}
+.wrapper-2 .container .uslugi-2 .right-2 p {
+  color: var(--unnamed, #78c081);
+  font-family: "Ruberoid";
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.wrapper-2 .container .uslugi-2 .right-2 span {
+  color: #7ca381;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
+}
+.wrapper-2 .container .uslugi-2 .right-2 div {
+  display: flex;
+  margin-top: 12px;
+}
+.wrapper-2 .container .uslugi-2 .right-2 div.aaa {
+  margin-top: 13px;
+}
+.wrapper-2 .container .uslugi-2 .right-2 img {
+  margin-right: 10px;
+}
+.wrapper-2 .container .uslugi-2 .right-2 img.bbb {
+  align-self: flex-start;
 }/*# sourceMappingURL=flex.css.map */
