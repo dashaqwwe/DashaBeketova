@@ -277,12 +277,81 @@
 			<div class="container">
 				<p>Оставьте заявку и мы с вами свяжемся</p>
 				<form action="https://fe.it-academy.by/TestForm.php">
-					<input class="input_text" type="text" placeholder="Ваше Имя" />
-					<input class="input_tel" type="tel" placeholder="Номер телефона" />
+					<input
+						class="input_text"
+						type="text"
+						name="name"
+						placeholder="Ваше Имя"
+						autocomplete="off"
+						required
+					/>
+					<input
+						class="input_tel"
+						type="tel"
+						name="tel"
+						placeholder="Номер телефона"
+						autocomplete="off"
+						required
+						pattern="\s{0,}\+{1,1}375\s{0,}(([2]{1}([5]{1}|[9]{1}))|([3]{1}[3]{1})|([4]{1}[4]{1}))\s{0,}[0-9]{3,3}\s{0,}[0-9]{4,4}"
+					/>
 					<div class="border">
 						<input class="button-3" type="submit" value="Отправить" />
 					</div>
 				</form>
+			</div>
+		</div>
+		<div class="container">
+			<div class="main-about">
+				<div class="about-us">
+					<p class="p-about">о нас</p>
+					<div class="pascal-vent">
+						<span>Pascal vent</span>
+						<div class="line"></div>
+					</div>
+					<p class="p-about peculiarities">Особенности</p>
+					<p>
+						Мы любим то, чем занимаемся – поэтому у нас индивидуальный подход к
+						каждому человеку, креативные решения для проекта любой сложности и
+						высокий уровень клиентского сервиса.
+					</p>
+					<br />
+					<br />
+					<p>
+						Именно поэтому нам доверяют сложнейшие задачи, рекомендуют нас и
+						возвращаются вновь. Доверьте нам воплощение ваших самых изысканных и
+						технологичных задач, и мы сделаем всё с высочайшим уровнем сервиса
+						<span>Pascal Vent</span>.
+					</p>
+					<br />
+					<br />
+					<p>
+						<span>Pascal Vent</span> гарантирует сертифицированные современные
+						системы, оборудование, качественные материалы и самые оптимальные
+						решения под любой бюджет.
+					</p>
+				</div>
+				<div class="general-figures">
+					<div class="general-1">
+						<p class="p-general"><span class="number">10</span> лет на рынке</p>
+						<span>Работаем</span>
+						<span>как единое целое</span>
+					</div>
+					<div class="general-2">
+						<p class="p-general"><span class="number">+ 11</span> лет стажа</p>
+						<span>Опытные и обученные</span>
+						<span>специалисты своего дела</span>
+					</div>
+					<div class="general-3">
+						<p class="p-general"><span class="number">+ 180</span> клиентов</p>
+						<span>Число счастливых</span>
+						<span>клиентов за этот период</span>
+					</div>
+					<div class="general-4">
+						<p class="p-general"><span class="number">+ 470</span> проектов</p>
+						<span>Большое количество</span>
+						<span>реализованных проектов</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>

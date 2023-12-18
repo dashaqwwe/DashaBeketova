@@ -581,7 +581,6 @@
 .wrapper-2 .container .ellipse-img-2 {
   display: flex;
   justify-content: space-around;
-  background: url(../img/Vector\ 2.png) no-repeat 247px 20px, url(../img/Vector\ 3.png) no-repeat 638px 59px;
   margin-bottom: 100px;
 }
 .wrapper-2 .container .ellipse-img-2 .obertka-3 {
@@ -613,7 +612,7 @@
 }
 
 .wrapper-3 {
-  background: url(../img/Frame.svg) no-repeat right top, #d9fadd;
+  background: url(../img/Frame.svg) no-repeat right, #d9fadd;
 }
 .wrapper-3 .container {
   padding-top: 55px;
@@ -656,6 +655,7 @@
   border: none;
   margin-top: 9px;
   margin-bottom: 58px;
+  outline: none;
 }
 .wrapper-3 .container form input.input_tel {
   width: 290px;
@@ -667,12 +667,13 @@
   border: none;
   margin-top: 9px;
   margin-bottom: 58px;
+  outline: none;
 }
 .wrapper-3 .container form .border {
   border-radius: 20px;
   background: rgba(120, 192, 129, 0.25);
   padding: 10px;
-  margin-bottom: 58px;
+  margin-bottom: 49px;
 }
 .wrapper-3 .container form .border .button-3 {
   width: 209px;
@@ -688,4 +689,194 @@
   font-weight: 500;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+}
+
+.container .main-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .main-about .about-us {
+  display: flex;
+  width: 531px;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(73, 93, 76, 0.1);
+  padding: 45px 44px 33px 45px;
+}
+.container .main-about .about-us .p-about {
+  color: #495e4c;
+  font-family: "Ruberoid";
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 60px;
+  text-transform: capitalize;
+}
+.container .main-about .about-us .p-about:first-of-type {
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+.container .main-about .about-us .p-about.peculiarities {
+  margin-bottom: 20px;
+}
+.container .main-about .about-us .pascal-vent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container .main-about .about-us .pascal-vent span {
+  color: var(--unnamed, #78c081);
+  font-family: "Ruberoid";
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+.container .main-about .about-us .pascal-vent .line {
+  width: 166px;
+  height: 1px;
+  flex-shrink: 0;
+  border-radius: 1.5px;
+  background: var(--unnamed, #78c081);
+  margin-bottom: 12px;
+}
+.container .main-about .about-us p {
+  color: #848484;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.container .main-about .general-figures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 513px;
+}
+.container .main-about .general-figures .general-1 {
+  width: 216px;
+  height: 122px;
+  justify-content: center;
+  margin-bottom: 93px;
+  display: flex;
+  flex-direction: column;
+}
+.container .main-about .general-figures .general-1 .p-general {
+  color: var(--unnamed, #78c081);
+  font-family: "Ruberoid";
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.container .main-about .general-figures .general-1 .p-general .number {
+  color: var(--unnamed, #78c081);
+  text-align: center;
+  font-family: "Ruberoid";
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.container .main-about .general-figures .general-1 span {
+  align-self: center;
+  color: #7ca381;
+  text-align: center;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.container .main-about .general-figures .general-2 {
+  width: 202px;
+  margin-bottom: 93px;
+  display: flex;
+  flex-direction: column;
+  height: 122px;
+  justify-content: center;
+}
+.container .main-about .general-figures .general-2 .p-general {
+  color: var(--unnamed, #78c081);
+  font-family: "Ruberoid";
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.container .main-about .general-figures .general-2 .p-general .number {
+  color: var(--unnamed, #78c081);
+  text-align: center;
+  font-family: "Ruberoid";
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.container .main-about .general-figures .general-2 span {
+  align-self: center;
+  color: #7ca381;
+  text-align: center;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.container .main-about .general-figures .general-3 {
+  width: 225px;
+  display: flex;
+  flex-direction: column;
+  height: 122px;
+  justify-content: center;
+}
+.container .main-about .general-figures .general-3 .p-general {
+  color: var(--unnamed, #78c081);
+  font-family: "Ruberoid";
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.container .main-about .general-figures .general-3 .p-general .number {
+  color: var(--unnamed, #78c081);
+  text-align: center;
+  font-family: "Ruberoid";
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.container .main-about .general-figures .general-3 span {
+  align-self: center;
+  color: #7ca381;
+  text-align: center;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.container .main-about .general-figures .general-4 {
+  width: 229px;
+  display: flex;
+  flex-direction: column;
+  height: 122px;
+  justify-content: center;
+}
+.container .main-about .general-figures .general-4 .p-general {
+  color: var(--unnamed, #78c081);
+  font-family: "Ruberoid";
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.container .main-about .general-figures .general-4 .p-general .number {
+  color: var(--unnamed, #78c081);
+  text-align: center;
+  font-family: "Ruberoid";
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.container .main-about .general-figures .general-4 span {
+  align-self: center;
+  color: #7ca381;
+  text-align: center;
+  font-family: "Proxima Nova Rg";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }/*# sourceMappingURL=flex.css.map */
