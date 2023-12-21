@@ -1,0 +1,27 @@
+//цвета
+$color_grey: #c3b9b5;
+$color_orange: #ffc59e;
+$color_black: #080606;
+$color_brown: #59443f;
+$color_white: #ffffff;
+
+//миксин
+@mixin fontst($c, $ff, $fs, $fw, $lh) {
+	color: $c;
+	font-family: $ff;
+	font-size: $fs;
+	font-weight: $fw;
+	line-height: $lh;
+}
+
+//кнопка оранжевая
+%button_orange {
+	width: 284.534px;
+	height: 67px;
+	flex-shrink: 0;
+	border-radius: 33.5px;
+	background: $color_orange;
+	box-shadow: 0px 4px 20px 0px $color_orange;
+	border: none;
+	transition: transform 0.5s;
+}

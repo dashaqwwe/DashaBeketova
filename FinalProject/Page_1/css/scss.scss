@@ -1,0 +1,147 @@
+@import '../../reset.scss';
+@import '../../variables.scss';
+
+header {
+	padding: 65px 80px 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	.nav {
+		display: flex;
+		flex-grow: 1;
+		margin-left: 235px;
+		margin-right: 333px;
+		ul {
+			display: flex;
+			flex-grow: 1;
+			justify-content: space-between;
+			.dropdown {
+				position: relative;
+				display: inline-block;
+				&:hover {
+					.dropdown-content {
+						display: block;
+						width: 300px;
+						padding: 40px 0px 40px 50px;
+						border-radius: 20px;
+					}
+					.dropbtn {
+						color: $color_brown;
+					}
+				}
+				.dropdown-content {
+					display: none;
+					position: absolute;
+					background-color: #fff;
+					box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+					z-index: 1;
+					a {
+						color: black;
+						padding: 12px 16px;
+						text-decoration: none;
+						display: block;
+						&:hover {
+							background-color: #ddd;
+						}
+					}
+				}
+			}
+			li {
+				display: inline;
+				@include fontst($color_grey, 'Roboto', 20px, 700, 20px);
+				&:hover {
+					cursor: pointer;
+				}
+				a {
+					@include fontst($color_grey, 'Roboto', 20px, 700, 20px);
+				}
+			}
+		}
+	}
+	.location {
+		.fa-location-dot {
+			color: $color_orange;
+			font-size: 20px;
+		}
+		span {
+			@include fontst($color_orange, 'Roboto', 20px, 700, 20px);
+			margin-left: 10px;
+		}
+	}
+}
+.wrapper {
+	background: url(../img/OIZUTT0.png) no-repeat right bottom;
+	padding: 107px 79px 0px 110px;
+	.cat {
+		margin-right: 500px;
+		background: url(../img/_58409-8699.png) no-repeat right bottom;
+		.left_menu {
+			width: 490px;
+			display: inline-flex;
+			justify-content: space-between;
+			transform: rotate(90deg);
+			transform-origin: left center;
+			margin-left: 25px;
+			button {
+				transform: rotate(270deg);
+				width: 40px;
+				height: 40px;
+				color: $color_grey;
+				font-family: 'Roboto';
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 20px;
+				padding: 0;
+				border: none;
+				background-color: transparent;
+				cursor: pointer;
+				transition-duration: 0.3s;
+				&:hover {
+					border: 1px solid $color_black;
+					border-radius: 50%;
+					transform: scale(1.2) rotate(270deg);
+				}
+				&:focus {
+					border: 1px solid $color_black;
+					border-radius: 50%;
+					transform: scale(1.2) rotate(270deg);
+				}
+			}
+		}
+		.clinic {
+			width: 645px;
+			margin: 0px 0px 0px 265px;
+			display: flex;
+			flex-direction: column;
+			h1 {
+				@include fontst($color_black, 'EB Garamond', 80px, 500, 110px);
+			}
+			button {
+				@extend %button_orange;
+				color: $color_white;
+				font-family: 'Roboto';
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 20px;
+				margin: 50px 0px 197px;
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+			.social_media {
+				width: 284.534px;
+				display: flex;
+				justify-content: space-between;
+				font-size: 35px;
+				color: $color_grey;
+				i {
+					transition: 0.5s;
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+}
