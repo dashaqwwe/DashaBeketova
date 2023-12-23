@@ -136,7 +136,7 @@ a {
   text-decoration: none;
 }
 
-.wrapper .cat .clinic button {
+.header .fon .header_2 .clinic button {
   width: 284.534px;
   height: 67px;
   flex-shrink: 0;
@@ -147,108 +147,35 @@ a {
   transition: transform 0.5s;
 }
 
-header {
-  padding: 65px 80px 0px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+.header {
+  background: #fffefe;
 }
-header .nav {
-  display: flex;
-  flex-grow: 1;
-  margin-left: 235px;
-  margin-right: 333px;
+.header .fon {
+  max-width: 1920px;
+  margin: 0 auto;
+  background: url(../img/OIZUTT0.png) no-repeat 100% 100%, url(../img/_58409-8699.png) no-repeat 60% 100%;
 }
-header .nav ul {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-between;
+.header .fon .header_2 {
+  max-width: 1730px;
+  margin: 0 auto;
+  padding-top: 120px;
 }
-header .nav ul .dropdown {
-  position: relative;
-  display: inline-block;
-}
-header .nav ul .dropdown:hover .dropdown-content {
-  display: block;
-  width: 300px;
-  padding: 40px 0px 40px 50px;
-  border-radius: 20px;
-}
-header .nav ul .dropdown:hover .dropbtn {
-  color: #59443f;
-}
-header .nav ul .dropdown .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-header .nav ul .dropdown .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-header .nav ul .dropdown .dropdown-content a:hover {
-  background-color: #ddd;
-}
-header .nav ul li {
-  display: inline;
-  color: #c3b9b5;
-  font-family: "Roboto";
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 20px;
-}
-header .nav ul li:hover {
-  cursor: pointer;
-}
-header .nav ul li a {
-  color: #c3b9b5;
-  font-family: "Roboto";
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 20px;
-}
-header .location .fa-location-dot {
-  color: #ffc59e;
-  font-size: 20px;
-}
-header .location span {
-  color: #ffc59e;
-  font-family: "Roboto";
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 20px;
-  margin-left: 10px;
-}
-
-.wrapper {
-  background: url(../img/OIZUTT0.png) no-repeat right bottom;
-  padding: 107px 79px 0px 110px;
-}
-.wrapper .cat {
-  margin-right: 500px;
-  background: url(../img/_58409-8699.png) no-repeat right bottom;
-}
-.wrapper .cat .left_menu {
+.header .fon .header_2 .menu_button {
+  transform: rotate(90deg);
+  transform-origin: left top;
   width: 490px;
   display: inline-flex;
   justify-content: space-between;
-  transform: rotate(90deg);
-  transform-origin: left center;
-  margin-left: 25px;
+  margin-left: 60px;
 }
-.wrapper .cat .left_menu button {
+.header .fon .header_2 .menu_button button {
   transform: rotate(270deg);
   width: 40px;
   height: 40px;
   color: #c3b9b5;
   font-family: "Roboto";
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 20px;
   padding: 0;
   border: none;
@@ -256,30 +183,30 @@ header .location span {
   cursor: pointer;
   transition-duration: 0.3s;
 }
-.wrapper .cat .left_menu button:hover {
+.header .fon .header_2 .menu_button button:hover {
   border: 1px solid #080606;
   border-radius: 50%;
   transform: scale(1.2) rotate(270deg);
 }
-.wrapper .cat .left_menu button:focus {
+.header .fon .header_2 .menu_button button:focus {
   border: 1px solid #080606;
   border-radius: 50%;
   transform: scale(1.2) rotate(270deg);
 }
-.wrapper .cat .clinic {
+.header .fon .header_2 .clinic {
   width: 645px;
   margin: 0px 0px 0px 265px;
   display: flex;
   flex-direction: column;
 }
-.wrapper .cat .clinic h1 {
+.header .fon .header_2 .clinic h1 {
   color: #080606;
-  font-family: "EB Garamond";
+  font-family: "Roboto";
   font-size: 80px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 110px;
 }
-.wrapper .cat .clinic button {
+.header .fon .header_2 .clinic button {
   color: #ffffff;
   font-family: "Roboto";
   font-size: 20px;
@@ -287,19 +214,126 @@ header .location span {
   line-height: 20px;
   margin: 50px 0px 197px;
 }
-.wrapper .cat .clinic button:hover {
+.header .fon .header_2 .clinic button:hover {
   transform: scale(1.1);
 }
-.wrapper .cat .clinic .social_media {
+.header .fon .header_2 .clinic .social_media {
   width: 284.534px;
   display: flex;
   justify-content: space-between;
   font-size: 35px;
   color: #c3b9b5;
 }
-.wrapper .cat .clinic .social_media i {
+.header .fon .header_2 .clinic .social_media i {
   transition: 0.5s;
 }
-.wrapper .cat .clinic .social_media i:hover {
+.header .fon .header_2 .clinic .social_media i:hover {
   transform: scale(1.1);
+}
+
+header {
+  display: flex;
+  max-width: 1760px;
+  margin: 0 auto;
+  padding-top: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+header input {
+  display: none;
+}
+header label {
+  font-size: 30px;
+  color: #080606;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  margin: 0 25px;
+}
+header nav ul li button {
+  background: none;
+  border: none;
+  padding: 0px;
+  color: #c3b9b5;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  transition-duration: 1s;
+}
+header nav ul li button:hover {
+  color: #59443f;
+}
+header nav ul li a {
+  color: #c3b9b5;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  display: inline-block;
+  transition-duration: 1s;
+}
+header nav ul li a:hover {
+  color: #59443f;
+}
+header nav ul .dropdown {
+  position: relative;
+  display: inline-block;
+}
+header nav ul .dropdown:hover .dropdown-content {
+  display: block;
+}
+header nav ul .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 234.92px;
+  padding-top: 10px;
+  z-index: 1;
+}
+header nav ul .dropdown .dropdown-content ul {
+  display: inline-block;
+}
+header nav ul .dropdown .dropdown-content ul li {
+  transition: 1s;
+  height: 30px;
+}
+header nav ul .dropdown .dropdown-content ul li:hover {
+  border-bottom: none;
+  transform: scale(1.1);
+}
+header nav ul .dropdown .dropdown-content ul li a {
+  color: #080606;
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+header .navigation {
+  display: flex;
+}
+header .navigation button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 10px;
+  color: #ffc59e;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+header .navigation .fa-location-dot {
+  font-size: 20px;
+  color: #ffc59e;
 }/*# sourceMappingURL=scss.css.map */
