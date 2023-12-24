@@ -1,16 +1,17 @@
 @import '../../reset.scss';
 @import '../../variables.scss';
-.header {
+.container-header {
 	background: #fffefe;
 	.fon {
 		max-width: 1920px;
 		margin: 0 auto;
 		background: url(../img/OIZUTT0.png) no-repeat 100% 100%,
 			url(../img/_58409-8699.png) no-repeat 60% 100%;
-		.header_2 {
+		.header-2 {
 			max-width: 1730px;
 			margin: 0 auto;
 			padding-top: 120px;
+			padding-bottom: 80.18px;
 			.menu_button {
 				transform: rotate(90deg);
 				transform-origin: left top;
@@ -64,17 +65,26 @@
 						transform: scale(1.1);
 					}
 				}
-				.social_media {
-					width: 284.534px;
+				.number {
 					display: flex;
+					width: 1465px;
 					justify-content: space-between;
-					font-size: 35px;
-					color: $color_grey;
-					i {
-						transition: 0.5s;
-						&:hover {
-							transform: scale(1.1);
+					.social_media {
+						width: 284.534px;
+						display: flex;
+						justify-content: space-between;
+						font-size: 35px;
+						color: $color_grey;
+						i {
+							transition: 0.5s;
+							&:hover {
+								transform: scale(1.1);
+							}
 						}
+					}
+					span {
+						align-self: center;
+						@include fontst($color_brown, 'Roboto', 24px, 400, 30px);
 					}
 				}
 			}
@@ -170,6 +180,85 @@ header {
 		.fa-location-dot {
 			font-size: 20px;
 			color: $color_orange;
+		}
+	}
+}
+.container {
+	background: #fffefe;
+	.content {
+		max-width: 1352px;
+		margin: 0 auto;
+		padding: 150.82px 0px 150px 0px;
+		.uslugi-main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.uslugi {
+				padding: 14px;
+				width: 320px;
+				height: 220px;
+				margin-bottom: 24px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				background: #fff;
+				border: none;
+				border-radius: 20px;
+				-webkit-box-shadow: 3px 4px 10px -1px rgba(163, 163, 163, 0.5);
+				box-shadow: 3px 4px 10px -1px rgba(163, 163, 163, 0.5);
+				transition-duration: 1s;
+				&:hover {
+					transform: scale(1.1);
+					-webkit-box-shadow: 3px 4px 7px -1px rgba(163, 163, 163, 0.9);
+					box-shadow: 3px 4px 7px -1px rgba(163, 163, 163, 0.9);
+					.fa-solid {
+						color: $color_brown;
+					}
+				}
+				.fa-solid {
+					font-size: 90px;
+					color: $color_orange;
+					align-self: flex-end;
+				}
+				h3 {
+					@include fontst($color_brown, 'Roboto', 30px, 400, 40px);
+				}
+				span {
+					@include fontst($color_brown, 'Roboto', 20px, 400, 20px);
+				}
+			}
+		}
+	}
+}
+.container-2 {
+	background: #fbf8f8;
+	section {
+		max-width: 1254px;
+		margin: 0 auto;
+		padding: 180px 0px 0px 0px;
+		.history {
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			p {
+				@include fontst($color_black, 'Roboto', 40px, 400, 40px);
+				margin-bottom: 48px;
+			}
+			span {
+				@include fontst($color_brown, 'Roboto', 20px, 400, 30px);
+				margin-bottom: 36px;
+			}
+			.read-more {
+				margin-bottom: 100px;
+				span {
+					@include fontst($color_orange, 'Roboto', 20px, 400, 20px);
+				}
+				img {
+					vertical-align: sub;
+					height: 22px;
+				}
+			}
 		}
 	}
 }

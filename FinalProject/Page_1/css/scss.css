@@ -136,7 +136,7 @@ a {
   text-decoration: none;
 }
 
-.header .fon .header_2 .clinic button {
+.container-header .fon .header-2 .clinic button {
   width: 284.534px;
   height: 67px;
   flex-shrink: 0;
@@ -147,20 +147,21 @@ a {
   transition: transform 0.5s;
 }
 
-.header {
+.container-header {
   background: #fffefe;
 }
-.header .fon {
+.container-header .fon {
   max-width: 1920px;
   margin: 0 auto;
   background: url(../img/OIZUTT0.png) no-repeat 100% 100%, url(../img/_58409-8699.png) no-repeat 60% 100%;
 }
-.header .fon .header_2 {
+.container-header .fon .header-2 {
   max-width: 1730px;
   margin: 0 auto;
   padding-top: 120px;
+  padding-bottom: 80.18px;
 }
-.header .fon .header_2 .menu_button {
+.container-header .fon .header-2 .menu_button {
   transform: rotate(90deg);
   transform-origin: left top;
   width: 490px;
@@ -168,7 +169,7 @@ a {
   justify-content: space-between;
   margin-left: 60px;
 }
-.header .fon .header_2 .menu_button button {
+.container-header .fon .header-2 .menu_button button {
   transform: rotate(270deg);
   width: 40px;
   height: 40px;
@@ -183,30 +184,30 @@ a {
   cursor: pointer;
   transition-duration: 0.3s;
 }
-.header .fon .header_2 .menu_button button:hover {
+.container-header .fon .header-2 .menu_button button:hover {
   border: 1px solid #080606;
   border-radius: 50%;
   transform: scale(1.2) rotate(270deg);
 }
-.header .fon .header_2 .menu_button button:focus {
+.container-header .fon .header-2 .menu_button button:focus {
   border: 1px solid #080606;
   border-radius: 50%;
   transform: scale(1.2) rotate(270deg);
 }
-.header .fon .header_2 .clinic {
+.container-header .fon .header-2 .clinic {
   width: 645px;
   margin: 0px 0px 0px 265px;
   display: flex;
   flex-direction: column;
 }
-.header .fon .header_2 .clinic h1 {
+.container-header .fon .header-2 .clinic h1 {
   color: #080606;
   font-family: "Roboto";
   font-size: 80px;
   font-weight: 400;
   line-height: 110px;
 }
-.header .fon .header_2 .clinic button {
+.container-header .fon .header-2 .clinic button {
   color: #ffffff;
   font-family: "Roboto";
   font-size: 20px;
@@ -214,21 +215,34 @@ a {
   line-height: 20px;
   margin: 50px 0px 197px;
 }
-.header .fon .header_2 .clinic button:hover {
+.container-header .fon .header-2 .clinic button:hover {
   transform: scale(1.1);
 }
-.header .fon .header_2 .clinic .social_media {
+.container-header .fon .header-2 .clinic .number {
+  display: flex;
+  width: 1465px;
+  justify-content: space-between;
+}
+.container-header .fon .header-2 .clinic .number .social_media {
   width: 284.534px;
   display: flex;
   justify-content: space-between;
   font-size: 35px;
   color: #c3b9b5;
 }
-.header .fon .header_2 .clinic .social_media i {
+.container-header .fon .header-2 .clinic .number .social_media i {
   transition: 0.5s;
 }
-.header .fon .header_2 .clinic .social_media i:hover {
+.container-header .fon .header-2 .clinic .number .social_media i:hover {
   transform: scale(1.1);
+}
+.container-header .fon .header-2 .clinic .number span {
+  align-self: center;
+  color: #59443f;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 header {
@@ -336,4 +350,103 @@ header .navigation button {
 header .navigation .fa-location-dot {
   font-size: 20px;
   color: #ffc59e;
+}
+
+.container {
+  background: #fffefe;
+}
+.container .content {
+  max-width: 1352px;
+  margin: 0 auto;
+  padding: 150.82px 0px 150px 0px;
+}
+.container .content .uslugi-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .content .uslugi-main .uslugi {
+  padding: 14px;
+  width: 320px;
+  height: 220px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 3px 4px 10px -1px rgba(163, 163, 163, 0.5);
+  transition-duration: 1s;
+}
+.container .content .uslugi-main .uslugi:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 4px 7px -1px rgba(163, 163, 163, 0.9);
+}
+.container .content .uslugi-main .uslugi:hover .fa-solid {
+  color: #59443f;
+}
+.container .content .uslugi-main .uslugi .fa-solid {
+  font-size: 90px;
+  color: #ffc59e;
+  align-self: flex-end;
+}
+.container .content .uslugi-main .uslugi h3 {
+  color: #59443f;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+}
+.container .content .uslugi-main .uslugi span {
+  color: #59443f;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.container-2 {
+  background: #fbf8f8;
+}
+.container-2 section {
+  max-width: 1254px;
+  margin: 0 auto;
+  padding: 180px 0px 0px 0px;
+}
+.container-2 section .history {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container-2 section .history p {
+  color: #080606;
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 48px;
+}
+.container-2 section .history span {
+  color: #59443f;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 36px;
+}
+.container-2 section .history .read-more {
+  margin-bottom: 100px;
+}
+.container-2 section .history .read-more span {
+  color: #ffc59e;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.container-2 section .history .read-more img {
+  vertical-align: sub;
+  height: 22px;
 }/*# sourceMappingURL=scss.css.map */
