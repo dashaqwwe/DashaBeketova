@@ -1,5 +1,17 @@
 @import '../../reset.scss';
 @import '../../variables.scss';
+
+body::-webkit-scrollbar {
+	width: 10px;
+}
+body::-webkit-scrollbar-track {
+	opacity: 0;
+}
+body::-webkit-scrollbar-thumb {
+	background: $color_orange;
+	border-radius: 8px;
+}
+
 .container-header {
 	background: #fffefe;
 	.fon {
@@ -120,6 +132,7 @@ header {
 					background: none;
 					border: none;
 					padding: 0px;
+					cursor: pointer;
 					@include fontst($color_grey, 'Roboto', 20px, 400, 20px);
 					transition-duration: 1s;
 					&:hover {

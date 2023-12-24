@@ -147,6 +147,19 @@ a {
   transition: transform 0.5s;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  opacity: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ffc59e;
+  border-radius: 8px;
+}
+
 .container-header {
   background: #fffefe;
 }
@@ -278,6 +291,7 @@ header nav ul li button {
   background: none;
   border: none;
   padding: 0px;
+  cursor: pointer;
   color: #c3b9b5;
   font-family: "Roboto";
   font-size: 20px;
