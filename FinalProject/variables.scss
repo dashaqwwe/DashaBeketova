@@ -1,17 +1,19 @@
 //цвета
-$color_grey: #c3b9b5;
-$color_orange: #ffc59e;
+$color_while: #ffffff;
+$color_blue: #2991d6;
 $color_black: #080606;
 $color_brown: #59443f;
 $color_white: #ffffff;
 
 //миксин
-@mixin fontst($c, $ff, $fs, $fw, $lh) {
+@mixin fontst($c, $ff, $fs, $fw, $lh, $ls, $tt) {
 	color: $c;
 	font-family: $ff;
 	font-size: $fs;
 	font-weight: $fw;
 	line-height: $lh;
+	letter-spacing: $ls;
+	text-transform: $tt;
 }
 
 //кнопка оранжевая

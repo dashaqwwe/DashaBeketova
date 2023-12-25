@@ -1,275 +1,31 @@
 @import '../../reset.scss';
 @import '../../variables.scss';
 
-body::-webkit-scrollbar {
-	width: 10px;
-}
-body::-webkit-scrollbar-track {
-	opacity: 0;
-}
-body::-webkit-scrollbar-thumb {
-	background: $color_orange;
-	border-radius: 8px;
-}
-
-.container-header {
-	background: #fffefe;
-	.fon {
-		max-width: 1920px;
-		margin: 0 auto;
-		background: url(../img/OIZUTT0.png) no-repeat 100% 100%,
-			url(../img/_58409-8699.png) no-repeat 60% 100%;
-		.header-2 {
-			max-width: 1730px;
-			margin: 0 auto;
-			padding-top: 120px;
-			padding-bottom: 80.18px;
-			.menu_button {
-				transform: rotate(90deg);
-				transform-origin: left top;
-				width: 490px;
-				display: inline-flex;
-				justify-content: space-between;
-				margin-left: 60px;
-				button {
-					transform: rotate(270deg);
-					width: 40px;
-					height: 40px;
-					color: $color_grey;
-					font-family: 'Roboto';
-					font-size: 20px;
-					font-weight: 400;
-					line-height: 20px;
-					padding: 0;
-					border: none;
-					background-color: transparent;
-					cursor: pointer;
-					transition-duration: 0.3s;
-					&:hover {
-						border: 1px solid $color_black;
-						border-radius: 50%;
-						transform: scale(1.2) rotate(270deg);
-					}
-					&:focus {
-						border: 1px solid $color_black;
-						border-radius: 50%;
-						transform: scale(1.2) rotate(270deg);
-					}
-				}
-			}
-			.clinic {
-				width: 645px;
-				margin: 0px 0px 0px 265px;
-				display: flex;
-				flex-direction: column;
-				h1 {
-					@include fontst($color_black, 'Roboto', 80px, 400, 110px);
-				}
-				button {
-					@extend %button_orange;
-					color: $color_white;
-					font-family: 'Roboto';
-					font-size: 20px;
-					font-weight: 700;
-					line-height: 20px;
-					margin: 50px 0px 197px;
-					&:hover {
-						transform: scale(1.1);
-					}
-				}
-				.number {
-					display: flex;
-					width: 1465px;
-					justify-content: space-between;
-					.social_media {
-						width: 284.534px;
-						display: flex;
-						justify-content: space-between;
-						font-size: 35px;
-						color: $color_grey;
-						i {
-							transition: 0.5s;
-							&:hover {
-								transform: scale(1.1);
-							}
-						}
-					}
-					span {
-						align-self: center;
-						@include fontst($color_brown, 'Roboto', 24px, 400, 30px);
-					}
-				}
-			}
-		}
-	}
-}
-header {
-	display: flex;
-	max-width: 1760px;
-	margin: 0 auto;
-	padding-top: 60px;
-	justify-content: space-between;
-	align-items: center;
-	input {
-		display: none;
-	}
-	label {
-		font-size: 30px;
-		color: $color_black;
-		cursor: pointer;
-		visibility: hidden;
-		opacity: 0;
-	}
-	nav {
-		width: 100%;
-		display: flex;
-		justify-content: space-around;
-		ul {
-			display: flex;
-			li {
-				margin: 0 25px;
-				button {
-					background: none;
-					border: none;
-					padding: 0px;
-					cursor: pointer;
-					@include fontst($color_grey, 'Roboto', 20px, 400, 20px);
-					transition-duration: 1s;
-					&:hover {
-						color: $color_brown;
-					}
-				}
-				a {
-					@include fontst($color_grey, 'Roboto', 20px, 400, 20px);
-					display: inline-block;
-					transition-duration: 1s;
-					&:hover {
-						color: $color_brown;
-					}
-				}
-			}
-			.dropdown {
-				position: relative;
-				display: inline-block;
-				&:hover {
-					.dropdown-content {
-						display: block;
-					}
-				}
-				.dropdown-content {
-					display: none;
-					position: absolute;
-					min-width: 234.92px;
-					padding-top: 10px;
-					z-index: 1;
-					ul {
-						display: inline-block;
-						li {
-							transition: 1s;
-							height: 30px;
-							&:hover {
-								border-bottom: none;
-								transform: scale(1.1);
-							}
-							a {
-								@include fontst($color_black, 'Roboto', 15px, 400, 12px);
-								text-transform: uppercase;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	.navigation {
-		display: flex;
-		button {
-			background: none;
-			border: none;
-			padding: 0;
-			margin-left: 10px;
-			@include fontst($color_orange, 'Roboto', 20px, 400, 20px);
-		}
-		.fa-location-dot {
-			font-size: 20px;
-			color: $color_orange;
-		}
-	}
-}
 .container {
-	background: #fffefe;
-	.content {
-		max-width: 1352px;
-		margin: 0 auto;
-		padding: 150.82px 0px 150px 0px;
-		.uslugi-main {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			.uslugi {
-				padding: 14px;
-				width: 320px;
-				height: 220px;
-				margin-bottom: 24px;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				background: #fff;
-				border: none;
-				border-radius: 20px;
-				-webkit-box-shadow: 3px 4px 10px -1px rgba(163, 163, 163, 0.5);
-				box-shadow: 3px 4px 10px -1px rgba(163, 163, 163, 0.5);
-				transition-duration: 1s;
-				&:hover {
-					transform: scale(1.1);
-					-webkit-box-shadow: 3px 4px 7px -1px rgba(163, 163, 163, 0.9);
-					box-shadow: 3px 4px 7px -1px rgba(163, 163, 163, 0.9);
-					.fa-solid {
-						color: $color_brown;
-					}
-				}
-				.fa-solid {
-					font-size: 90px;
-					color: $color_orange;
-					align-self: flex-end;
-				}
-				h3 {
-					@include fontst($color_brown, 'Roboto', 30px, 400, 40px);
-				}
-				span {
-					@include fontst($color_brown, 'Roboto', 20px, 400, 20px);
-				}
+	background: url(../img/video\ bg.png) no-repeat;
+	header {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		padding: 2rem 8%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		z-index: 100;
+		.logo {
+			transition: 0.5s;
+			&:hover {
+				transform: scale(1.2);
 			}
 		}
-	}
-}
-.container-2 {
-	background: #fbf8f8;
-	section {
-		max-width: 1254px;
-		margin: 0 auto;
-		padding: 180px 0px 0px 0px;
-		.history {
-			margin: 0 auto;
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			p {
-				@include fontst($color_black, 'Roboto', 40px, 400, 40px);
-				margin-bottom: 48px;
-			}
-			span {
-				@include fontst($color_brown, 'Roboto', 20px, 400, 30px);
-				margin-bottom: 36px;
-			}
-			.read-more {
-				margin-bottom: 100px;
-				span {
-					@include fontst($color_orange, 'Roboto', 20px, 400, 20px);
-				}
-				img {
-					vertical-align: sub;
-					height: 22px;
+		.navbar {
+			a {
+				@include fontst(black, 'TT Norms', 12px, 700, normal, 0.6px, uppercase);
+				margin-left: 2rem;
+				transition: 0.5s;
+				&:hover {
+					color: $color_blue;
 				}
 			}
 		}
