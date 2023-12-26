@@ -1,146 +1,20 @@
 * {
-  box-sizing: border-box;
-}
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-a {
+  box-sizing: border-box;
+  font-family: "TT Norms";
+  border: none;
+  outline: none;
   text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
 }
 
 .container {
   background: url(../img/video\ bg.png) no-repeat;
 }
 .container header {
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
@@ -149,6 +23,12 @@ a {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  transition: 0.5s;
+}
+@media (max-width: 1445px) {
+  .container header {
+    padding: 1rem 1%;
+  }
 }
 .container header .logo {
   transition: 0.5s;
@@ -156,8 +36,19 @@ a {
 .container header .logo:hover {
   transform: scale(1.2);
 }
+@media (max-width: 815px) {
+  .container header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform-origin: top;
+    transform: scale(0);
+    opacity: 0;
+  }
+}
 .container header .navbar a {
-  color: black;
+  color: #ffffff;
   font-family: "TT Norms";
   font-size: 12px;
   font-weight: 700;
@@ -165,4 +56,84 @@ a {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   margin-left: 2rem;
+  transition: 0.5s;
+}
+.container header .navbar a:hover {
+  color: #2991d6;
+}
+@media (max-width: 1245px) {
+  .container header .navbar a {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 1130px) {
+  .container header .navbar a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 945px) {
+  .container header .navbar a {
+    font-size: 8px;
+  }
+}
+@media (max-width: 815px) {
+  .container header .navbar a {
+    display: block;
+    margin: 2rem 0;
+    font-size: 1.8rem;
+  }
+}
+.container header input {
+  display: none;
+}
+.container header label {
+  font-size: 2rem;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  color: #ffffff;
+}
+@media (max-width: 815px) {
+  .container header label {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.container header .contact p {
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: lowercase;
+}
+@media (max-width: 1130px) {
+  .container header .contact p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 945px) {
+  .container header .contact p {
+    font-size: 8px;
+  }
+}
+.container header .contact span {
+  color: #8c94a6;
+  font-family: "TT Norms";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: lowercase;
+}
+@media (max-width: 1130px) {
+  .container header .contact span {
+    font-size: 8px;
+  }
+}
+@media (max-width: 945px) {
+  .container header .contact span {
+    font-size: 6px;
+  }
 }/*# sourceMappingURL=scss.css.map */

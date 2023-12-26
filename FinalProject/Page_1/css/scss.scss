@@ -1,10 +1,34 @@
-@import '../../reset.scss';
-@import '../../variables.scss';
+$color_blue: #2991d6;
+$color_black: #080606;
+$color_lite_gray: #8c94a6;
+$color_white: #ffffff;
+
+@mixin fontst($c, $ff, $fs, $fw, $lh, $ls, $tt) {
+	color: $c;
+	font-family: $ff;
+	font-size: $fs;
+	font-weight: $fw;
+	line-height: $lh;
+	letter-spacing: $ls;
+	text-transform: $tt;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'TT Norms';
+	border: none;
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+	text-transform: capitalize;
+}
 
 .container {
 	background: url(../img/video\ bg.png) no-repeat;
 	header {
-		position: fixed;
+		position: relative;
 		width: 100%;
 		top: 0;
 		left: 0;
@@ -13,6 +37,12 @@
 		justify-content: space-between;
 		align-items: center;
 		z-index: 100;
+		transition: 0.5s;
+		@media (max-width: 1445px) {
+			& {
+				padding: 1rem 1%;
+			}
+		}
 		.logo {
 			transition: 0.5s;
 			&:hover {
@@ -20,12 +50,113 @@
 			}
 		}
 		.navbar {
+			@media (max-width: 815px) {
+				& {
+					position: absolute;
+					top: 100%;
+					left: 0;
+					width: 100%;
+					transform-origin: top;
+					transform: scale(0);
+					opacity: 0;
+				}
+			}
 			a {
-				@include fontst(black, 'TT Norms', 12px, 700, normal, 0.6px, uppercase);
+				@include fontst(
+					$color_white,
+					'TT Norms',
+					12px,
+					700,
+					normal,
+					0.6px,
+					uppercase
+				);
 				margin-left: 2rem;
 				transition: 0.5s;
 				&:hover {
 					color: $color_blue;
+				}
+				@media (max-width: 1245px) {
+					& {
+						margin-left: 1rem;
+					}
+				}
+				@media (max-width: 1130px) {
+					& {
+						font-size: 10px;
+					}
+				}
+				@media (max-width: 945px) {
+					& {
+						font-size: 8px;
+					}
+				}
+				@media (max-width: 815px) {
+					& {
+						display: block;
+						margin: 2rem 0;
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
+		input {
+			display: none;
+		}
+		label {
+			font-size: 2rem;
+			cursor: pointer;
+			visibility: hidden;
+			opacity: 0;
+			color: $color_white;
+			@media (max-width: 815px) {
+				& {
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+		.contact {
+			p {
+				@include fontst(
+					$color_white,
+					'TT Norms',
+					16px,
+					500,
+					normal,
+					0.6px,
+					lowercase
+				);
+				@media (max-width: 1130px) {
+					& {
+						font-size: 10px;
+					}
+				}
+				@media (max-width: 945px) {
+					& {
+						font-size: 8px;
+					}
+				}
+			}
+			span {
+				@include fontst(
+					$color_lite_gray,
+					'TT Norms',
+					14px,
+					500,
+					normal,
+					0.6px,
+					lowercase
+				);
+				@media (max-width: 1130px) {
+					& {
+						font-size: 8px;
+					}
+				}
+				@media (max-width: 945px) {
+					& {
+						font-size: 6px;
+					}
 				}
 			}
 		}
