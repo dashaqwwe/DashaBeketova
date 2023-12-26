@@ -50,15 +50,19 @@ $color_white: #ffffff;
 			}
 		}
 		.navbar {
+			display: flex;
+			align-items: baseline;
 			@media (max-width: 815px) {
 				& {
+					display: block;
 					position: absolute;
 					top: 100%;
 					left: 0;
 					width: 100%;
 					transform-origin: top;
-					transform: scale(0);
-					opacity: 0;
+					background: #0c0e16;
+					// transform: scale(0);
+					// opacity: 0;
 				}
 			}
 			a {
@@ -95,7 +99,94 @@ $color_white: #ffffff;
 					& {
 						display: block;
 						margin: 2rem 0;
-						font-size: 1.8rem;
+						font-size: 1rem;
+					}
+				}
+			}
+			.dropdown {
+				position: relative;
+				&:hover {
+					.dropdown-menu {
+						display: block;
+						z-index: 150;
+					}
+				}
+				&:hover {
+					.dropdown-menu-2 {
+						display: block;
+						z-index: 150;
+					}
+				}
+				.dropdown-menu {
+					position: absolute;
+					right: -22%;
+					max-width: 151px;
+					background: #0c0e16;
+					padding: 30px;
+					display: none;
+					@media (max-width: 1130px) {
+						& {
+							padding: 15px;
+							height: 165px;
+						}
+					}
+					@media (max-width: 815px) {
+						& {
+							margin-top: -20px;
+							right: 0%;
+							left: 0%;
+						}
+					}
+					a {
+						margin: 0px 0px 10px 0px;
+						display: inline-block;
+						@media (max-width: 815px) {
+							& {
+								color: $color_white;
+								font-size: 12px;
+							}
+						}
+						&:hover {
+							color: $color_blue;
+						}
+					}
+				}
+				.dropdown-menu-2 {
+					position: absolute;
+					max-width: 197px;
+					background: #0c0e16;
+					padding: 30px;
+					display: none;
+					@media (max-width: 1245px) {
+						& {
+							padding: 20px;
+						}
+					}
+					@media (max-width: 1130px) {
+						& {
+							padding: 15px;
+							height: 165px;
+						}
+					}
+					@media (max-width: 815px) {
+						& {
+							margin-top: -20px;
+							right: 0%;
+							left: 0%;
+						}
+					}
+					a {
+						margin: 0px 0px 10px 0px;
+						display: inline-block;
+						@media (max-width: 815px) {
+							& {
+								color: $color_white;
+								font-size: 12px;
+							}
+						}
+						&:hover {
+							color: $color_blue;
+						}
 					}
 				}
 			}
