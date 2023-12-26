@@ -4,250 +4,255 @@ $color_lite_gray: #8c94a6;
 $color_white: #ffffff;
 
 @mixin fontst($c, $ff, $fs, $fw, $lh, $ls, $tt) {
-	color: $c;
-	font-family: $ff;
-	font-size: $fs;
-	font-weight: $fw;
-	line-height: $lh;
-	letter-spacing: $ls;
-	text-transform: $tt;
+  color: $c;
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+  text-transform: $tt;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'TT Norms';
-	border: none;
-	outline: none;
-	text-decoration: none;
-	list-style: none;
-	text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "TT Norms";
+  border: none;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
 }
 
 .container {
-	background: url(../img/video\ bg.png) no-repeat;
-	header {
-		position: relative;
-		width: 100%;
-		top: 0;
-		left: 0;
-		padding: 2rem 8%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		z-index: 100;
-		transition: 0.5s;
-		@media (max-width: 1445px) {
-			& {
-				padding: 1rem 1%;
-			}
-		}
-		.logo {
-			transition: 0.5s;
-			&:hover {
-				transform: scale(1.2);
-			}
-		}
-		.navbar {
-			display: flex;
-			align-items: baseline;
-			@media (max-width: 815px) {
-				& {
-					display: block;
-					position: absolute;
-					top: 100%;
-					left: 0;
-					width: 100%;
-					transform-origin: top;
-					background: #0c0e16;
-					// transform: scale(0);
-					// opacity: 0;
-				}
-			}
-			a {
-				@include fontst(
-					$color_white,
-					'TT Norms',
-					12px,
-					700,
-					normal,
-					0.6px,
-					uppercase
-				);
-				margin-left: 2rem;
-				transition: 0.5s;
-				&:hover {
-					color: $color_blue;
-				}
-				@media (max-width: 1245px) {
-					& {
-						margin-left: 1rem;
-					}
-				}
-				@media (max-width: 1130px) {
-					& {
-						font-size: 10px;
-					}
-				}
-				@media (max-width: 945px) {
-					& {
-						font-size: 8px;
-					}
-				}
-				@media (max-width: 815px) {
-					& {
-						display: block;
-						margin: 2rem 0;
-						font-size: 1rem;
-					}
-				}
-			}
-			.dropdown {
-				position: relative;
-				&:hover {
-					.dropdown-menu {
-						display: block;
-						z-index: 150;
-					}
-				}
-				&:hover {
-					.dropdown-menu-2 {
-						display: block;
-						z-index: 150;
-					}
-				}
-				.dropdown-menu {
-					position: absolute;
-					right: -22%;
-					max-width: 151px;
-					background: #0c0e16;
-					padding: 30px;
-					display: none;
-					@media (max-width: 1130px) {
-						& {
-							padding: 15px;
-							height: 165px;
-						}
-					}
-					@media (max-width: 815px) {
-						& {
-							right: 0%;
-							left: 0%;
-						}
-					}
-					a {
-						margin: 0px 0px 10px 0px;
-						display: inline-block;
-						@media (max-width: 815px) {
-							& {
-								color: $color_white;
-								font-size: 12px;
-							}
-						}
-						&:hover {
-							color: $color_blue;
-						}
-					}
-				}
-				.dropdown-menu-2 {
-					position: absolute;
-					max-width: 197px;
-					background: #0c0e16;
-					padding: 30px;
-					display: none;
-					@media (max-width: 1245px) {
-						& {
-							padding: 20px;
-						}
-					}
-					@media (max-width: 1130px) {
-						& {
-							padding: 15px;
-							height: 165px;
-						}
-					}
-					@media (max-width: 815px) {
-						& {
-							right: 0%;
-							left: 0%;
-						}
-					}
-					a {
-						margin: 0px 0px 10px 0px;
-						display: inline-block;
-						@media (max-width: 815px) {
-							& {
-								color: $color_white;
-								font-size: 12px;
-							}
-						}
-						&:hover {
-							color: $color_blue;
-						}
-					}
-				}
-			}
-		}
-		input {
-			display: none;
-		}
-		label {
-			font-size: 2rem;
-			cursor: pointer;
-			visibility: hidden;
-			opacity: 0;
-			color: $color_white;
-			@media (max-width: 815px) {
-				& {
-					visibility: visible;
-					opacity: 1;
-				}
-			}
-		}
-		.contact {
-			p {
-				@include fontst(
-					$color_white,
-					'TT Norms',
-					16px,
-					500,
-					normal,
-					0.6px,
-					lowercase
-				);
-				@media (max-width: 1130px) {
-					& {
-						font-size: 10px;
-					}
-				}
-				@media (max-width: 945px) {
-					& {
-						font-size: 8px;
-					}
-				}
-			}
-			span {
-				@include fontst(
-					$color_lite_gray,
-					'TT Norms',
-					14px,
-					500,
-					normal,
-					0.6px,
-					lowercase
-				);
-				@media (max-width: 1130px) {
-					& {
-						font-size: 8px;
-					}
-				}
-				@media (max-width: 945px) {
-					& {
-						font-size: 6px;
-					}
-				}
-			}
-		}
-	}
+  background: url(../img/video\ bg.png) no-repeat;
+  header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: 0.5s;
+    @media (max-width: 1445px) {
+      & {
+        padding: 1rem 1%;
+      }
+    }
+    .logo {
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    .navbar {
+      display: flex;
+      align-items: baseline;
+      @media (max-width: 815px) {
+        & {
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          transform-origin: top;
+          background: #0c0e16;
+          transform: scale(0);
+          opacity: 0;
+        }
+      }
+      a {
+        @include fontst(
+          $color_white,
+          "TT Norms",
+          12px,
+          700,
+          normal,
+          0.6px,
+          uppercase
+        );
+        margin-left: 2rem;
+        transition: 0.5s;
+        &:hover {
+          color: $color_blue;
+        }
+        @media (max-width: 1245px) {
+          & {
+            margin-left: 1rem;
+          }
+        }
+        @media (max-width: 1130px) {
+          & {
+            font-size: 10px;
+          }
+        }
+        @media (max-width: 945px) {
+          & {
+            font-size: 8px;
+          }
+        }
+        @media (max-width: 815px) {
+          & {
+            display: block;
+            margin: 2rem 0;
+            font-size: 1rem;
+          }
+        }
+      }
+      .dropdown {
+        position: relative;
+        &:hover {
+          .dropdown-menu {
+            display: block;
+            z-index: 150;
+          }
+        }
+        &:hover {
+          .dropdown-menu-2 {
+            display: block;
+            z-index: 150;
+          }
+        }
+        .dropdown-menu {
+          position: absolute;
+          right: -22%;
+          max-width: 151px;
+          background: #0c0e16;
+          padding: 30px;
+          display: none;
+          @media (max-width: 1130px) {
+            & {
+              padding: 15px;
+              height: 165px;
+            }
+          }
+          @media (max-width: 815px) {
+            & {
+              right: 0%;
+              left: 0%;
+            }
+          }
+          a {
+            margin: 0px 0px 10px 0px;
+            display: inline-block;
+            @media (max-width: 815px) {
+              & {
+                color: $color_white;
+                font-size: 12px;
+              }
+            }
+            &:hover {
+              color: $color_blue;
+            }
+          }
+        }
+        .dropdown-menu-2 {
+          position: absolute;
+          max-width: 197px;
+          background: #0c0e16;
+          padding: 30px;
+          display: none;
+          @media (max-width: 1245px) {
+            & {
+              padding: 20px;
+            }
+          }
+          @media (max-width: 1130px) {
+            & {
+              padding: 15px;
+              height: 165px;
+            }
+          }
+          @media (max-width: 815px) {
+            & {
+              right: 0%;
+              left: 0%;
+            }
+          }
+          a {
+            margin: 0px 0px 10px 0px;
+            display: inline-block;
+            @media (max-width: 815px) {
+              & {
+                color: $color_white;
+                font-size: 12px;
+              }
+            }
+            &:hover {
+              color: $color_blue;
+            }
+          }
+        }
+      }
+    }
+    input {
+      display: none;
+      &:checked + label ~ .navbar {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    label {
+      font-size: 2rem;
+	  margin-right: 10px;
+      cursor: pointer;
+      visibility: hidden;
+      opacity: 0;
+      color: $color_white;
+      @media (max-width: 815px) {
+        & {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+    .contact {
+      p {
+        @include fontst(
+          $color_white,
+          "TT Norms",
+          16px,
+          500,
+          normal,
+          0.6px,
+          lowercase
+        );
+        @media (max-width: 1130px) {
+          & {
+            font-size: 10px;
+          }
+        }
+        @media (max-width: 945px) {
+          & {
+            font-size: 8px;
+          }
+        }
+      }
+      span {
+        @include fontst(
+          $color_lite_gray,
+          "TT Norms",
+          14px,
+          500,
+          normal,
+          0.6px,
+          lowercase
+        );
+        @media (max-width: 1130px) {
+          & {
+            font-size: 8px;
+          }
+        }
+        @media (max-width: 945px) {
+          & {
+            font-size: 6px;
+          }
+        }
+      }
+    }
+  }
 }

@@ -49,6 +49,8 @@
     width: 100%;
     transform-origin: top;
     background: #0c0e16;
+    transform: scale(0);
+    opacity: 0;
   }
 }
 .container header .navbar a {
@@ -171,8 +173,13 @@
 .container header input {
   display: none;
 }
+.container header input:checked + label ~ .navbar {
+  transform: scale(1);
+  opacity: 1;
+}
 .container header label {
   font-size: 2rem;
+  margin-right: 10px;
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
