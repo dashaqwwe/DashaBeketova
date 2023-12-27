@@ -7,27 +7,48 @@
   outline: none;
   text-decoration: none;
   list-style: none;
-  text-transform: capitalize;
 }
 
 .container {
   background: url(../img/video\ bg.png) no-repeat;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 .container header {
   position: relative;
   width: 100%;
   top: 0;
   left: 0;
-  padding: 2rem 8%;
+  padding: 39px 273px 39px 270px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
   transition: 0.5s;
 }
+@media (max-width: 1790px) {
+  .container header {
+    padding: 39px 200px 39px 200px;
+  }
+}
+@media (max-width: 1645px) {
+  .container header {
+    padding: 39px 150px 39px 150px;
+  }
+}
+@media (max-width: 1545px) {
+  .container header {
+    padding: 39px 100px 39px 100px;
+  }
+}
 @media (max-width: 1445px) {
   .container header {
-    padding: 1rem 1%;
+    padding: 30px 50px 30px 50px;
+  }
+}
+@media (max-width: 1315px) {
+  .container header {
+    padding: 30px 30px 30px 30px;
   }
 }
 .container header .logo {
@@ -51,6 +72,7 @@
     background: #0c0e16;
     transform: scale(0);
     opacity: 0;
+    padding: 0 15px;
   }
 }
 .container header .navbar a {
@@ -74,19 +96,24 @@
 }
 @media (max-width: 1130px) {
   .container header .navbar a {
-    font-size: 10px;
+    font-size: 55%;
   }
 }
-@media (max-width: 945px) {
+@media (max-width: 930px) {
   .container header .navbar a {
-    font-size: 8px;
+    margin-left: 6px;
+  }
+}
+@media (max-width: 865px) {
+  .container header .navbar a {
+    font-size: 50%;
   }
 }
 @media (max-width: 815px) {
   .container header .navbar a {
     display: block;
     margin: 2rem 0;
-    font-size: 1rem;
+    font-size: 50%;
   }
 }
 .container header .navbar .dropdown {
@@ -118,6 +145,8 @@
   .container header .navbar .dropdown .dropdown-menu {
     right: 0%;
     left: 0%;
+    padding: 15px 0px;
+    width: 89px;
   }
 }
 .container header .navbar .dropdown .dropdown-menu a {
@@ -127,7 +156,7 @@
 @media (max-width: 815px) {
   .container header .navbar .dropdown .dropdown-menu a {
     color: #ffffff;
-    font-size: 12px;
+    font-size: 50%;
   }
 }
 .container header .navbar .dropdown .dropdown-menu a:hover {
@@ -155,6 +184,8 @@
   .container header .navbar .dropdown .dropdown-menu-2 {
     right: 0%;
     left: 0%;
+    padding: 15px 0px;
+    width: 100px;
   }
 }
 .container header .navbar .dropdown .dropdown-menu-2 a {
@@ -164,7 +195,7 @@
 @media (max-width: 815px) {
   .container header .navbar .dropdown .dropdown-menu-2 a {
     color: #ffffff;
-    font-size: 12px;
+    font-size: 50%;
   }
 }
 .container header .navbar .dropdown .dropdown-menu-2 a:hover {
@@ -191,6 +222,14 @@
     opacity: 1;
   }
 }
+.container header .contact {
+  margin-left: 50px;
+}
+@media (max-width: 1485px) {
+  .container header .contact {
+    margin-left: 21px;
+  }
+}
 .container header .contact p {
   color: #ffffff;
   font-family: "TT Norms";
@@ -199,15 +238,11 @@
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: lowercase;
+  transition: 0.5s;
 }
-@media (max-width: 1130px) {
+@media (max-width: 1275px) {
   .container header .contact p {
-    font-size: 10px;
-  }
-}
-@media (max-width: 945px) {
-  .container header .contact p {
-    font-size: 8px;
+    font-size: 50%;
   }
 }
 .container header .contact span {
@@ -218,14 +253,15 @@
   line-height: normal;
   letter-spacing: 0.6px;
   text-transform: lowercase;
+  transition: 0.5s;
 }
-@media (max-width: 1130px) {
+@media (max-width: 1275px) {
   .container header .contact span {
-    font-size: 8px;
+    font-size: 50%;
   }
 }
-@media (max-width: 945px) {
-  .container header .contact span {
-    font-size: 6px;
-  }
+.container .supp-container {
+  max-width: 1315px;
+  margin: 0 auto;
+  padding: 213px 30px 0px 30px;
 }/*# sourceMappingURL=scss.css.map */
