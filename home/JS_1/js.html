@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			var firstname = prompt('Введите ваше Имя')
+			var lastname = prompt('Введите вашу Фамилию')
+			var surname = prompt('Введите ваше Отчество')
+			var age = prompt('Введите ваш возраст в годах')
+			var Age = parseFloat(age)
+			var days = Age * 365
+			var next = Age + 5
+			var pol
+			var vozrast
+			var gender = confirm('Ваш пол мужской?')
+			//
+			if (gender) pol = 'Мужской'
+			else pol = 'Женский'
+			//
+			if (pol == 'Мужской' && Age < 63) vozrast = 'нет'
+			else if (pol == 'Мужской' && age >= 63) vozrast = 'да'
+			else if (pol == 'Женский' && age < 58) vozrast = 'нет'
+			else if (pol == 'Женский' && age >= 58) vozrast = 'да'
+			//
+			alert(
+				'Ваше Фио: ' +
+					lastname +
+					' ' +
+					firstname +
+					' ' +
+					surname +
+					'\n' +
+					'Ваш возраст в годах: ' +
+					Age +
+					'\n' +
+					'Ваш возраст в днях: ' +
+					days +
+					'\n' +
+					'Через 5 лет вам будет: ' +
+					next +
+					'\n' +
+					'Ваш пол: ' +
+					pol +
+					'\n' +
+					'Вы на пенсии: ' +
+					vozrast
+			)
+		</script>
+	</body>
+</html>
