@@ -16,46 +16,27 @@
 }
 .container header {
   position: relative;
-  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
   top: 0;
   left: 0;
-  padding: 39px 273px 39px 270px;
+  padding: 39px 10px 0px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
   transition: 0.5s;
 }
-@media (max-width: 1790px) {
+@media (max-width: 815px) {
   .container header {
-    padding: 39px 200px 39px 200px;
-  }
-}
-@media (max-width: 1645px) {
-  .container header {
-    padding: 39px 150px 39px 150px;
-  }
-}
-@media (max-width: 1545px) {
-  .container header {
-    padding: 39px 100px 39px 100px;
-  }
-}
-@media (max-width: 1445px) {
-  .container header {
-    padding: 30px 50px 30px 50px;
-  }
-}
-@media (max-width: 1315px) {
-  .container header {
-    padding: 30px 30px 30px 30px;
+    padding: 20px 10px 0px 10px;
   }
 }
 .container header .logo {
   transition: 0.5s;
 }
 .container header .logo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .container header .navbar {
   display: flex;
@@ -89,31 +70,27 @@
 .container header .navbar a:hover {
   color: #2991d6;
 }
-@media (max-width: 1245px) {
+@media (max-width: 1045px) {
   .container header .navbar a {
     margin-left: 1rem;
   }
 }
-@media (max-width: 1130px) {
+@media (max-width: 935px) {
   .container header .navbar a {
-    font-size: 55%;
+    font-size: 10px;
   }
 }
-@media (max-width: 930px) {
+@media (max-width: 830px) {
   .container header .navbar a {
-    margin-left: 6px;
-  }
-}
-@media (max-width: 865px) {
-  .container header .navbar a {
-    font-size: 50%;
+    margin-right: 7px;
+    margin-left: 0px;
   }
 }
 @media (max-width: 815px) {
   .container header .navbar a {
     display: block;
     margin: 2rem 0;
-    font-size: 50%;
+    font-size: 12px;
   }
 }
 .container header .navbar .dropdown {
@@ -156,7 +133,7 @@
 @media (max-width: 815px) {
   .container header .navbar .dropdown .dropdown-menu a {
     color: #ffffff;
-    font-size: 50%;
+    font-size: 10px;
   }
 }
 .container header .navbar .dropdown .dropdown-menu a:hover {
@@ -195,7 +172,7 @@
 @media (max-width: 815px) {
   .container header .navbar .dropdown .dropdown-menu-2 a {
     color: #ffffff;
-    font-size: 50%;
+    font-size: 55%;
   }
 }
 .container header .navbar .dropdown .dropdown-menu-2 a:hover {
@@ -220,48 +197,211 @@
   .container header label {
     visibility: visible;
     opacity: 1;
-  }
-}
-.container header .contact {
-  margin-left: 50px;
-}
-@media (max-width: 1485px) {
-  .container header .contact {
-    margin-left: 21px;
-  }
-}
-.container header .contact p {
-  color: #ffffff;
-  font-family: "TT Norms";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.6px;
-  text-transform: lowercase;
-  transition: 0.5s;
-}
-@media (max-width: 1275px) {
-  .container header .contact p {
-    font-size: 50%;
-  }
-}
-.container header .contact span {
-  color: #8c94a6;
-  font-family: "TT Norms";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.6px;
-  text-transform: lowercase;
-  transition: 0.5s;
-}
-@media (max-width: 1275px) {
-  .container header .contact span {
-    font-size: 50%;
+    order: 1;
   }
 }
 .container .supp-container {
-  max-width: 1315px;
+  max-width: 1380px;
   margin: 0 auto;
-  padding: 213px 30px 0px 30px;
+  padding: 213px 10px 40px 10px;
+  transition: 0.5s;
+}
+@media (max-width: 1340px) {
+  .container .supp-container {
+    padding: 100px 10px 60px 10px;
+  }
+}
+@media (max-width: 1045px) {
+  .container .supp-container {
+    padding: 100px 10px 40px 10px;
+  }
+}
+@media (max-width: 815px) {
+  .container .supp-container {
+    padding: 50px 10px 40px 10px;
+  }
+}
+.container .supp-container section .company {
+  margin-bottom: 196px;
+  transition: 0.5s;
+}
+@media (max-width: 1045px) {
+  .container .supp-container section .company {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 815px) {
+  .container .supp-container section .company {
+    margin-bottom: 50px;
+  }
+}
+.container .supp-container section .company h1 {
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 150%;
+  letter-spacing: 0.6;
+  text-transform: none;
+  transition: 0.5s;
+}
+@media (max-width: 1045px) {
+  .container .supp-container section .company h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 815px) {
+  .container .supp-container section .company h1 {
+    font-size: 30px;
+  }
+}
+.container .supp-container section .company p {
+  color: #cfcfcf;
+  font-family: "TT Norms";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.6;
+  text-transform: none;
+}
+@media (max-width: 1045px) {
+  .container .supp-container section .company p {
+    font-size: 21px;
+  }
+}
+@media (max-width: 815px) {
+  .container .supp-container section .company p {
+    font-size: 18px;
+  }
+}
+.container .supp-container section .about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container .supp-container section .about .prof {
+  display: flex;
+  align-items: flex-start;
+  max-width: 330px;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+.container .supp-container section .about .prof:hover {
+  transform: scale(1.1);
+}
+.container .supp-container section .about .prof img {
+  margin-right: 10px;
+}
+.container .supp-container section .about .prof p {
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.6;
+  text-transform: none;
+}
+.container .supp-container section .about .prof span {
+  color: #cfcfcf;
+  font-family: "TT Norms";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.6;
+  text-transform: none;
+}
+
+.two {
+  background: transparent;
+  padding: 120px 10px 0px 10px;
+}
+.two main section .blocks {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0px 120px 0px;
+}
+@media (max-width: 1260px) {
+  .two main section .blocks {
+    justify-content: center;
+  }
+}
+.two main section .blocks .block-1 {
+  background: url(../img/img.png) no-repeat;
+  display: flex;
+}
+.two main section .blocks .block-1 .obertka {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  margin-top: 420px;
+}
+.two main section .blocks .block-1 .obertka .block-text {
+  padding: 27px 260px 26px 30px;
+  background-color: #2991d6;
+  transition: 0.5s;
+}
+.two main section .blocks .block-1 .obertka .block-text:hover {
+  background-color: #32a1df;
+}
+@media (max-width: 638px) {
+  .two main section .blocks .block-1 .obertka .block-text {
+    padding: 27px 200px 26px 30px;
+  }
+}
+.two main section .blocks .block-1 .obertka .block-button {
+  background-color: #32a1df;
+  width: 80px;
+  padding: 19px 25px 19px 24px;
+}
+.two main section .blocks .block-2 {
+  background: url(../img/img1.png) no-repeat;
+  display: flex;
+}
+.two main section .blocks .block-2 .obertka {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  margin-top: 420px;
+}
+.two main section .blocks .block-2 .obertka .block-text {
+  padding: 27px 180px 26px 30px;
+  background-color: #2991d6;
+  transition: 0.5s;
+}
+.two main section .blocks .block-2 .obertka .block-text:hover {
+  background-color: #32a1df;
+}
+@media (max-width: 641px) {
+  .two main section .blocks .block-2 .obertka .block-text {
+    padding: 27px 100px 26px 30px;
+  }
+}
+.two main section .blocks .block-2 .obertka .block-button {
+  background-color: #32a1df;
+  width: 80px;
+  padding: 19px 25px 19px 24px;
+}
+.two main section .blocks .block-3 {
+  background: url(../img/img2.png) no-repeat;
+  display: flex;
+}
+.two main section .blocks .block-3 .obertka {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  margin-top: 420px;
+}
+.two main section .blocks .block-3 .obertka .block-text {
+  padding: 27px 178px 26px 30px;
+  background-color: #2991d6;
+  transition: 0.5s;
+}
+.two main section .blocks .block-3 .obertka .block-text:hover {
+  background-color: #32a1df;
+}
+.two main section .blocks .block-3 .obertka .block-button {
+  background-color: #32a1df;
+  width: 80px;
+  padding: 19px 25px 19px 24px;
 }/*# sourceMappingURL=scss.css.map */

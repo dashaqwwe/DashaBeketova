@@ -1,6 +1,8 @@
 $color_blue: #2991d6;
+$lite_blue: #32a1df;
 $color_black: #080606;
 $color_lite_gray: #8c94a6;
+$color_gray: #cfcfcf;
 $color_white: #ffffff;
 
 @mixin fontst($c, $ff, $fs, $fw, $lh, $ls, $tt) {
@@ -30,44 +32,23 @@ $color_white: #ffffff;
 	margin: 0 auto;
 	header {
 		position: relative;
-		width: 100%;
+		max-width: 1380px;
+		margin: 0 auto;
 		top: 0;
 		left: 0;
-		padding: 39px 273px 39px 270px;
+		padding: 39px 10px 0px 10px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		z-index: 100;
 		transition: 0.5s;
-		@media (max-width: 1790px) {
-			& {
-				padding: 39px 200px 39px 200px;
-			}
-		}
-		@media (max-width: 1645px) {
-			& {
-				padding: 39px 150px 39px 150px;
-			}
-		}
-		@media (max-width: 1545px) {
-			& {
-				padding: 39px 100px 39px 100px;
-			}
-		}
-		@media (max-width: 1445px) {
-			& {
-				padding: 30px 50px 30px 50px;
-			}
-		}
-		@media (max-width: 1315px) {
-			& {
-				padding: 30px 30px 30px 30px;
-			}
+		@media (max-width: 815px) {
+			padding: 20px 10px 0px 10px;
 		}
 		.logo {
 			transition: 0.5s;
 			&:hover {
-				transform: scale(1.2);
+				transform: scale(1.1);
 			}
 		}
 		.navbar {
@@ -102,31 +83,27 @@ $color_white: #ffffff;
 				&:hover {
 					color: $color_blue;
 				}
-				@media (max-width: 1245px) {
+				@media (max-width: 1045px) {
 					& {
 						margin-left: 1rem;
 					}
 				}
-				@media (max-width: 1130px) {
+				@media (max-width: 935px) {
 					& {
-						font-size: 55%;
+						font-size: 10px;
 					}
 				}
-				@media (max-width: 930px) {
+				@media (max-width: 830px) {
 					& {
-						margin-left: 6px;
-					}
-				}
-				@media (max-width: 865px) {
-					& {
-						font-size: 50%;
+						margin-right: 7px;
+						margin-left: 0px;
 					}
 				}
 				@media (max-width: 815px) {
 					& {
 						display: block;
 						margin: 2rem 0;
-						font-size: 50%;
+						font-size: 12px;
 					}
 				}
 			}
@@ -171,7 +148,7 @@ $color_white: #ffffff;
 						@media (max-width: 815px) {
 							& {
 								color: $color_white;
-								font-size: 50%;
+								font-size: 10px;
 							}
 						}
 						&:hover {
@@ -210,7 +187,7 @@ $color_white: #ffffff;
 						@media (max-width: 815px) {
 							& {
 								color: $color_white;
-								font-size: 50%;
+								font-size: 55%;
 							}
 						}
 						&:hover {
@@ -238,55 +215,207 @@ $color_white: #ffffff;
 				& {
 					visibility: visible;
 					opacity: 1;
-				}
-			}
-		}
-		.contact {
-			margin-left: 50px;
-			@media (max-width: 1485px) {
-				& {
-					margin-left: 21px;
-				}
-			}
-			p {
-				@include fontst(
-					$color_white,
-					'TT Norms',
-					16px,
-					500,
-					normal,
-					0.6px,
-					lowercase
-				);
-				transition: 0.5s;
-				@media (max-width: 1275px) {
-					& {
-						font-size: 50%;
-					}
-				}
-			}
-			span {
-				@include fontst(
-					$color_lite_gray,
-					'TT Norms',
-					14px,
-					500,
-					normal,
-					0.6px,
-					lowercase
-				);
-				transition: 0.5s;
-				@media (max-width: 1275px) {
-					& {
-						font-size: 50%;
-					}
+					order: 1;
 				}
 			}
 		}
 	}
 	.supp-container {
-		max-width: 1315px;
+		max-width: 1380px;
 		margin: 0 auto;
-		padding: 213px 30px 0px 30px;
+		padding: 213px 10px 40px 10px;
+		transition: 0.5s;
+		@media (max-width: 1340px) {
+			& {
+				padding: 100px 10px 60px 10px;
+			}
+		}
+		@media (max-width: 1045px) {
+			& {
+				padding: 100px 10px 40px 10px;
+			}
+		}
+		@media (max-width: 815px) {
+			& {
+				padding: 50px 10px 40px 10px;
+			}
+		}
+		section {
+			.company {
+				margin-bottom: 196px;
+				transition: 0.5s;
+				@media (max-width: 1045px) {
+					& {
+						margin-bottom: 100px;
+					}
+				}
+				@media (max-width: 815px) {
+					& {
+						margin-bottom: 50px;
+					}
+				}
+				h1 {
+					@include fontst($color_white, 'TT Norms', 54px, 800, 150%, 0.6, none);
+					transition: 0.5s;
+					@media (max-width: 1045px) {
+						& {
+							font-size: 45px;
+						}
+					}
+					@media (max-width: 815px) {
+						& {
+							font-size: 30px;
+						}
+					}
+				}
+				p {
+					@include fontst($color_gray, 'TT Norms', 26px, 400, 150%, 0.6, none);
+					@media (max-width: 1045px) {
+						& {
+							font-size: 21px;
+						}
+					}
+					@media (max-width: 815px) {
+						& {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+			.about {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				.prof {
+					display: flex;
+					align-items: flex-start;
+					max-width: 330px;
+					margin-bottom: 15px;
+					transition: 0.5s;
+					&:hover {
+						transform: scale(1.1);
+					}
+					img {
+						margin-right: 10px;
+					}
+					p {
+						@include fontst(
+							$color_white,
+							'TT Norms',
+							16px,
+							700,
+							150%,
+							0.6,
+							none
+						);
+					}
+					span {
+						@include fontst(
+							$color_gray,
+							'TT Norms',
+							14px,
+							400,
+							150%,
+							0.6,
+							none
+						);
+					}
+				}
+			}
+		}
+	}
+}
+.two {
+	background: transparent;
+	padding: 120px 10px 0px 10px;
+	main {
+		section {
+			.blocks {
+				justify-content: space-between;
+				display: flex;
+				flex-wrap: wrap;
+				margin: 50px 0px 120px 0px;
+				@media (max-width: 1260px) {
+					& {
+						justify-content: center;
+					}
+				}
+				.block-1 {
+					background: url(../img/img.png) no-repeat;
+					display: flex;
+					.obertka {
+						display: flex;
+						flex-wrap: nowrap;
+						align-items: flex-end;
+						margin-top: 420px;
+						.block-text {
+							padding: 27px 260px 26px 30px;
+							background-color: $color_blue;
+							transition: 0.5s;
+							&:hover {
+								background-color: $lite_blue;
+							}
+							@media (max-width: 638px) {
+								padding: 27px 200px 26px 30px;
+							}
+						}
+						.block-button {
+							background-color: $lite_blue;
+							width: 80px;
+							padding: 19px 25px 19px 24px;
+						}
+					}
+				}
+				.block-2 {
+					background: url(../img/img1.png) no-repeat;
+					display: flex;
+					.obertka {
+						display: flex;
+						flex-wrap: nowrap;
+						align-items: flex-end;
+						margin-top: 420px;
+						.block-text {
+							padding: 27px 180px 26px 30px;
+							background-color: $color_blue;
+							transition: 0.5s;
+							&:hover {
+								background-color: $lite_blue;
+							}
+							@media (max-width: 641px) {
+								padding: 27px 100px 26px 30px;
+							}
+						}
+						.block-button {
+							background-color: $lite_blue;
+							width: 80px;
+							padding: 19px 25px 19px 24px;
+						}
+					}
+				}
+				.block-3 {
+					background: url(../img/img2.png) no-repeat;
+					display: flex;
+					.obertka {
+						display: flex;
+						flex-wrap: nowrap;
+						align-items: flex-end;
+						margin-top: 420px;
+						.block-text {
+							padding: 27px 178px 26px 30px;
+							background-color: $color_blue;
+							transition: 0.5s;
+							&:hover {
+								background-color: $lite_blue;
+							}
+						}
+						.block-button {
+							background-color: $lite_blue;
+							width: 80px;
+							padding: 19px 25px 19px 24px;
+						}
+					}
+				}
+			}
+		}
 	}
 }
