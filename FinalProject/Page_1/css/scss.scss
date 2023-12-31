@@ -175,7 +175,13 @@ $color_white: #ffffff;
 					@media (max-width: 1130px) {
 						& {
 							padding: 15px;
-							height: 165px;
+							height: 200px;
+						}
+					}
+					@media (max-width: 935px) {
+						& {
+							padding: 15px;
+							height: 170px;
 						}
 					}
 					@media (max-width: 815px) {
@@ -184,6 +190,7 @@ $color_white: #ffffff;
 							left: 0%;
 							padding: 15px 10px;
 							width: 125px;
+							height: 150px;
 						}
 					}
 					a {
