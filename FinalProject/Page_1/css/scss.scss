@@ -1,8 +1,10 @@
 $color_blue: #2991d6;
 $lite_blue: #32a1df;
 $color_black: #080606;
+$color_black_black: #000000;
 $color_lite_gray: #8c94a6;
 $color_gray: #cfcfcf;
+$color_gray_gray: #fafafa;
 $color_white: #ffffff;
 
 @mixin fontst($c, $ff, $fs, $fw, $lh, $ls, $tt) {
@@ -24,6 +26,9 @@ $color_white: #ffffff;
 	outline: none;
 	text-decoration: none;
 	list-style: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 .container {
@@ -62,7 +67,7 @@ $color_white: #ffffff;
 					left: 0;
 					width: 100%;
 					transform-origin: top;
-					background: #0c0e16;
+					background: $color_lite_gray;
 					transform: scale(0);
 					opacity: 0;
 					padding: 0 15px;
@@ -125,7 +130,7 @@ $color_white: #ffffff;
 					position: absolute;
 					right: -22%;
 					max-width: 151px;
-					background: #0c0e16;
+					background: #505768;
 					padding: 30px;
 					display: none;
 					@media (max-width: 1130px) {
@@ -138,7 +143,7 @@ $color_white: #ffffff;
 						& {
 							right: 0%;
 							left: 0%;
-							padding: 15px 0px;
+							padding: 15px 10px;
 							width: 89px;
 						}
 					}
@@ -159,7 +164,7 @@ $color_white: #ffffff;
 				.dropdown-menu-2 {
 					position: absolute;
 					max-width: 197px;
-					background: #0c0e16;
+					background: #505768;
 					padding: 30px;
 					display: none;
 					@media (max-width: 1245px) {
@@ -177,8 +182,8 @@ $color_white: #ffffff;
 						& {
 							right: 0%;
 							left: 0%;
-							padding: 15px 0px;
-							width: 100px;
+							padding: 15px 10px;
+							width: 125px;
 						}
 					}
 					a {
@@ -254,6 +259,9 @@ $color_white: #ffffff;
 						margin-bottom: 50px;
 					}
 				}
+				@media (max-width: 450px) {
+					margin-bottom: 40px;
+				}
 				h1 {
 					@include fontst($color_white, 'TT Norms', 54px, 800, 150%, 0.6, none);
 					transition: 0.5s;
@@ -266,6 +274,9 @@ $color_white: #ffffff;
 						& {
 							font-size: 30px;
 						}
+					}
+					@media (max-width: 450px) {
+						text-align: center;
 					}
 				}
 				p {
@@ -280,17 +291,25 @@ $color_white: #ffffff;
 							font-size: 18px;
 						}
 					}
+					@media (max-width: 450px) {
+						text-align: center;
+					}
 				}
 			}
 			.about {
 				display: flex;
 				justify-content: space-between;
 				flex-wrap: wrap;
+				@media (max-width: 450px) {
+					justify-content: center;
+				}
 				.prof {
 					display: flex;
 					align-items: flex-start;
 					max-width: 330px;
 					margin-bottom: 15px;
+					box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+						0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 					transition: 0.5s;
 					&:hover {
 						transform: scale(1.1);
@@ -328,90 +347,256 @@ $color_white: #ffffff;
 .two {
 	background: transparent;
 	padding: 120px 10px 0px 10px;
+	@media (max-width: 815px) {
+		& {
+			padding: 50px 10px 0px 10px;
+		}
+	}
 	main {
 		section {
-			.blocks {
-				justify-content: space-between;
-				display: flex;
-				flex-wrap: wrap;
-				margin: 50px 0px 120px 0px;
-				@media (max-width: 1260px) {
+			h2 {
+				@include fontst(
+					$color_black_black,
+					'TT Norms',
+					46px,
+					700,
+					150%,
+					0.6,
+					none
+				);
+				transition: 0.5s;
+				@media (max-width: 815px) {
 					& {
-						justify-content: center;
+						font-size: 36px;
 					}
 				}
-				.block-1 {
+				@media (max-width: 815px) {
+					& {
+						font-size: 26px;
+					}
+				}
+				@media (max-width: 450px) {
+					& {
+						text-align: center;
+						font-size: 24px;
+					}
+				}
+			}
+			.blocks {
+				display: flex;
+				justify-content: space-between;
+				margin-top: 50px;
+				margin-bottom: 120px;
+				transition: 0.5s;
+				@media (max-width: 1000px) {
+					& {
+						flex-wrap: wrap;
+						flex-direction: column;
+					}
+				}
+				@media (max-width: 815px) {
+					& {
+						margin-bottom: 50px;
+					}
+				}
+				@media (max-width: 450px) {
+					& {
+						margin-top: 20px;
+					}
+				}
+				.block-one {
 					background: url(../img/img.png) no-repeat;
-					display: flex;
-					.obertka {
-						display: flex;
-						flex-wrap: nowrap;
-						align-items: flex-end;
-						margin-top: 420px;
-						.block-text {
-							padding: 27px 260px 26px 30px;
-							background-color: $color_blue;
-							transition: 0.5s;
-							&:hover {
-								background-color: $lite_blue;
-							}
-							@media (max-width: 638px) {
-								padding: 27px 200px 26px 30px;
-							}
-						}
-						.block-button {
-							background-color: $lite_blue;
-							width: 80px;
-							padding: 19px 25px 19px 24px;
-						}
-					}
 				}
-				.block-2 {
+				.block-two {
 					background: url(../img/img1.png) no-repeat;
-					display: flex;
-					.obertka {
+				}
+				.block-three {
+					background: url(../img/img2.png) no-repeat;
+				}
+				.block {
+					padding-top: 420px;
+					transition: 0.5s;
+					@media (max-width: 1340px) {
+						& {
+							padding-top: 380px;
+						}
+					}
+					@media (max-width: 1045px) {
+						& {
+							padding-top: 320px;
+						}
+					}
+					@media (max-width: 1000px) {
+						& {
+							background-size: cover;
+							margin-bottom: 10px;
+						}
+					}
+					@media (max-width: 815px) {
+						& {
+							padding-top: 280px;
+						}
+					}
+					@media (max-width: 679px) {
+						& {
+							padding-top: 200px;
+						}
+					}
+					@media (max-width: 450px) {
+						& {
+							padding-top: 100px;
+						}
+					}
+					@media (max-width: 320px) {
+						& {
+							padding-top: 70px;
+						}
+					}
+					.block-text {
+						background-color: $color_blue;
 						display: flex;
-						flex-wrap: nowrap;
-						align-items: flex-end;
-						margin-top: 420px;
-						.block-text {
-							padding: 27px 180px 26px 30px;
-							background-color: $color_blue;
+						align-items: center;
+						transition: 0.5s;
+						&:hover {
+							background-color: $lite_blue;
+						}
+						p {
+							width: 480px;
+							margin-left: 30px;
 							transition: 0.5s;
-							&:hover {
-								background-color: $lite_blue;
+							@include fontst(
+								$color_white,
+								'TT Norms',
+								18px,
+								500,
+								150%,
+								0.6,
+								none
+							);
+							@media (max-width: 1789px) {
+								& {
+									width: 460px;
+								}
 							}
-							@media (max-width: 641px) {
-								padding: 27px 100px 26px 30px;
+							@media (max-width: 1729px) {
+								& {
+									width: 420px;
+								}
+							}
+							@media (max-width: 1609px) {
+								& {
+									width: 380px;
+								}
+							}
+							@media (max-width: 1489px) {
+								& {
+									width: 340px;
+								}
+							}
+							@media (max-width: 1369px) {
+								& {
+									width: 300px;
+								}
+							}
+							@media (max-width: 1249px) {
+								& {
+									width: 260px;
+								}
+							}
+							@media (max-width: 1129px) {
+								& {
+									width: 220px;
+								}
+							}
+							@media (max-width: 1000px) {
+								& {
+									width: 100%;
+								}
+							}
+							@media (max-width: 320px) {
+								& {
+									margin-left: 7px;
+									font-size: 15px;
+								}
 							}
 						}
-						.block-button {
+						.arrow {
 							background-color: $lite_blue;
-							width: 80px;
-							padding: 19px 25px 19px 24px;
+							padding: 25px 25px 25px 24px;
+							@media (max-width: 450px) {
+								& {
+									padding: 15px 15px 15px 14px;
+								}
+							}
+							@media (max-width: 320px) {
+								& {
+									padding: 7px 7px 7px 6px;
+								}
+							}
 						}
 					}
 				}
-				.block-3 {
-					background: url(../img/img2.png) no-repeat;
+			}
+			.viewport {
+				max-width: 1920px;
+				width: calc(100% - 20px);
+				margin: 0 auto;
+				margin-top: 50px;
+				transition: 0.5s;
+				margin-bottom: 150px;
+				@media (max-width: 450px) {
+					margin-top: 20px;
+				}
+				.list {
+					list-style: none;
 					display: flex;
-					.obertka {
-						display: flex;
-						flex-wrap: nowrap;
-						align-items: flex-end;
-						margin-top: 420px;
-						.block-text {
-							padding: 27px 178px 26px 30px;
-							background-color: $color_blue;
-							transition: 0.5s;
-							&:hover {
-								background-color: $lite_blue;
-							}
+					overflow-x: scroll;
+					overscroll-behavior: contain;
+					-webkit-overflow-scrolling: touch;
+					touch-action: pan-x;
+					&::-webkit-scrollbar {
+						display: block;
+					}
+					&::-webkit-scrollbar {
+						width: 0px;
+					}
+					&::-webkit-scrollbar-track {
+						background: transparent;
+					}
+					&::-webkit-scrollbar-thumb {
+						background: $color_gray;
+						border-radius: 8px;
+					}
+					@media (max-width: 768px) {
+						&::-webkit-scrollbar {
+							display: none;
 						}
-						.block-button {
-							background-color: $lite_blue;
-							width: 80px;
-							padding: 19px 25px 19px 24px;
+					}
+					.item {
+						height: 120px;
+						width: 218px;
+						flex-shrink: 0;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin-right: 10px;
+						background-color: $color_gray_gray;
+						transition: 0.5s;
+						&:last-child {
+							position: relative;
+							margin-right: 0px;
+						}
+						&:last-child::after {
+							position: absolute;
+							left: 100%;
+							height: 1px;
+							width: 20px;
+							display: block;
+							content: '';
+						}
+						@media (max-width: 768px) {
+							height: 90px;
+							width: 150px;
 						}
 					}
 				}
