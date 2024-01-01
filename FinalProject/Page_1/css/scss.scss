@@ -4,6 +4,7 @@ $color_black: #080606;
 $color_black_black: #000000;
 $color_lite_gray: #8c94a6;
 $color_gray: #cfcfcf;
+$color_gray-2: #8b8b8b;
 $color_gray_gray: #fafafa;
 $color_white: #ffffff;
 
@@ -331,7 +332,7 @@ $color_white: #ffffff;
 							16px,
 							700,
 							150%,
-							0.6,
+							normal,
 							none
 						);
 					}
@@ -342,7 +343,7 @@ $color_white: #ffffff;
 							14px,
 							400,
 							150%,
-							0.6,
+							normal,
 							none
 						);
 					}
@@ -368,7 +369,7 @@ $color_white: #ffffff;
 					46px,
 					700,
 					150%,
-					0.6,
+					normal,
 					none
 				);
 				transition: 0.5s;
@@ -477,7 +478,7 @@ $color_white: #ffffff;
 								18px,
 								500,
 								150%,
-								0.6,
+								normal,
 								none
 							);
 							@media (max-width: 1789px) {
@@ -551,6 +552,9 @@ $color_white: #ffffff;
 				margin-top: 50px;
 				transition: 0.5s;
 				margin-bottom: 150px;
+				@media (max-width: 850px) {
+					margin-bottom: 50px;
+				}
 				@media (max-width: 450px) {
 					margin-top: 20px;
 				}
@@ -604,6 +608,209 @@ $color_white: #ffffff;
 						@media (max-width: 768px) {
 							height: 90px;
 							width: 150px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.container-map {
+	max-width: 1920px;
+	background-color: $color_gray_gray;
+	margin: 0 auto;
+	padding: 119px 10px 120px 10px;
+	transition: 0.5s;
+	@media (max-width: 1815px) {
+		& {
+			padding: 50px 10px 120px 10px;
+		}
+	}
+	.obj {
+		max-width: 1315px;
+		margin: 0 auto;
+		h2 {
+			@include fontst(
+				$color_black_black,
+				'TT Norms',
+				46px,
+				700,
+				150%,
+				normal,
+				none
+			);
+			transition: 0.5s;
+			@media (max-width: 815px) {
+				& {
+					font-size: 36px;
+				}
+			}
+			@media (max-width: 815px) {
+				& {
+					font-size: 26px;
+				}
+			}
+			@media (max-width: 450px) {
+				& {
+					text-align: center;
+					font-size: 24px;
+				}
+			}
+		}
+		.map {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 50px;
+			transition: 0.5s;
+			@media (max-width: 1280px) {
+				& {
+					flex-direction: column;
+					align-items: flex-start;
+				}
+			}
+			@media (max-width: 450px) {
+				margin-top: 20px;
+			}
+			.objects {
+				display: flex;
+				flex-direction: column;
+				transition: 0.5s;
+				@media (max-width: 1280px) {
+					& {
+						margin-bottom: 20px;
+						flex-direction: row;
+					}
+				}
+				.check {
+					display: flex;
+					flex-direction: column;
+					padding-left: 15px;
+					p {
+						@include fontst(
+							$color_blue,
+							'TT Norms',
+							80px,
+							800,
+							normal,
+							normal,
+							uppercase
+						);
+						transition: 0.5s;
+						@media (max-width: 815px) {
+							font-size: 50px;
+						}
+					}
+					span {
+						@include fontst(
+							$color_gray-2,
+							'TT Norms',
+							18px,
+							400,
+							150%,
+							normal,
+							none
+						);
+						transition: 0.5s;
+						@media (max-width: 815px) {
+							font-size: 16px;
+						}
+					}
+				}
+				.checkone {
+					background: url(../img/checkedd.svg) no-repeat left top;
+				}
+				.checktwo {
+					background: url(../img/sand-clock1.svg) no-repeat left top;
+				}
+			}
+			.puzzle {
+				.viewport {
+					max-width: 1030px;
+					width: calc(100% - 20px);
+					transition: 0.5s;
+					@media (max-width: 1040px) {
+						& {
+							max-width: 800px;
+						}
+					}
+					@media (max-width: 810px) {
+						& {
+							max-width: 500px;
+						}
+					}
+					@media (max-width: 510px) {
+						& {
+							max-width: 300px;
+						}
+					}
+					@media (max-width: 360px) {
+						& {
+							max-width: 280px;
+						}
+					}
+					.list {
+						display: flex;
+						overflow-x: scroll;
+						overscroll-behavior: contain;
+						-webkit-overflow-scrolling: touch;
+						touch-action: pan-x;
+						&::-webkit-scrollbar {
+							display: block;
+						}
+						&::-webkit-scrollbar {
+							width: 0px;
+						}
+						&::-webkit-scrollbar-track {
+							background: transparent;
+						}
+						&::-webkit-scrollbar-thumb {
+							background: $color_gray;
+							border-radius: 8px;
+						}
+						@media (max-width: 768px) {
+							&::-webkit-scrollbar {
+								display: none;
+							}
+						}
+						.item {
+							height: 479px;
+							width: 420px;
+							flex-shrink: 0;
+							margin-right: 5px;
+							background: url(../img/imgg.png) no-repeat left top, $color_white;
+							box-shadow: 0px 10px 10px 0px rgba(44, 59, 99, 0.15);
+							transition: 0.5s;
+							&:last-child {
+								position: relative;
+								margin-right: 0px;
+							}
+							&:last-child::after {
+								position: absolute;
+								left: 100%;
+								height: 1px;
+								width: 20px;
+								display: block;
+								content: '';
+							}
+							@media (max-width: 1280px) {
+								& {
+									height: 429px;
+									width: 370px;
+								}
+							}
+							@media (max-width: 1040px) {
+								& {
+									height: 379px;
+									width: 270px;
+								}
+							}
+							@media (max-width: 810px) {
+								& {
+									height: 437px;
+									width: 250px;
+								}
+							}
 						}
 					}
 				}
