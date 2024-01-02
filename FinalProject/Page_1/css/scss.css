@@ -771,6 +771,7 @@
   width: 420px;
   flex-shrink: 0;
   margin-right: 5px;
+  padding: 270px 20px 20px 20px;
   background: url(../img/imgg.png) no-repeat left top, #ffffff;
   box-shadow: 0px 10px 10px 0px rgba(44, 59, 99, 0.15);
   transition: 0.5s;
@@ -789,19 +790,114 @@
 }
 @media (max-width: 1280px) {
   .container-map .obj .map .puzzle .viewport .list .item {
-    height: 429px;
     width: 370px;
+    padding: 245px 20px 20px 20px;
   }
 }
 @media (max-width: 1040px) {
   .container-map .obj .map .puzzle .viewport .list .item {
-    height: 379px;
     width: 270px;
+    padding: 245px 5px 5px 5px;
   }
 }
 @media (max-width: 810px) {
   .container-map .obj .map .puzzle .viewport .list .item {
-    height: 437px;
     width: 250px;
+    height: 437px;
+    padding: 245px 0px 5px 5px;
+  }
+}
+.container-map .obj .map .puzzle .viewport .list .item h3 {
+  color: #000000;
+  font-family: "TT Norms";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: normal;
+  text-transform: none;
+  margin-bottom: 7px;
+  transition: 0.5s;
+}
+@media (max-width: 810px) {
+  .container-map .obj .map .puzzle .viewport .list .item h3 {
+    font-size: 20px;
+  }
+}
+.container-map .obj .map .puzzle .viewport .list .item .location {
+  display: flex;
+  margin-bottom: 10px;
+}
+.container-map .obj .map .puzzle .viewport .list .item .location img {
+  margin-right: 10px;
+}
+.container-map .obj .map .puzzle .viewport .list .item .location span {
+  color: #000000;
+  font-family: "TT Norms";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.container-map .obj .map .puzzle .viewport .list .item .napr-raz {
+  display: flex;
+}
+.container-map .obj .map .puzzle .viewport .list .item .napr-raz p {
+  margin-bottom: 5px;
+  color: #8b8b8b;
+  font-family: "TT Norms";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.container-map .obj .map .puzzle .viewport .list .item .napr-raz .napr {
+  margin-right: 30px;
+}
+.container-map .obj .map .puzzle .viewport .list .item .napr-raz span {
+  color: #000000;
+  font-family: "TT Norms";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.container-map .obj .map .puzzle .viewport .list .item .block-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2991d6;
+  width: 200px;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.container-map .obj .map .puzzle .viewport .list .item .block-text:hover {
+  background-color: #32a1df;
+}
+@media (max-width: 810px) {
+  .container-map .obj .map .puzzle .viewport .list .item .block-text {
+    margin-top: 5px;
+  }
+}
+.container-map .obj .map .puzzle .viewport .list .item .block-text p {
+  margin-left: 20px;
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.container-map .obj .map .puzzle .viewport .list .item .block-text .arrow {
+  background-color: #32a1df;
+  padding: 8px;
+  transition: 0.5s;
+}
+@media (max-width: 810px) {
+  .container-map .obj .map .puzzle .viewport .list .item .block-text .arrow {
+    padding: 2px;
   }
 }/*# sourceMappingURL=scss.css.map */
