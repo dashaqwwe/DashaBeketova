@@ -136,6 +136,18 @@ a {
   text-decoration: none;
 }
 
+.four .controls #btnNext, .four .controls #btnPrev {
+  background-color: #118bdd;
+  border: none;
+  width: 70px;
+  height: 40px;
+  padding: 0px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
 .container {
   background: url(../img/video\ bg.png) no-repeat;
   max-width: 1920px;
@@ -490,7 +502,7 @@ a {
     font-size: 36px;
   }
 }
-@media (max-width: 815px) {
+@media (max-width: 550px) {
   .two h2 {
     font-size: 26px;
   }
@@ -534,7 +546,7 @@ a {
   background: url(../img/img2.png) no-repeat;
 }
 .two .blocks .block {
-  padding-top: 420px;
+  padding-top: 417px;
   transition: 0.5s;
 }
 @media (max-width: 1340px) {
@@ -583,7 +595,7 @@ a {
   background-color: #32a1df;
 }
 .two .blocks .block .block-text p {
-  width: 480px;
+  width: 510px;
   margin-left: 30px;
   transition: 0.5s;
   color: #ffffff;
@@ -593,6 +605,11 @@ a {
   line-height: 150%;
   letter-spacing: normal;
   text-transform: none;
+}
+@media (max-width: 1860px) {
+  .two .blocks .block .block-text p {
+    width: 480px;
+  }
 }
 @media (max-width: 1789px) {
   .two .blocks .block .block-text p {
@@ -766,7 +783,7 @@ a {
     font-size: 36px;
   }
 }
-@media (max-width: 815px) {
+@media (max-width: 550px) {
   .container-map .obj h2 {
     font-size: 26px;
   }
@@ -1041,7 +1058,7 @@ a {
 }
 @media (max-width: 850px) {
   .three {
-    padding: 59px 10px 120px 10px;
+    padding: 59px 10px 50px 10px;
   }
 }
 .three .news {
@@ -1069,7 +1086,7 @@ a {
     font-size: 36px;
   }
 }
-@media (max-width: 815px) {
+@media (max-width: 550px) {
   .three .news h2 {
     font-size: 26px;
   }
@@ -1250,5 +1267,176 @@ a {
 @media (max-width: 490px) {
   .three .dropdown-a {
     display: block;
+  }
+}
+
+.four {
+  background: transparent;
+}
+.four .slider {
+  max-width: 1920px;
+  max-height: 655px;
+  margin: 0 auto;
+}
+.four .slider .slide-oll {
+  background-size: cover;
+  padding: 72px 270px 71px 270px;
+  transition: 0.5s;
+}
+@media (max-width: 1320px) {
+  .four .slider .slide-oll {
+    padding: 72px 270px 71px 70px;
+  }
+}
+@media (max-width: 790px) {
+  .four .slider .slide-oll {
+    padding: 42px 10px 71px 10px;
+  }
+}
+@media (max-width: 450px) {
+  .four .slider .slide-oll {
+    padding: 10px 10px 71px 10px;
+  }
+}
+.four .slider .slide-oll .about-company {
+  max-width: 797px;
+  background-color: #fafafa;
+  padding: 50px;
+  transition: 0.5s;
+}
+@media (max-width: 790px) {
+  .four .slider .slide-oll .about-company {
+    padding: 20px;
+  }
+}
+.four .slider .slide-oll .about-company h2 {
+  color: #000000;
+  font-family: "TT Norms";
+  font-size: 46px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 150%;
+  text-transform: none;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+@media (max-width: 815px) {
+  .four .slider .slide-oll .about-company h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 550px) {
+  .four .slider .slide-oll .about-company h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 450px) {
+  .four .slider .slide-oll .about-company h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+.four .slider .slide-oll .about-company span {
+  color: #434343;
+  font-family: "TT Norms";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 180%;
+  text-transform: none;
+  transition: 0.5s;
+}
+@media (max-width: 450px) {
+  .four .slider .slide-oll .about-company span {
+    font-size: 12px;
+  }
+}
+.four .slider .slide-oll .about-company .read-more {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.four .slider .slide-oll .about-company .read-more p {
+  color: #000000;
+  font-family: "TT Norms";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 180%;
+  text-transform: none;
+  transition: 0.5s;
+}
+@media (max-width: 450px) {
+  .four .slider .slide-oll .about-company .read-more p {
+    font-size: 15px;
+  }
+}
+.four .slider .slide-oll .about-company .read-more img {
+  transform: rotate(90deg);
+  margin-left: 20px;
+}
+.four .slider .slide-1 {
+  background: url(../img/Rectangle\ 13.png) no-repeat left top;
+}
+.four .slider .slide-2 {
+  background: url(../img/Rectangle\ 15.png) no-repeat left top;
+}
+.four .slider .slide-3 {
+  background: url(../img/Rectangle\ 16.png) no-repeat left top;
+}
+.four .hidden {
+  display: none;
+}
+.four .controls {
+  position: relative;
+  margin-right: 270px;
+  transition: 0.5s;
+}
+@media (max-width: 1545px) {
+  .four .controls {
+    margin-right: 170px;
+  }
+}
+@media (max-width: 1420px) {
+  .four .controls {
+    margin-right: 70px;
+  }
+}
+@media (max-width: 790px) {
+  .four .controls {
+    margin-right: 10px;
+  }
+}
+.four .controls #btnPrev {
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 0px;
+  right: 70px;
+}
+.four .controls #btnPrev:hover {
+  background-color: #32a1df;
+  cursor: pointer;
+}
+@media (max-width: 450px) {
+  .four .controls #btnPrev {
+    width: 50px;
+    height: 30px;
+    right: 50px;
+  }
+}
+.four .controls #btnNext {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.four .controls #btnNext:hover {
+  background-color: #32a1df;
+  cursor: pointer;
+}
+@media (max-width: 450px) {
+  .four .controls #btnNext {
+    width: 50px;
+    height: 30px;
   }
 }/*# sourceMappingURL=scss.css.map */
