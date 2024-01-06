@@ -1,203 +1,136 @@
 @import '../../reset.scss';
 @import '../../variables.scss';
+@import '../../scrollbar.scss';
 
 .container {
 	background: url(../img/video\ bg.png) no-repeat;
 	max-width: 1920px;
 	margin: 0 auto;
 	header {
-		position: relative;
 		max-width: 1380px;
 		margin: 0 auto;
-		top: 0;
-		left: 0;
-		padding: 39px 10px 0px 10px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		z-index: 100;
-		transition: 0.5s;
+		padding: 46px 10px 0px 10px;
+		transition: all 0.3s;
 		@media (max-width: 815px) {
-			padding: 20px 10px 0px 10px;
-		}
-		.logo {
-			transition: 0.5s;
-			&:hover {
-				transform: scale(1.1);
-			}
+			padding: 15px 10px 0px 10px;
 		}
 		.navbar {
 			display: flex;
-			align-items: baseline;
-			@media (max-width: 815px) {
-				& {
-					display: block;
-					position: absolute;
-					top: 100%;
-					left: 0;
-					width: 100%;
-					transform-origin: top;
-					background: $color_lite_gray;
-					transform: scale(0);
-					opacity: 0;
-					padding: 0 15px;
+			align-items: center;
+			justify-content: space-between;
+			.logo {
+				transition: all 0.5s;
+				&:hover {
+					transform: scale(1.1);
 				}
 			}
-			a {
-				@include fontst(
-					$color_white,
-					'TT Norms',
-					12px,
-					700,
-					normal,
-					0.6px,
-					uppercase
-				);
-				margin-left: 2rem;
-				transition: 0.5s;
-				&:hover {
-					color: $color_blue;
-				}
-				@media (max-width: 1045px) {
-					& {
-						margin-left: 1rem;
-					}
-				}
-				@media (max-width: 935px) {
-					& {
-						font-size: 10px;
-					}
-				}
-				@media (max-width: 830px) {
-					& {
-						margin-right: 7px;
-						margin-left: 0px;
-					}
-				}
-				@media (max-width: 815px) {
-					& {
-						display: block;
-						margin: 2rem 0;
-						font-size: 12px;
-					}
-				}
-			}
-			.dropdown {
-				position: relative;
-				&:hover {
-					.dropdown-menu {
-						display: block;
-						z-index: 150;
-					}
-				}
-				&:hover {
-					.dropdown-menu-2 {
-						display: block;
-						z-index: 150;
-					}
-				}
-				.dropdown-menu {
-					position: absolute;
-					right: -22%;
-					max-width: 151px;
-					background: #505768;
-					padding: 30px;
+			.nav-links {
+				.hamburger {
 					display: none;
-					@media (max-width: 1130px) {
-						& {
-							padding: 15px;
-							height: 165px;
-						}
-					}
+					font-size: 24px;
+					cursor: pointer;
 					@media (max-width: 815px) {
-						& {
-							right: 0%;
-							left: 0%;
-							padding: 15px 10px;
-							width: 89px;
+						display: block;
+						padding: 20px 0px;
+					}
+					.hamburger-line {
+						background-color: $color_white;
+						display: block;
+						height: 2px;
+						width: 24px;
+						position: relative;
+						&::before,
+						&::after {
+							background-color: $color_white;
+							content: '';
+							display: block;
+							position: absolute;
+							transition: all 0.3s;
+							width: 100%;
+							height: 100%;
+						}
+						&::before {
+							top: 7px;
+						}
+						&::after {
+							top: -7px;
 						}
 					}
-					a {
-						margin: 0px 0px 10px 0px;
-						display: inline-block;
+				}
+				#checkbox_toggle {
+					display: none;
+					@media (max-width: 815px) {
+						&:checked + label ~ .menu {
+							display: block;
+							max-width: 100%;
+							transition: all 0.5s;
+							max-height: 100%;
+						}
+						&:checked ~ .hamburger .hamburger-line {
+							background-color: transparent;
+						}
+						&:checked ~ .hamburger .hamburger-line {
+							&::before {
+								transform: rotate(-45deg);
+								top: 0;
+							}
+						}
+						&:checked ~ .hamburger .hamburger-line {
+							&::after {
+								transform: rotate(45deg);
+								top: 0;
+							}
+						}
+					}
+				}
+				.menu {
+					display: flex;
+					@media (max-width: 815px) {
+						display: none;
+						max-height: 0px;
+						overflow: hidden;
+						-webkit-transition: max-height 0.4s linear;
+						-moz-transition: max-height 0.4s linear;
+						transition: max-height 0.4s linear;
+						position: absolute;
+						background-color: $color_footer;
+						text-align: center;
+						right: 0;
+						left: 0;
+					}
+					li {
+						padding: 0px 15px;
+						transition: all 0.5s;
+						@media (max-width: 992px) {
+							padding: 0px 7px;
+						}
+						@media (max-width: 880px) {
+							padding: 0px 4px;
+						}
 						@media (max-width: 815px) {
-							& {
-								color: $color_white;
+							padding: 20px;
+							border-top: 1px solid rgb(44, 47, 55, 0.25);
+							border-bottom: 1px solid rgb(44, 47, 55, 0.25);
+						}
+						a {
+							@include fontst(
+								$color_white,
+								'TT Norms',
+								12px,
+								700,
+								normal,
+								0.6px,
+								uppercase
+							);
+							transition: all 0.5s;
+							&:hover {
+								color: $color_blue;
+							}
+							@media (max-width: 838px) {
 								font-size: 10px;
 							}
 						}
-						&:hover {
-							color: $color_blue;
-						}
 					}
-				}
-				.dropdown-menu-2 {
-					position: absolute;
-					max-width: 197px;
-					background: #505768;
-					padding: 30px;
-					display: none;
-					@media (max-width: 1245px) {
-						& {
-							padding: 20px;
-						}
-					}
-					@media (max-width: 1130px) {
-						& {
-							padding: 15px;
-							height: 200px;
-						}
-					}
-					@media (max-width: 935px) {
-						& {
-							padding: 15px;
-							height: 170px;
-						}
-					}
-					@media (max-width: 815px) {
-						& {
-							right: 0%;
-							left: 0%;
-							padding: 15px 10px;
-							width: 125px;
-							height: 150px;
-						}
-					}
-					a {
-						margin: 0px 0px 10px 0px;
-						display: inline-block;
-						@media (max-width: 815px) {
-							& {
-								color: $color_white;
-								font-size: 55%;
-							}
-						}
-						&:hover {
-							color: $color_blue;
-						}
-					}
-				}
-			}
-		}
-		input {
-			display: none;
-			&:checked + label ~ .navbar {
-				transform: scale(1);
-				opacity: 1;
-			}
-		}
-		label {
-			font-size: 2rem;
-			margin-right: 10px;
-			cursor: pointer;
-			visibility: hidden;
-			opacity: 0;
-			color: $color_white;
-			@media (max-width: 815px) {
-				& {
-					visibility: visible;
-					opacity: 1;
-					order: 1;
 				}
 			}
 		}
@@ -436,7 +369,7 @@
 					background-color: $lite_blue;
 				}
 				p {
-					width: 510px;
+					width: 490px;
 					margin-left: 30px;
 					transition: 0.5s;
 					@include fontst(
@@ -448,17 +381,12 @@
 						normal,
 						none
 					);
-					@media (max-width: 1860px) {
-						& {
-							width: 480px;
-						}
-					}
-					@media (max-width: 1789px) {
+					@media (max-width: 1820px) {
 						& {
 							width: 460px;
 						}
 					}
-					@media (max-width: 1729px) {
+					@media (max-width: 1730px) {
 						& {
 							width: 420px;
 						}
@@ -538,17 +466,20 @@
 			-webkit-overflow-scrolling: touch;
 			touch-action: pan-x;
 			&::-webkit-scrollbar {
-				display: block;
-			}
-			&::-webkit-scrollbar {
-				width: 0px;
+				width: 10px;
+				height: 8px;
+				background-color: #143861;
 			}
 			&::-webkit-scrollbar-track {
-				background: transparent;
+				background: $color_gray;
 			}
 			&::-webkit-scrollbar-thumb {
-				background: $color_gray;
-				border-radius: 8px;
+				background-color: $lite_blue;
+				border-radius: 9em;
+				box-shadow: inset 1px 1px 10px #f3faf7;
+				&:hover {
+					background-color: $color_blue;
+				}
 			}
 			@media (max-width: 768px) {
 				&::-webkit-scrollbar {
@@ -731,17 +662,19 @@
 						-webkit-overflow-scrolling: touch;
 						touch-action: pan-x;
 						&::-webkit-scrollbar {
-							display: block;
-						}
-						&::-webkit-scrollbar {
-							width: 0px;
+							width: 10px;
+							height: 8px;
 						}
 						&::-webkit-scrollbar-track {
-							background: transparent;
+							background: $color_gray;
 						}
 						&::-webkit-scrollbar-thumb {
-							background: $color_gray;
-							border-radius: 8px;
+							background-color: $lite_blue;
+							border-radius: 9em;
+							box-shadow: inset 1px 1px 10px #f3faf7;
+							&:hover {
+								background-color: $color_blue;
+							}
 						}
 						@media (max-width: 768px) {
 							&::-webkit-scrollbar {

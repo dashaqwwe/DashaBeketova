@@ -1,0 +1,15 @@
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+body::-webkit-scrollbar-track {
+  background: #cfcfcf;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #32a1df;
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #2991d6;
+}/*# sourceMappingURL=scrollbar.css.map */

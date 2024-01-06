@@ -1,0 +1,18 @@
+@import '../FinalProject/variables.scss';
+body {
+	&::-webkit-scrollbar {
+		width: 10px;
+		height: 8px;
+	}
+	&::-webkit-scrollbar-track {
+		background: $color_gray;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: $lite_blue;
+		border-radius: 9em;
+		box-shadow: inset 1px 1px 10px #f3faf7;
+		&:hover {
+			background-color: $color_blue;
+		}
+	}
+}
