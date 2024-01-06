@@ -10,7 +10,8 @@ $color_gray-2: #8b8b8b;
 $color_gray-3: #434343;
 $color_gray_gray: #fafafa;
 $color_white: #ffffff;
-
+$color_footer: #0c0e16;
+$color_footer_a: #606269;
 //миксин
 @mixin fontst($c, $ff, $fs, $fw, $lh, $ls, $tt) {
 	color: $c;

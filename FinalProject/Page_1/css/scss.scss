@@ -961,7 +961,7 @@
 		justify-content: space-between;
 		margin-top: 50px;
 		transition: 0.5s;
-		@media (max-width: 850px) {
+		@media (max-width: 1345px) {
 			flex-wrap: wrap;
 			justify-content: center;
 		}
@@ -979,9 +979,38 @@
 				padding-top: 143px;
 				display: flex;
 				align-items: flex-end;
+				transition: 0.5s;
+				@media (max-width: 1345px) {
+					width: 1000px;
+				}
+				@media (max-width: 1000px) {
+					width: 800px;
+				}
+				@media (max-width: 800px) {
+					width: 600px;
+				}
+				@media (max-width: 600px) {
+					width: 500px;
+				}
+				@media (max-width: 505px) {
+					width: 460px;
+				}
+				@media (max-width: 490px) {
+					width: auto;
+				}
 				.text-news {
 					padding: 30px;
 					background-color: $color_gray_gray;
+					transition: 0.5s;
+					@media (max-width: 1345px) {
+						margin-right: 330px;
+					}
+					@media (max-width: 1000px) {
+						margin-right: 130px;
+					}
+					@media (max-width: 505px) {
+						margin-right: 93px;
+					}
 					@media (max-width: 490px) {
 						display: none;
 					}
@@ -1017,6 +1046,14 @@
 				}
 				.text-news-1 {
 					padding-bottom: 37px;
+				}
+				.text-news-2 {
+					@media (max-width: 600px) {
+						margin-right: 77px;
+					}
+					@media (max-width: 505px) {
+						margin-right: 37px;
+					}
 				}
 				.date {
 					background-color: $color_blue;
@@ -1115,7 +1152,7 @@
 		margin: 0 auto;
 		.slide-oll {
 			background-size: cover;
-			padding: 72px 270px 71px 270px;
+			padding: 112px 270px 111px 270px;
 			transition: 0.5s;
 			@media (max-width: 1320px) {
 				padding: 72px 270px 71px 70px;
@@ -1264,6 +1301,158 @@
 			@media (max-width: 450px) {
 				width: 50px;
 				height: 30px;
+			}
+		}
+	}
+}
+footer {
+	max-width: 1920px;
+	margin: 0 auto;
+	background-color: $color_footer;
+	padding: 46px 359px 50px 270px;
+	display: flex;
+	justify-content: space-between;
+	transition: 0.5s;
+	@media (max-width: 1850px) {
+		padding: 46px 251px 50px 189px;
+	}
+	@media (max-width: 1660px) {
+		padding: 46px 176px 50px 132px;
+	}
+	@media (max-width: 1530px) {
+		padding: 46px 123px 50px 92px;
+	}
+	@media (max-width: 1440px) {
+		padding: 46px 86px 50px 64px;
+	}
+	@media (max-width: 1370px) {
+		padding: 46px 60px 50px 45px;
+	}
+	@media (max-width: 815px) {
+		justify-content: flex-start;
+		flex-direction: column;
+	}
+	@media (max-width: 490px) {
+		padding: 50px 10px;
+	}
+	.logo {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		transition: 0.5s;
+		@media (max-width: 1000px) {
+			margin-right: 80px;
+		}
+		@media (max-width: 815px) {
+			margin-right: 0px;
+			margin-bottom: 40px;
+		}
+		img {
+			margin-bottom: 10px;
+		}
+		span {
+			@include fontst($color_white, 'TT Norms', 12px, 700, 150%, normal, none);
+		}
+	}
+	.menu {
+		.menu-list {
+			display: inline-flex;
+			width: 893px;
+			justify-content: space-between;
+			transition: 0.5s;
+			//ОСНОВНОЙ ПЕРЕХОД
+			@media (max-width: 1320px) {
+				width: auto;
+			}
+			@media (max-width: 815px) {
+				flex-direction: column;
+			}
+			li {
+				position: relative;
+				.menu-link {
+					@include fontst(
+						$color_footer_a,
+						'TT Norms',
+						14px,
+						500,
+						150%,
+						normal,
+						none
+					);
+					margin-bottom: 10px;
+				}
+				.link-last {
+					margin-bottom: 0px;
+				}
+				.sub-menu-list {
+					@media (max-width: 815px) {
+						display: flex;
+						flex-wrap: wrap;
+					}
+					.sub-menu-link {
+						@include fontst(
+							$color_white,
+							'TT Norms',
+							16px,
+							400,
+							150%,
+							normal,
+							none
+						);
+						display: inline-block;
+						margin-right: 10px;
+						margin-bottom: 10px;
+						transition: 0.5s;
+						&:hover {
+							color: $color_blue;
+						}
+					}
+					span {
+						@include fontst(
+							$color_white,
+							'TT Norms',
+							16px,
+							400,
+							150%,
+							normal,
+							none
+						);
+					}
+					p {
+						@include fontst(
+							$color_footer_a,
+							'TT Norms',
+							14px,
+							500,
+							150%,
+							normal,
+							none
+						);
+						margin-top: 10px;
+						margin-bottom: 10px;
+					}
+				}
+				.list-last {
+					@media (max-width: 815px) {
+						display: flex;
+						flex-direction: column;
+					}
+				}
+			}
+			.li-first {
+				display: flex;
+				flex-direction: column;
+				transition: 0.5s;
+				@media (max-width: 1320px) {
+					margin-left: 70px;
+				}
+				@media (max-width: 815px) {
+					margin-left: 0px;
+					margin-bottom: 40px;
+				}
+			}
+			.li-last {
+				margin-bottom: 0px;
 			}
 		}
 	}
