@@ -278,12 +278,12 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 0px 15px;
   transition: all 0.5s;
 }
-@media (max-width: 992px) {
+@media (max-width: 1005px) {
   .container header .navbar .nav-links .menu li {
     padding: 0px 7px;
   }
 }
-@media (max-width: 880px) {
+@media (max-width: 895px) {
   .container header .navbar .nav-links .menu li {
     padding: 0px 4px;
   }
@@ -291,7 +291,12 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 815px) {
   .container header .navbar .nav-links .menu li {
     padding: 20px;
+  }
+  .container header .navbar .nav-links .menu li:nth-child(1) {
     border-top: 1px solid rgba(44, 47, 55, 0.25);
+    border-bottom: 1px solid rgba(44, 47, 55, 0.25);
+  }
+  .container header .navbar .nav-links .menu li:nth-child(2), .container header .navbar .nav-links .menu li:nth-child(3), .container header .navbar .nav-links .menu li:nth-child(4), .container header .navbar .nav-links .menu li:nth-child(5), .container header .navbar .nav-links .menu li:nth-child(6), .container header .navbar .nav-links .menu li:nth-child(7) {
     border-bottom: 1px solid rgba(44, 47, 55, 0.25);
   }
 }
@@ -308,7 +313,7 @@ body::-webkit-scrollbar-thumb:hover {
 .container header .navbar .nav-links .menu li a:hover {
   color: #2991d6;
 }
-@media (max-width: 838px) {
+@media (max-width: 850px) {
   .container header .navbar .nav-links .menu li a {
     font-size: 10px;
   }

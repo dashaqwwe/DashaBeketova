@@ -12,6 +12,7 @@ $color_gray_gray: #fafafa;
 $color_white: #ffffff;
 $color_footer: #0c0e16;
 $color_footer_a: #606269;
+$color_link: #bababa;
 //миксин
 @mixin fontst($c, $ff, $fs, $fw, $lh, $ls, $tt) {
 	color: $c;
@@ -34,4 +35,12 @@ $color_footer_a: #606269;
 	justify-content: center;
 	align-items: center;
 	transition: 0.5s;
+}
+@keyframes block-one {
+	0% {
+		right: -2000px;
+	}
+	100% {
+		left: 0;
+	}
 }
