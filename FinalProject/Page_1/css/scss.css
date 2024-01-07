@@ -148,6 +148,14 @@ a {
   transition: 0.5s;
 }
 
+@keyframes block-one {
+  0% {
+    right: -2000px;
+  }
+  100% {
+    left: 0;
+  }
+}
 .four .controls #btnNext, .four .controls #btnPrev {
   background-color: #118bdd;
   border: none;
@@ -160,6 +168,14 @@ a {
   transition: 0.5s;
 }
 
+@keyframes block-one {
+  0% {
+    right: -2000px;
+  }
+  100% {
+    left: 0;
+  }
+}
 body::-webkit-scrollbar {
   width: 10px;
   height: 8px;

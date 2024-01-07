@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/scss.css" />
 		<title>Услуги</title>
 	</head>
-	<body>
+	<body style="display: none">
 		<div class="container">
 			<header>
 				<nav class="navbar">
@@ -21,11 +21,11 @@
 						></label>
 						<div class="menu">
 							<li><a href="../Page_1/page_1.html">О компании</a></li>
-							<li><a href="#">Услуги</a></li>
+							<li><a href="page_2.html">Услуги</a></li>
 							<li><a href="#">Раскрытие информации</a></li>
 							<li><a href="#">Абонентам</a></li>
 							<li><a href="#">Наши объекты</a></li>
-							<li><a href="#">Новости</a></li>
+							<li><a href="../Page_3/page_3.html">Новости</a></li>
 							<li><a href="#">Контакты</a></li>
 						</div>
 					</ul>
@@ -137,5 +137,28 @@
 				</ul>
 			</nav>
 		</footer>
+		<script
+			src="https://kit.fontawesome.com/808d376f7d.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				var body = $('body')
+				body.fadeIn(600)
+				$(document).on(
+					'click',
+					"a:not([href^='#']):not([href^='tel']):not([href^='mailto'])",
+					function (e) {
+						e.preventDefault()
+						$('body').fadeOut(600)
+						var self = this
+						setTimeout(function () {
+							window.location.href = $(self).attr('href')
+						}, 600)
+					}
+				)
+			})
+		</script>
 	</body>
 </html>
