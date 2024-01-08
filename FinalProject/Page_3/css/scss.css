@@ -392,6 +392,29 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 0;
   transform: translateY(50px);
 }
+.supp-container section .element-animation .dropdown-text {
+  margin-bottom: 10px;
+}
+.supp-container section .element-animation .dropdown-text .dropdown-h3 {
+  color: #000000;
+  font-family: "TT Norms";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 150%;
+  text-transform: none;
+  display: none;
+  transition: 0.5s;
+  padding: 10px 20px;
+}
+.supp-container section .element-animation .dropdown-text .dropdown-h3:hover {
+  color: #2991d6;
+}
+@media (max-width: 590px) {
+  .supp-container section .element-animation .dropdown-text .dropdown-h3 {
+    display: block;
+  }
+}
 .supp-container section .element-animation .block {
   width: 1380px;
   padding: 276px 0px 0px 0px;
@@ -426,6 +449,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 590px) {
   .supp-container section .element-animation .block {
     padding-left: 380px;
+    margin-bottom: 0px;
   }
 }
 @media (max-width: 590px) {
@@ -585,9 +609,11 @@ body::-webkit-scrollbar-thumb:hover {
   color: #ffffff;
 }
 @media (max-width: 380px) {
-  .supp-container section .buttons button {
-    width: 30px;
-    height: 30px;
+  .supp-container section .buttons button:nth-child(5) {
+    display: none;
+  }
+  .supp-container section .buttons button:nth-child(6) {
+    display: none;
   }
 }
 .supp-container section .buttons .arrow-prev {

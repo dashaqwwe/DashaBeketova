@@ -216,6 +216,29 @@
 		.element-animation {
 			opacity: 0;
 			transform: translateY(50px);
+			.dropdown-text {
+				margin-bottom: 10px;
+				.dropdown-h3 {
+					@include fontst(
+						$color_black_black,
+						'TT Norms',
+						18px,
+						700,
+						normal,
+						150%,
+						none
+					);
+					display: none;
+					transition: 0.5s;
+					padding: 10px 20px;
+					&:hover {
+						color: $color_blue;
+					}
+					@media (max-width: 590px) {
+						display: block;
+					}
+				}
+			}
 			.block {
 				width: 1380px;
 				padding: 276px 0px 0px 0px;
@@ -238,6 +261,7 @@
 				}
 				@media (max-width: 590px) {
 					padding-left: 380px;
+					margin-bottom: 0px;
 				}
 				@media (max-width: 590px) {
 					padding-left: 280px;
@@ -390,8 +414,12 @@
 					color: $color_white;
 				}
 				@media (max-width: 380px) {
-					width: 30px;
-					height: 30px;
+					&:nth-child(5) {
+						display: none;
+					}
+					&:nth-child(6) {
+						display: none;
+					}
 				}
 			}
 			.arrow-prev {
