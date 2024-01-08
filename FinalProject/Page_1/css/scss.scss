@@ -151,6 +151,8 @@
 		margin: 0 auto;
 		padding: 213px 10px 40px 10px;
 		transition: 0.5s;
+		display: flex;
+		position: relative;
 		@media (max-width: 1340px) {
 			& {
 				padding: 100px 10px 60px 10px;
@@ -263,6 +265,91 @@
 				}
 			}
 		}
+		.scroll {
+			position: absolute;
+			right: 0;
+			.hover {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-content: center;
+				transition: 0.5s;
+				a:hover ~ p {
+					display: block;
+				}
+				p {
+					@include fontst(
+						$color_white,
+						'TT Norms',
+						12px,
+						500,
+						150%,
+						normal,
+						none
+					);
+					position: absolute;
+					left: -90px;
+					bottom: 11px;
+					display: none;
+				}
+				.nav3 {
+					left: -71px;
+				}
+				.nav4 {
+					left: -95px;
+				}
+				.nav5 {
+					left: -62px;
+				}
+			}
+			button {
+				background: transparent;
+				border: none;
+				padding: 0px;
+				margin: 10px;
+				@include fontst(
+					$color_scroll,
+					'TT Norms',
+					12px,
+					700,
+					150%,
+					normal,
+					none
+				);
+				transition: 0.5s;
+				&:hover {
+					color: $button;
+					transform: scale(1.2);
+					cursor: pointer;
+				}
+				&:focus {
+					color: $button;
+					transform: scale(1.2);
+				}
+			}
+			.hover {
+				display: flex;
+				position: relative;
+			}
+			a {
+				margin: 10px;
+				display: inline-block;
+				@include fontst(
+					$color_scroll,
+					'TT Norms',
+					12px,
+					700,
+					150%,
+					normal,
+					none
+				);
+				transition: 0.5s;
+				&:hover {
+					color: $button;
+					transform: scale(1.2);
+				}
+			}
+		}
 	}
 }
 .two {
@@ -284,6 +371,8 @@
 			none
 		);
 		transition: 0.5s;
+		display: flex;
+		align-items: center;
 		@media (max-width: 815px) {
 			& {
 				font-size: 36px;
@@ -299,6 +388,10 @@
 				text-align: center;
 				font-size: 24px;
 			}
+		}
+		span {
+			@include fontst($button, 'TT Norms', 20px, 700, 150%, normal, none);
+			margin-right: 29px;
 		}
 	}
 	.blocks {
@@ -557,6 +650,8 @@
 				none
 			);
 			transition: 0.5s;
+			display: flex;
+			align-items: center;
 			@media (max-width: 815px) {
 				& {
 					font-size: 36px;
@@ -572,6 +667,10 @@
 					text-align: center;
 					font-size: 24px;
 				}
+			}
+			span {
+				@include fontst($button, 'TT Norms', 20px, 700, 150%, normal, none);
+				margin-right: 29px;
 			}
 		}
 		.map {
@@ -863,6 +962,8 @@
 				none
 			);
 			transition: 0.5s;
+			display: flex;
+			align-items: center;
 			@media (max-width: 815px) {
 				& {
 					font-size: 36px;
@@ -878,6 +979,11 @@
 					text-align: center;
 					font-size: 24px;
 				}
+			}
+			span {
+				@include fontst($button, 'TT Norms', 20px, 700, 150%, normal, none);
+				margin-right: 29px;
+				display: inline-block;
 			}
 		}
 		a {

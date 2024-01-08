@@ -340,6 +340,8 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0 auto;
   padding: 213px 10px 40px 10px;
   transition: 0.5s;
+  display: flex;
+  position: relative;
 }
 @media (max-width: 1340px) {
   .container .supp-container {
@@ -466,6 +468,85 @@ body::-webkit-scrollbar-thumb:hover {
   letter-spacing: normal;
   text-transform: none;
 }
+.container .supp-container .scroll {
+  position: absolute;
+  right: 0;
+}
+.container .supp-container .scroll .hover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  transition: 0.5s;
+}
+.container .supp-container .scroll .hover a:hover ~ p {
+  display: block;
+}
+.container .supp-container .scroll .hover p {
+  color: #ffffff;
+  font-family: "TT Norms";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: normal;
+  text-transform: none;
+  position: absolute;
+  left: -90px;
+  bottom: 11px;
+  display: none;
+}
+.container .supp-container .scroll .hover .nav3 {
+  left: -71px;
+}
+.container .supp-container .scroll .hover .nav4 {
+  left: -95px;
+}
+.container .supp-container .scroll .hover .nav5 {
+  left: -62px;
+}
+.container .supp-container .scroll button {
+  background: transparent;
+  border: none;
+  padding: 0px;
+  margin: 10px;
+  color: #7b7b7b;
+  font-family: "TT Norms";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: normal;
+  text-transform: none;
+  transition: 0.5s;
+}
+.container .supp-container .scroll button:hover {
+  color: #118bdd;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.container .supp-container .scroll button:focus {
+  color: #118bdd;
+  transform: scale(1.2);
+}
+.container .supp-container .scroll .hover {
+  display: flex;
+  position: relative;
+}
+.container .supp-container .scroll a {
+  margin: 10px;
+  display: inline-block;
+  color: #7b7b7b;
+  font-family: "TT Norms";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: normal;
+  text-transform: none;
+  transition: 0.5s;
+}
+.container .supp-container .scroll a:hover {
+  color: #118bdd;
+  transform: scale(1.2);
+}
 
 .two {
   background: transparent;
@@ -485,6 +566,8 @@ body::-webkit-scrollbar-thumb:hover {
   letter-spacing: normal;
   text-transform: none;
   transition: 0.5s;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 815px) {
   .two h2 {
@@ -501,6 +584,16 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     font-size: 24px;
   }
+}
+.two h2 span {
+  color: #118bdd;
+  font-family: "TT Norms";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: normal;
+  text-transform: none;
+  margin-right: 29px;
 }
 .two .blocks {
   display: flex;
@@ -764,6 +857,8 @@ body::-webkit-scrollbar-thumb:hover {
   letter-spacing: normal;
   text-transform: none;
   transition: 0.5s;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 815px) {
   .container-map .obj h2 {
@@ -780,6 +875,16 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     font-size: 24px;
   }
+}
+.container-map .obj h2 span {
+  color: #118bdd;
+  font-family: "TT Norms";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: normal;
+  text-transform: none;
+  margin-right: 29px;
 }
 .container-map .obj .map {
   display: flex;
@@ -1069,6 +1174,8 @@ body::-webkit-scrollbar-thumb:hover {
   letter-spacing: normal;
   text-transform: none;
   transition: 0.5s;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 815px) {
   .three .news h2 {
@@ -1085,6 +1192,17 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     font-size: 24px;
   }
+}
+.three .news h2 span {
+  color: #118bdd;
+  font-family: "TT Norms";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: normal;
+  text-transform: none;
+  margin-right: 29px;
+  display: inline-block;
 }
 .three .news a {
   display: flex;
