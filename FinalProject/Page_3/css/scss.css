@@ -481,7 +481,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .supp-container section .element-animation .block .obertka .text-news:hover {
   cursor: pointer;
-  transform: scale(1.1);
 }
 .supp-container section .element-animation .block .obertka .text-news:hover h3 {
   color: #118bdd;
