@@ -43,11 +43,3 @@ $color_scroll: #7b7b7b;
 	align-items: center;
 	transition: 0.5s;
 }
-@keyframes block-one {
-	0% {
-		right: -2000px;
-	}
-	100% {
-		left: 0;
-	}
-}
