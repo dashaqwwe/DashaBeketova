@@ -146,345 +146,81 @@
 		}
 	}
 }
-.supp-container {
-	max-width: 1920px;
+section {
+	background: url(../img/bg.png) no-repeat;
+	background-size: cover;
+	padding: 100px 0px 100px 270px;
 	margin: 0 auto;
-	background-color: $color_gray_gray;
+	max-width: 1920px;
 	transition: 0.5s;
-	.about {
-		max-width: 1380px;
-		margin: 0 auto;
-		padding: 20px 10px 67px 10px;
-		.prev {
-			a {
-				@include fontst(
-					$color_link,
-					'TT Norms',
-					12px,
-					500,
-					normal,
-					normal,
-					none
-				);
-				@media (max-width: 815px) {
-					display: none;
-				}
+	@media (max-width: 1100px) {
+		padding: 100px 0px 100px 170px;
+	}
+	@media (max-width: 950px) {
+		padding: 120px 0px 100px 60px;
+	}
+	@media (max-width: 710px) {
+		padding: 120px 0px 100px 0px;
+	}
+	@media (max-width: 320px) {
+		background: url(../img/bglite.png) no-repeat;
+	}
+	.error {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 580px;
+		@media (max-width: 710px) {
+			margin: 0 auto;
+		}
+		h1 {
+			@include fontst($button, 'TT Norms', 300px, 700, normal, normal, none);
+			transition: 0.5s;
+			@media (max-width: 710px) {
+				font-size: 100px;
 			}
+		}
+		h2 {
+			@include fontst(
+				$color_black_black,
+				'TT Norms',
+				22px,
+				400,
+				normal,
+				normal,
+				none
+			);
+			transition: 0.5s;
+			@media (max-width: 710px) {
+				font-size: 18px;
+			}
+		}
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background-color: #2991d6;
+			width: 200px;
+			margin-top: 50px;
+			transition: 0.5s;
 			span {
-				@include fontst($button, 'TT Norms', 12px, 500, normal, normal, none);
-				@media (max-width: 815px) {
-					display: none;
-				}
-			}
-			h2 {
+				margin-right: 20px;
 				@include fontst(
-					$color_black_black,
+					$color_white,
 					'TT Norms',
-					46px,
+					14px,
 					700,
 					150%,
 					normal,
 					none
 				);
-				transition: 0.5s;
-				@media (max-width: 815px) {
-					& {
-						font-size: 36px;
-					}
-				}
-				@media (max-width: 550px) {
-					& {
-						font-size: 26px;
-					}
-				}
-				@media (max-width: 450px) {
-					& {
-						font-size: 24px;
-					}
-				}
 			}
-		}
-		.contacts {
-			display: flex;
-			justify-content: space-between;
-			margin-top: 20px;
-			@media (max-width: 975px) {
-				flex-wrap: wrap;
-				justify-content: center;
-			}
-			@media (max-width: 462px) {
-				flex-wrap: wrap;
-				justify-content: flex-start;
-			}
-			.contact {
-				display: flex;
-				height: 72px;
-				align-items: center;
-				transition: 0.5s;
-				@media (max-width: 975px) {
-					margin-right: 10px;
-				}
-				@media (max-width: 450px) {
-					margin-right: 0px;
-				}
-				img {
-					margin-right: 20px;
-				}
-				span {
-					@include fontst(
-						$color_black_black,
-						'TT Norms',
-						26px,
-						500,
-						150%,
-						normal,
-						none
-					);
-					transition: 0.5s;
-					@media (max-width: 1200px) {
-						font-size: 20px;
-					}
-				}
-				.address {
-					p {
-						@include fontst(
-							$color_black_black,
-							'TT Norms',
-							16px,
-							500,
-							150%,
-							normal,
-							none
-						);
-					}
-					span {
-						@include fontst(
-							$color_black_black,
-							'TT Norms',
-							16px,
-							400,
-							150%,
-							normal,
-							none
-						);
-					}
-				}
-				.tel-email {
-					p {
-						@include fontst(
-							$color_text,
-							'TT Norms',
-							14px,
-							500,
-							150%,
-							normal,
-							none
-						);
-					}
-					span {
-						@include fontst(
-							$color_black_black,
-							'TT Norms',
-							24px,
-							500,
-							150%,
-							normal,
-							none
-						);
-						transition: 0.5s;
-						@media (max-width: 1200px) {
-							font-size: 20px;
-						}
-					}
-				}
-			}
-		}
-	}
-	.forma {
-		max-width: 1920px;
-		margin: 0 auto;
-		background-color: $color_bgr;
-		.form {
-			max-width: 1380px;
-			margin: 0 auto;
-			padding: 50px 10px;
-			display: flex;
-			justify-content: space-between;
-			transition: 0.5s;
-			@media (max-width: 1145px) {
-				justify-content: space-evenly;
-			}
-			@media (max-width: 930px) {
-				flex-direction: column;
-			}
-			p {
-				@include fontst(
-					$color_white,
-					'TT Norms',
-					28px,
-					700,
-					180%,
-					normal,
-					none
-				);
-				transition: 0.5s;
-				@media (max-width: 930px) {
-					text-align: center;
-					margin-bottom: 20px;
-				}
-				@media (max-width: 510px) {
-					font-size: 20px;
-				}
-			}
-			form {
-				.obertka {
-					display: flex;
-					flex-direction: column;
-					.obertka-2 {
-						display: flex;
-						transition: 0.5s;
-						@media (max-width: 930px) {
-							justify-content: center;
-						}
-						@media (max-width: 510px) {
-							flex-direction: column;
-						}
-						.obertka-3 {
-							float: left;
-							fieldset {
-								border: 1px solid $color_input;
-								legend {
-									margin-left: 10px;
-									padding-left: 10px;
-									padding-right: 10px;
-									@include fontst(
-										$color_legend,
-										'TT Norms',
-										12px,
-										400,
-										150%,
-										normal,
-										none
-									);
-								}
-								input {
-									height: 51px;
-									width: 328px;
-									padding: 0px 20px 8px 20px;
-									background: transparent;
-									outline: none;
-									border: none;
-									transition: 0.5s;
-									@include fontst(
-										$color_white,
-										'TT Norms',
-										16px,
-										400,
-										150%,
-										normal,
-										none
-									);
-									&::placeholder {
-										@include fontst(
-											$color_placeholder,
-											'TT Norms',
-											16px,
-											400,
-											150%,
-											normal,
-											none
-										);
-									}
-									@media (max-width: 1145px) {
-										width: 228px;
-									}
-									@media (max-width: 510px) {
-										width: 100%;
-									}
-								}
-							}
-							.email {
-								margin-top: 10px;
-								.email-inp {
-									height: 60px;
-								}
-							}
-						}
-						.question {
-							width: 573px;
-							height: 203px;
-							align-self: flex-end;
-							background: transparent;
-							outline: none;
-							border: 1px solid $color_input;
-							margin-left: 10px;
-							resize: none;
-							transition: 0.5s;
-							@include fontst(
-								$color_white,
-								'TT Norms',
-								16px,
-								400,
-								150%,
-								normal,
-								none
-							);
-							&::-webkit-scrollbar {
-								width: 10px;
-								height: 8px;
-							}
-							&::-webkit-scrollbar-track {
-								background: transparent;
-							}
-							&::-webkit-scrollbar-thumb {
-								background-color: $color_input;
-								border-radius: 9em;
-							}
-							@media (max-width: 1385px) {
-								width: 473px;
-								height: 203px;
-							}
-							@media (max-width: 1250px) {
-								width: 373px;
-								height: 203px;
-							}
-							@media (max-width: 1145px) {
-								width: 228px;
-								height: 203px;
-							}
-							@media (max-width: 510px) {
-								width: 100%;
-								height: 203px;
-							}
-						}
-					}
-					.button {
-						width: 250px;
-						height: 60px;
-						background-color: $button;
-						margin-top: 10px;
-						border: none;
-						align-self: self-end;
-						@include fontst(
-							$color_white,
-							'TT Norms',
-							14px,
-							700,
-							150%,
-							normal,
-							none
-						);
-						transition: 0.5s;
-						&:hover {
-							cursor: pointer;
-						}
-						@media (max-width: 930px) {
-							align-self: center;
-						}
-						@media (max-width: 310px) {
-							width: 100%;
-						}
-					}
+			div {
+				padding: 16px;
+				background-color: $lite_blue;
+				.fa-chevron-left {
+					color: $color_white;
 				}
 			}
 		}

@@ -311,353 +311,87 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-.supp-container {
+section {
+  background: url(../img/bg.png) no-repeat;
+  background-size: cover;
+  padding: 100px 0px 100px 270px;
+  margin: 0 auto;
   max-width: 1920px;
-  margin: 0 auto;
-  background-color: #fafafa;
   transition: 0.5s;
 }
-.supp-container .about {
-  max-width: 1380px;
-  margin: 0 auto;
-  padding: 20px 10px 67px 10px;
-}
-.supp-container .about .prev a {
-  color: #bababa;
-  font-family: "TT Norms";
-  font-size: 12px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: normal;
-  text-transform: none;
-}
-@media (max-width: 815px) {
-  .supp-container .about .prev a {
-    display: none;
+@media (max-width: 1100px) {
+  section {
+    padding: 100px 0px 100px 170px;
   }
 }
-.supp-container .about .prev span {
-  color: #118bdd;
-  font-family: "TT Norms";
-  font-size: 12px;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: normal;
-  text-transform: none;
-}
-@media (max-width: 815px) {
-  .supp-container .about .prev span {
-    display: none;
+@media (max-width: 950px) {
+  section {
+    padding: 120px 0px 100px 60px;
   }
 }
-.supp-container .about .prev h2 {
-  color: #000000;
-  font-family: "TT Norms";
-  font-size: 46px;
-  font-weight: 700;
-  line-height: 150%;
-  letter-spacing: normal;
-  text-transform: none;
-  transition: 0.5s;
-}
-@media (max-width: 815px) {
-  .supp-container .about .prev h2 {
-    font-size: 36px;
+@media (max-width: 710px) {
+  section {
+    padding: 120px 0px 100px 0px;
   }
 }
-@media (max-width: 550px) {
-  .supp-container .about .prev h2 {
-    font-size: 26px;
+@media (max-width: 320px) {
+  section {
+    background: url(../img/bglite.png) no-repeat;
   }
 }
-@media (max-width: 450px) {
-  .supp-container .about .prev h2 {
-    font-size: 24px;
-  }
-}
-.supp-container .about .contacts {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-@media (max-width: 975px) {
-  .supp-container .about .contacts {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media (max-width: 462px) {
-  .supp-container .about .contacts {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-}
-.supp-container .about .contacts .contact {
-  display: flex;
-  height: 72px;
-  align-items: center;
-  transition: 0.5s;
-}
-@media (max-width: 975px) {
-  .supp-container .about .contacts .contact {
-    margin-right: 10px;
-  }
-}
-@media (max-width: 450px) {
-  .supp-container .about .contacts .contact {
-    margin-right: 0px;
-  }
-}
-.supp-container .about .contacts .contact img {
-  margin-right: 20px;
-}
-.supp-container .about .contacts .contact span {
-  color: #000000;
-  font-family: "TT Norms";
-  font-size: 26px;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: normal;
-  text-transform: none;
-  transition: 0.5s;
-}
-@media (max-width: 1200px) {
-  .supp-container .about .contacts .contact span {
-    font-size: 20px;
-  }
-}
-.supp-container .about .contacts .contact .address p {
-  color: #000000;
-  font-family: "TT Norms";
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: normal;
-  text-transform: none;
-}
-.supp-container .about .contacts .contact .address span {
-  color: #000000;
-  font-family: "TT Norms";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: normal;
-  text-transform: none;
-}
-.supp-container .about .contacts .contact .tel-email p {
-  color: #a4a4a4;
-  font-family: "TT Norms";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: normal;
-  text-transform: none;
-}
-.supp-container .about .contacts .contact .tel-email span {
-  color: #000000;
-  font-family: "TT Norms";
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 150%;
-  letter-spacing: normal;
-  text-transform: none;
-  transition: 0.5s;
-}
-@media (max-width: 1200px) {
-  .supp-container .about .contacts .contact .tel-email span {
-    font-size: 20px;
-  }
-}
-.supp-container .forma {
-  max-width: 1920px;
-  margin: 0 auto;
-  background-color: #161822;
-}
-.supp-container .forma .form {
-  max-width: 1380px;
-  margin: 0 auto;
-  padding: 50px 10px;
-  display: flex;
-  justify-content: space-between;
-  transition: 0.5s;
-}
-@media (max-width: 1145px) {
-  .supp-container .forma .form {
-    justify-content: space-evenly;
-  }
-}
-@media (max-width: 930px) {
-  .supp-container .forma .form {
-    flex-direction: column;
-  }
-}
-.supp-container .forma .form p {
-  color: #ffffff;
-  font-family: "TT Norms";
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 180%;
-  letter-spacing: normal;
-  text-transform: none;
-  transition: 0.5s;
-}
-@media (max-width: 930px) {
-  .supp-container .forma .form p {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 510px) {
-  .supp-container .forma .form p {
-    font-size: 20px;
-  }
-}
-.supp-container .forma .form form .obertka {
+section .error {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 580px;
 }
-.supp-container .forma .form form .obertka .obertka-2 {
+@media (max-width: 710px) {
+  section .error {
+    margin: 0 auto;
+  }
+}
+section .error h1 {
+  color: #118bdd;
+  font-family: "TT Norms";
+  font-size: 300px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  transition: 0.5s;
+}
+@media (max-width: 710px) {
+  section .error h1 {
+    font-size: 100px;
+  }
+}
+section .error h2 {
+  color: #000000;
+  font-family: "TT Norms";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  transition: 0.5s;
+}
+@media (max-width: 710px) {
+  section .error h2 {
+    font-size: 18px;
+  }
+}
+section .error a {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2991d6;
+  width: 200px;
+  margin-top: 50px;
   transition: 0.5s;
 }
-@media (max-width: 930px) {
-  .supp-container .forma .form form .obertka .obertka-2 {
-    justify-content: center;
-  }
-}
-@media (max-width: 510px) {
-  .supp-container .forma .form form .obertka .obertka-2 {
-    flex-direction: column;
-  }
-}
-.supp-container .forma .form form .obertka .obertka-2 .obertka-3 {
-  float: left;
-}
-.supp-container .forma .form form .obertka .obertka-2 .obertka-3 fieldset {
-  border: 1px solid #393e52;
-}
-.supp-container .forma .form form .obertka .obertka-2 .obertka-3 fieldset legend {
-  margin-left: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #535970;
-  font-family: "TT Norms";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: normal;
-  text-transform: none;
-}
-.supp-container .forma .form form .obertka .obertka-2 .obertka-3 fieldset input {
-  height: 51px;
-  width: 328px;
-  padding: 0px 20px 8px 20px;
-  background: transparent;
-  outline: none;
-  border: none;
-  transition: 0.5s;
-  color: #ffffff;
-  font-family: "TT Norms";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: normal;
-  text-transform: none;
-}
-.supp-container .forma .form form .obertka .obertka-2 .obertka-3 fieldset input::-moz-placeholder {
-  color: #6a6e81;
-  font-family: "TT Norms";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: normal;
-  text-transform: none;
-}
-.supp-container .forma .form form .obertka .obertka-2 .obertka-3 fieldset input::placeholder {
-  color: #6a6e81;
-  font-family: "TT Norms";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: normal;
-  text-transform: none;
-}
-@media (max-width: 1145px) {
-  .supp-container .forma .form form .obertka .obertka-2 .obertka-3 fieldset input {
-    width: 228px;
-  }
-}
-@media (max-width: 510px) {
-  .supp-container .forma .form form .obertka .obertka-2 .obertka-3 fieldset input {
-    width: 100%;
-  }
-}
-.supp-container .forma .form form .obertka .obertka-2 .obertka-3 .email {
-  margin-top: 10px;
-}
-.supp-container .forma .form form .obertka .obertka-2 .obertka-3 .email .email-inp {
-  height: 60px;
-}
-.supp-container .forma .form form .obertka .obertka-2 .question {
-  width: 573px;
-  height: 203px;
-  align-self: flex-end;
-  background: transparent;
-  outline: none;
-  border: 1px solid #393e52;
-  margin-left: 10px;
-  resize: none;
-  transition: 0.5s;
-  color: #ffffff;
-  font-family: "TT Norms";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: normal;
-  text-transform: none;
-}
-.supp-container .forma .form form .obertka .obertka-2 .question::-webkit-scrollbar {
-  width: 10px;
-  height: 8px;
-}
-.supp-container .forma .form form .obertka .obertka-2 .question::-webkit-scrollbar-track {
-  background: transparent;
-}
-.supp-container .forma .form form .obertka .obertka-2 .question::-webkit-scrollbar-thumb {
-  background-color: #393e52;
-  border-radius: 9em;
-}
-@media (max-width: 1385px) {
-  .supp-container .forma .form form .obertka .obertka-2 .question {
-    width: 473px;
-    height: 203px;
-  }
-}
-@media (max-width: 1250px) {
-  .supp-container .forma .form form .obertka .obertka-2 .question {
-    width: 373px;
-    height: 203px;
-  }
-}
-@media (max-width: 1145px) {
-  .supp-container .forma .form form .obertka .obertka-2 .question {
-    width: 228px;
-    height: 203px;
-  }
-}
-@media (max-width: 510px) {
-  .supp-container .forma .form form .obertka .obertka-2 .question {
-    width: 100%;
-    height: 203px;
-  }
-}
-.supp-container .forma .form form .obertka .button {
-  width: 250px;
-  height: 60px;
-  background-color: #118bdd;
-  margin-top: 10px;
-  border: none;
-  align-self: self-end;
+section .error a span {
+  margin-right: 20px;
   color: #ffffff;
   font-family: "TT Norms";
   font-size: 14px;
@@ -665,20 +399,13 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 150%;
   letter-spacing: normal;
   text-transform: none;
-  transition: 0.5s;
 }
-.supp-container .forma .form form .obertka .button:hover {
-  cursor: pointer;
+section .error a div {
+  padding: 16px;
+  background-color: #32a1df;
 }
-@media (max-width: 930px) {
-  .supp-container .forma .form form .obertka .button {
-    align-self: center;
-  }
-}
-@media (max-width: 310px) {
-  .supp-container .forma .form form .obertka .button {
-    width: 100%;
-  }
+section .error a div .fa-chevron-left {
+  color: #ffffff;
 }
 
 footer {
