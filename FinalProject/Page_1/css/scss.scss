@@ -268,6 +268,9 @@
 		.scroll {
 			position: absolute;
 			right: 0;
+			@media (max-width: 815px) {
+				display: none;
+			}
 			.hover {
 				position: relative;
 				display: flex;
@@ -385,13 +388,18 @@
 		}
 		@media (max-width: 450px) {
 			& {
-				text-align: center;
 				font-size: 24px;
+				flex-direction: column;
+				align-items: flex-start;
 			}
 		}
 		span {
 			@include fontst($button, 'TT Norms', 20px, 700, 150%, normal, none);
 			margin-right: 29px;
+			transition: 0.5s;
+			@media (max-width: 450px) {
+				font-size: 14px;
+			}
 		}
 	}
 	.blocks {
@@ -664,13 +672,18 @@
 			}
 			@media (max-width: 450px) {
 				& {
-					text-align: center;
 					font-size: 24px;
+					flex-direction: column;
+					align-items: flex-start;
 				}
 			}
 			span {
 				@include fontst($button, 'TT Norms', 20px, 700, 150%, normal, none);
 				margin-right: 29px;
+				transition: 0.5s;
+				@media (max-width: 450px) {
+					font-size: 14px;
+				}
 			}
 		}
 		.map {
@@ -747,22 +760,32 @@
 					transition: 0.5s;
 					@media (max-width: 1040px) {
 						& {
+							max-width: 950px;
+						}
+					}
+					@media (max-width: 970px) {
+						& {
 							max-width: 800px;
 						}
 					}
 					@media (max-width: 810px) {
 						& {
+							max-width: 650px;
+						}
+					}
+					@media (max-width: 660px) {
+						& {
 							max-width: 500px;
 						}
 					}
-					@media (max-width: 510px) {
+					@media (max-width: 660px) {
 						& {
-							max-width: 300px;
+							max-width: 350px;
 						}
 					}
 					@media (max-width: 360px) {
 						& {
-							max-width: 280px;
+							max-width: 285px;
 						}
 					}
 					.list {
@@ -976,14 +999,19 @@
 			}
 			@media (max-width: 450px) {
 				& {
-					text-align: center;
 					font-size: 24px;
+					flex-direction: column;
+					align-items: flex-start;
 				}
 			}
 			span {
 				@include fontst($button, 'TT Norms', 20px, 700, 150%, normal, none);
 				margin-right: 29px;
 				display: inline-block;
+				transition: 0.5s;
+				@media (max-width: 450px) {
+					font-size: 14px;
+				}
 			}
 		}
 		a {
@@ -1245,9 +1273,10 @@
 					}
 					@media (max-width: 450px) {
 						& {
-							text-align: center;
 							font-size: 24px;
 							margin-bottom: 10px;
+							flex-direction: column;
+							align-items: flex-start;
 						}
 					}
 				}

@@ -81,7 +81,7 @@
 						</div>
 					</div>
 				</section>
-				<div class="scroll">
+				<div id="scroll" class="scroll">
 					<button>01</button><br />
 					<div class="hover">
 						<a href="#nav2">02</a><br />
@@ -692,6 +692,14 @@
 						}, 600)
 					}
 				)
+			})
+			$(document).ready(function () {
+				$('#scroll').on('click', 'a', function (e) {
+					e.preventDefault()
+					var id = e.currentTarget.hash
+					var top = $(id).offset().top
+					$('html, body').animate({ scrollTop: top - 30 }, 1000)
+				})
 			})
 		</script>
 	</body>
