@@ -146,215 +146,344 @@
 		}
 	}
 }
-section {
+.supp-container {
 	max-width: 1920px;
 	margin: 0 auto;
 	background-color: $color_gray_gray;
-	padding: 20px 10px 50px 10px;
 	transition: 0.5s;
-	.prev {
-		margin-left: 270px;
-		margin-bottom: 20px;
-		transition: 0.5s;
-		@media (max-width: 1380px) {
-			margin-left: 170px;
-		}
-		@media (max-width: 1100px) {
-			margin-left: 70px;
-		}
-		@media (max-width: 815px) {
-			margin-left: 0px;
-		}
-		a {
-			@include fontst($color_link, 'TT Norms', 12px, 500, normal, normal, none);
-			@media (max-width: 815px) {
-				display: none;
-			}
-		}
-		span {
-			@include fontst($button, 'TT Norms', 12px, 500, normal, normal, none);
-			@media (max-width: 815px) {
-				display: none;
-			}
-		}
-		h2 {
-			@include fontst(
-				$color_black_black,
-				'TT Norms',
-				46px,
-				700,
-				150%,
-				normal,
-				none
-			);
-			transition: 0.5s;
-			@media (max-width: 815px) {
-				& {
-					font-size: 36px;
+	.about {
+		max-width: 1380px;
+		margin: 0 auto;
+		padding: 20px 10px 67px 10px;
+		.prev {
+			a {
+				@include fontst(
+					$color_link,
+					'TT Norms',
+					12px,
+					500,
+					normal,
+					normal,
+					none
+				);
+				@media (max-width: 815px) {
+					display: none;
 				}
 			}
-			@media (max-width: 550px) {
-				& {
-					font-size: 26px;
+			span {
+				@include fontst($button, 'TT Norms', 12px, 500, normal, normal, none);
+				@media (max-width: 815px) {
+					display: none;
 				}
 			}
-			@media (max-width: 450px) {
-				& {
-					font-size: 24px;
-				}
-			}
-		}
-	}
-	.blocks {
-		display: flex;
-		justify-content: space-between;
-		transition: 0.5s;
-		@media (max-width: 1000px) {
-			& {
-				flex-wrap: wrap;
-				flex-direction: column;
-			}
-		}
-		.block-one {
-			background: url(../../Page_1/img/img.png) no-repeat;
-		}
-		.block-two {
-			background: url(../../Page_1/img/img1.png) no-repeat;
-		}
-		.block-three {
-			background: url(../../Page_1/img/img2.png) no-repeat;
-		}
-		.element-animation {
-			opacity: 0;
-			transform: translateY(50px);
-			.block {
-				padding-top: 417px;
+			h2 {
+				@include fontst(
+					$color_black_black,
+					'TT Norms',
+					46px,
+					700,
+					150%,
+					normal,
+					none
+				);
 				transition: 0.5s;
-				@media (max-width: 1340px) {
-					& {
-						padding-top: 380px;
-					}
-				}
-				@media (max-width: 1045px) {
-					& {
-						padding-top: 320px;
-					}
-				}
-				@media (max-width: 1000px) {
-					& {
-						background-size: cover;
-						margin-bottom: 10px;
-					}
-				}
 				@media (max-width: 815px) {
 					& {
-						padding-top: 280px;
+						font-size: 36px;
 					}
 				}
-				@media (max-width: 679px) {
+				@media (max-width: 550px) {
 					& {
-						padding-top: 200px;
+						font-size: 26px;
 					}
 				}
 				@media (max-width: 450px) {
 					& {
-						padding-top: 100px;
+						font-size: 24px;
 					}
 				}
-				@media (max-width: 320px) {
-					& {
-						padding-top: 70px;
-					}
+			}
+		}
+		.contacts {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 20px;
+			@media (max-width: 975px) {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			@media (max-width: 462px) {
+				flex-wrap: wrap;
+				justify-content: flex-start;
+			}
+			.contact {
+				display: flex;
+				height: 72px;
+				align-items: center;
+				transition: 0.5s;
+				@media (max-width: 975px) {
+					margin-right: 10px;
 				}
-				.block-text {
-					background-color: $color_blue;
-					display: flex;
-					align-items: center;
+				@media (max-width: 450px) {
+					margin-right: 0px;
+				}
+				img {
+					margin-right: 20px;
+				}
+				span {
+					@include fontst(
+						$color_black_black,
+						'TT Norms',
+						26px,
+						500,
+						150%,
+						normal,
+						none
+					);
 					transition: 0.5s;
-					&:hover {
-						background-color: $lite_blue;
+					@media (max-width: 1200px) {
+						font-size: 20px;
 					}
+				}
+				.address {
 					p {
-						width: 490px;
-						margin-left: 30px;
-						transition: 0.5s;
 						@include fontst(
-							$color_white,
+							$color_black_black,
 							'TT Norms',
-							18px,
+							16px,
 							500,
 							150%,
 							normal,
 							none
 						);
-						@media (max-width: 1820px) {
-							& {
-								width: 460px;
-							}
-						}
-						@media (max-width: 1730px) {
-							& {
-								width: 420px;
-							}
-						}
-						@media (max-width: 1609px) {
-							& {
-								width: 380px;
-							}
-						}
-						@media (max-width: 1489px) {
-							& {
-								width: 340px;
-							}
-						}
-						@media (max-width: 1369px) {
-							& {
-								width: 300px;
-							}
-						}
-						@media (max-width: 1249px) {
-							& {
-								width: 260px;
-							}
-						}
-						@media (max-width: 1129px) {
-							& {
-								width: 220px;
-							}
-						}
-						@media (max-width: 1000px) {
-							& {
-								width: 100%;
-							}
-						}
-						@media (max-width: 320px) {
-							& {
-								margin-left: 7px;
-								font-size: 15px;
-							}
-						}
 					}
-					.arrow {
-						background-color: $lite_blue;
-						padding: 25px 25px 25px 24px;
-						@media (max-width: 450px) {
-							& {
-								padding: 15px 15px 15px 14px;
-							}
-						}
-						@media (max-width: 320px) {
-							& {
-								padding: 7px 7px 7px 6px;
-							}
+					span {
+						@include fontst(
+							$color_black_black,
+							'TT Norms',
+							16px,
+							400,
+							150%,
+							normal,
+							none
+						);
+					}
+				}
+				.tel-email {
+					p {
+						@include fontst(
+							$color_text,
+							'TT Norms',
+							14px,
+							500,
+							150%,
+							normal,
+							none
+						);
+					}
+					span {
+						@include fontst(
+							$color_black_black,
+							'TT Norms',
+							24px,
+							500,
+							150%,
+							normal,
+							none
+						);
+						transition: 0.5s;
+						@media (max-width: 1200px) {
+							font-size: 20px;
 						}
 					}
 				}
 			}
 		}
-		.element-show {
-			opacity: 1;
-			transition: all 3s;
-			transform: translateY(0%);
+	}
+	.forma {
+		max-width: 1920px;
+		margin: 0 auto;
+		background-color: $color_bgr;
+		.form {
+			max-width: 1380px;
+			margin: 0 auto;
+			padding: 50px 10px;
+			display: flex;
+			justify-content: space-between;
+			transition: 0.5s;
+			@media (max-width: 1145px) {
+				justify-content: space-evenly;
+			}
+			@media (max-width: 930px) {
+				flex-direction: column;
+			}
+			p {
+				@include fontst(
+					$color_white,
+					'TT Norms',
+					28px,
+					700,
+					180%,
+					normal,
+					none
+				);
+				transition: 0.5s;
+				@media (max-width: 930px) {
+					text-align: center;
+					margin-bottom: 20px;
+				}
+				@media (max-width: 510px) {
+					font-size: 20px;
+				}
+			}
+			form {
+				.obertka {
+					display: flex;
+					flex-direction: column;
+					.obertka-2 {
+						display: flex;
+						transition: 0.5s;
+						@media (max-width: 930px) {
+							justify-content: center;
+						}
+						@media (max-width: 510px) {
+							flex-direction: column;
+						}
+						.obertka-3 {
+							float: left;
+							fieldset {
+								border: 1px solid $color_input;
+								legend {
+									margin-left: 10px;
+									padding-left: 10px;
+									padding-right: 10px;
+									@include fontst(
+										$color_legend,
+										'TT Norms',
+										12px,
+										400,
+										150%,
+										normal,
+										none
+									);
+								}
+								input {
+									height: 51px;
+									width: 328px;
+									padding: 0px 20px 8px 20px;
+									background: transparent;
+									outline: none;
+									border: none;
+									transition: 0.5s;
+									@include fontst(
+										$color_white,
+										'TT Norms',
+										16px,
+										400,
+										150%,
+										normal,
+										none
+									);
+									&::placeholder {
+										@include fontst(
+											$color_placeholder,
+											'TT Norms',
+											16px,
+											400,
+											150%,
+											normal,
+											none
+										);
+									}
+									@media (max-width: 1145px) {
+										width: 228px;
+									}
+									@media (max-width: 510px) {
+										width: 100%;
+									}
+								}
+							}
+							.email {
+								margin-top: 10px;
+								.email-inp {
+									height: 60px;
+								}
+							}
+						}
+						.question {
+							width: 573px;
+							height: 203px;
+							align-self: flex-end;
+							background: transparent;
+							outline: none;
+							border: 1px solid $color_input;
+							margin-left: 10px;
+							resize: none;
+							transition: 0.5s;
+							@include fontst(
+								$color_white,
+								'TT Norms',
+								16px,
+								400,
+								150%,
+								normal,
+								none
+							);
+							&::-webkit-scrollbar {
+								width: 10px;
+								height: 8px;
+							}
+							&::-webkit-scrollbar-track {
+								background: transparent;
+							}
+							&::-webkit-scrollbar-thumb {
+								background-color: $color_input;
+								border-radius: 9em;
+							}
+							@media (max-width: 1385px) {
+								width: 473px;
+								height: 203px;
+							}
+							@media (max-width: 1250px) {
+								width: 373px;
+								height: 203px;
+							}
+							@media (max-width: 1145px) {
+								width: 228px;
+								height: 203px;
+							}
+							@media (max-width: 510px) {
+								width: 100%;
+								height: 203px;
+							}
+						}
+					}
+					.button {
+						width: 250px;
+						height: 60px;
+						background-color: $button;
+						margin-top: 10px;
+						border: none;
+						align-self: self-end;
+						@include fontst(
+							$color_white,
+							'TT Norms',
+							14px,
+							700,
+							150%,
+							normal,
+							none
+						);
+						transition: 0.5s;
+						@media (max-width: 930px) {
+							align-self: center;
+						}
+						@media (max-width: 310px) {
+							width: 100%;
+						}
+					}
+				}
+			}
 		}
 	}
 }

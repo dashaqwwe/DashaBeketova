@@ -14,6 +14,11 @@ $color_white: #ffffff;
 $color_footer: #0c0e16;
 $color_footer_a: #606269;
 $color_link: #bababa;
+$color_text: #a4a4a4;
+$color_bgr: #161822;
+$color_input: #393e52;
+$color_legend: #535970;
+$color_placeholder: #6a6e81;
 //миксин
 @mixin fontst($c, $ff, $fs, $fw, $lh, $ls, $tt) {
 	color: $c;
